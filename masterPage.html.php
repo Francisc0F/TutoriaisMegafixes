@@ -1,8 +1,4 @@
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,19 +21,14 @@
 
 <?php require_once "Templates/TemplateHeader.html.php"?>
 
-
 <!--main-->
 <?php require_once "Templates/default.html.php"?>
 
 <!--authors-->
 <?php // require_once "Templates/TemplateAuthorsList.html.php"?>
 
-
 <!-- login/regist -->
 <?php require_once "Templates/TemplateLogin" ?>
-
-
-
 
 <?php require_once "Templates/TemplateFooter.html.php"?>
 

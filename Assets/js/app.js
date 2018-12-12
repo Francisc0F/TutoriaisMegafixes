@@ -72,8 +72,6 @@ function displaylogin(){
 
 }
 
-
-
 //author functions
 function authorDescription(){
 
@@ -121,14 +119,13 @@ function authorDescription(){
     });
 }
 
-
 //menu functions
 function menuActive(){
 
 
     $("ul li.nav-item").click(function () {
 
-        $("ul li.nav-item").removeClass("active");
+
 
         $(this).addClass("active");
 
