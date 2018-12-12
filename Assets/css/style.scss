@@ -1,0 +1,295 @@
+$coler:#000;
+
+//style
+
+
+$forest:#04202C;
+.bg-forest{
+  background-color: $forest;
+}
+
+$evergreen:#304040;
+$pine:#5b7065;
+$fog:#C9D1C8;
+
+
+$gold:#CFB53B;
+.badge-gold{
+background-color: $gold;
+  color: black;
+}
+
+
+$silver:#E6E8FA;
+.badge-silver{
+  background-color: $silver;
+  color: black;
+}
+
+$bronze:#8C7853;
+.badge-bronze{
+  background-color: $bronze;
+  color: black;
+}
+
+
+.hide{
+  display: none!important;
+}
+
+
+.show{
+  display: block!important;
+}
+
+
+
+
+//Overrides
+.btn-success{
+  background-color: $pine;
+  color: white;
+  border:none;
+}
+
+.btn-success:hover{
+
+  background-color: $forest;
+
+}
+
+.list-group-item.active{
+  z-index: 2;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle
+{
+  color: #fff;
+  background-color: $forest!important;
+  border-color: $forest!important;
+}
+.btn-success:focus, .btn-success.focus{
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.12)!important;
+}
+
+
+.modal-header,.modal-footer{
+  border: 0px ;
+}
+
+.modal-dialog{
+  max-width: 326px!important;
+}
+
+
+.form-control:focus{
+
+  border-color: $fog;
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.27);
+}
+
+
+.h3{
+  color: $evergreen;
+}
+
+button:focus {
+  outline: none;
+
+}
+
+//end overrides
+
+
+//body start
+
+
+
+
+body{
+  background-color: #304040ed;
+  .header{
+background-color: $forest;
+  }
+}
+
+
+.autor{
+  bottom: 0px;
+
+  small{
+
+    position: absolute;
+    bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+
+  }
+
+}
+
+.recent-item{
+  overflow: hidden;
+  //height:203px;
+  height: 146px;
+  transition-timing-function: ease-in;
+transition: height 0.5s;
+  .group{
+    padding-top: 20px;
+    transition: padding-top 0.5s;
+  }
+}
+
+.recent-item:hover{
+
+  height:203px;
+  .group{
+    padding-top: 0px;
+
+  }
+}
+
+
+
+.dificulty{
+margin-left: 90px;
+
+}
+
+
+
+//most viewed item
+
+
+
+.list-group-item:last-child{
+  border-bottom: 0px;
+}
+
+
+.mostviewed{
+
+  overflow: hidden;
+
+  .mostviewed-item:last-child{
+    border-bottom: 0px;
+  }
+  .mostviewed-item
+  {
+
+    h5{
+    font-size: 17px;
+
+    }
+    p{
+      font-size: 16px;
+
+    }
+    height: 110.5px;
+    overflow: hidden;
+    border-left: 0px;
+    border-bottom: 1px solid $pine;
+    border-top: 0px;
+    padding: 0px;
+
+    .tutorialImage{
+
+    }
+
+  }
+
+}
+
+
+
+
+
+//top authors
+
+#topAutors{
+
+  .list-group-item:hover{
+    cursor: pointer;
+  }
+  .list-group-item:hover:not(.active){
+
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+
+  }
+
+
+  .profile{
+
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .imageOverflow{
+    width: 25%;
+    overflow: hidden;
+    border-radius: 600px;
+  }
+
+}
+
+//footer
+
+#footer{
+
+  color:white;
+
+
+  .footer-copyright{
+    background-color: $evergreen;
+  }
+}
+
+
+
+
+
+
+
+
+
+//modal login/registar
+
+#Grouplogin{        //evergreen com opacidade
+  background-color: #304040c2;
+
+
+  .notMember,.Member{
+    cursor: pointer;
+    color:$forest;
+  }
+  .notMember:hover, .Member:hover{
+    color:$pine;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
