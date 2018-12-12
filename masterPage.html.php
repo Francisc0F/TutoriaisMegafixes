@@ -22,10 +22,13 @@
 <?php require_once "Templates/TemplateHeader.html.php"?>
 
 <!--main-->
-<?php require_once "Templates/default.html.php"?>
+<?php //require_once "Templates/default.html.php"?>
 
 <!--authors-->
 <?php // require_once "Templates/TemplateAuthorsList.html.php"?>
+
+
+<?php require_once "Templates/Tutoriais.html.php"?>
 
 <!-- login/regist -->
 <?php require_once "Templates/TemplateLogin" ?>
