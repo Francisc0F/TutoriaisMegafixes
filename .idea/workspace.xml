@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/Tutoriais.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/TemplateHeader.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/TemplateHeader.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/default.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/default.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Tutoriais.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Tutoriais.html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/masterPage.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/masterPage.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,15 +161,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="1" />
-          <entry key="php" value="45" />
-          <entry key="txt" value="32" />
+          <entry key="php" value="158" />
+          <entry key="scss" value="44" />
+          <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="42" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PHP" value="155" />
+          <entry key="PLAIN_TEXT" value="76" />
+          <entry key="SCSS" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -176,6 +179,7 @@
           <entry key="js" value="3" />
           <entry key="md" value="1" />
           <entry key="php" value="6" />
+          <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -183,29 +187,27 @@
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="6" />
+          <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/masterPage.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="608">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Tutoriais.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="209" column="18" lean-forward="true" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
-              <folding>
-                <element signature="n#form#0;n#div#0;n#div#0;n#nav#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="380">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -225,15 +227,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/default.html.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/TemplateAuthorsList.html.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -243,10 +236,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="293" column="1" lean-forward="true" selection-start-line="293" selection-start-column="1" selection-end-line="293" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/TemplateFooter.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="163">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -261,19 +263,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/TemplateHeader.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -350,15 +343,15 @@
         <option value="$PROJECT_DIR$/Assets/app.js" />
         <option value="$PROJECT_DIR$/Assets/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/Templates/TemplateFooter.html.php" />
-        <option value="$PROJECT_DIR$/Assets/css/style.scss" />
         <option value="$PROJECT_DIR$/Templates/TemplateLogin" />
         <option value="$PROJECT_DIR$/Templates/TemplateAuthorsList.html.php" />
         <option value="$PROJECT_DIR$/master.php" />
-        <option value="$PROJECT_DIR$/masterPage.html.php" />
         <option value="$PROJECT_DIR$/Templates/default.html.php" />
         <option value="$PROJECT_DIR$/Assets/js/app.js" />
         <option value="$PROJECT_DIR$/Templates/TemplateHeader.html.php" />
+        <option value="$PROJECT_DIR$/Assets/css/style.scss" />
         <option value="$PROJECT_DIR$/Templates/Tutoriais.html.php" />
+        <option value="$PROJECT_DIR$/masterPage.html.php" />
       </list>
     </option>
   </component>
@@ -407,12 +400,13 @@
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -501,7 +495,7 @@
       <workItem from="1544469580425" duration="768000" />
       <workItem from="1544480427162" duration="8347000" />
       <workItem from="1544627297625" duration="1262000" />
-      <workItem from="1544628582283" duration="1776000" />
+      <workItem from="1544628582283" duration="3253000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -524,17 +518,31 @@
       <option name="project" value="LOCAL" />
       <updated>1544629833798</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&#10;+ tutorias by categories view">
+      <created>1544630399555</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544630399555</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&#10;+ tutorias">
+      <created>1544630768869</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544630768869</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190025000" />
+    <option name="totallyTimeSpent" value="191502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15167785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16845638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -554,27 +562,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.093959734" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2496454" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -587,7 +574,9 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="+ project start" />
     <MESSAGE value="&#10;+check" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+check" />
+    <MESSAGE value="&#10;+ tutorias by categories view" />
+    <MESSAGE value="&#10;+ tutorias" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -774,36 +763,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5187">
-          <caret line="273" column="16" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/TemplateFooter.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/TemplateFormEditar.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/TemplateListagem.html.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/master.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -820,20 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/TemplateAuthorsList.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/default.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -846,27 +797,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/TemplateListagem.html.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/TemplateHeader.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/masterPage.html.php">
+    <entry file="file://$PROJECT_DIR$/Templates/TemplateFormEditar.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="19">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/default.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="293" column="1" lean-forward="true" selection-start-line="293" selection-start-column="1" selection-end-line="293" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/TemplateFooter.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/TemplateAuthorsList.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Tutoriais.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="209" column="18" lean-forward="true" selection-start-line="209" selection-start-column="18" selection-end-line="209" selection-end-column="18" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#div#0;n#nav#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/masterPage.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
