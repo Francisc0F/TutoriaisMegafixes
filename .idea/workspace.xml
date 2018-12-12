@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Templates/Tutoriais.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Tutoriais.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -157,17 +160,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="1" />
-          <entry key="php" value="491" />
-          <entry key="scss" value="189" />
-          <entry key="txt" value="95" />
+          <entry key="php" value="637" />
+          <entry key="scss" value="301" />
+          <entry key="txt" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="488" />
-          <entry key="PLAIN_TEXT" value="95" />
-          <entry key="SCSS" value="189" />
+          <entry key="PHP" value="634" />
+          <entry key="PLAIN_TEXT" value="97" />
+          <entry key="SCSS" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -227,20 +230,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Tutoriais.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+            <state relative-caret-position="211">
+              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="297" column="33" lean-forward="true" selection-start-line="297" selection-start-column="33" selection-end-line="297" selection-end-column="33" />
+            <state relative-caret-position="296">
+              <caret line="344" lean-forward="true" selection-start-line="344" selection-end-line="344" />
             </state>
           </provider>
         </entry>
@@ -319,8 +325,8 @@
         <option value="$PROJECT_DIR$/Assets/js/app.js" />
         <option value="$PROJECT_DIR$/Templates/TemplateHeader.html.php" />
         <option value="$PROJECT_DIR$/masterPage.html.php" />
-        <option value="$PROJECT_DIR$/Assets/css/style.scss" />
         <option value="$PROJECT_DIR$/Templates/Tutoriais.html.php" />
+        <option value="$PROJECT_DIR$/Assets/css/style.scss" />
       </list>
     </option>
   </component>
@@ -371,6 +377,13 @@
               <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +481,7 @@
       <workItem from="1544469580425" duration="768000" />
       <workItem from="1544480427162" duration="8347000" />
       <workItem from="1544627297625" duration="1262000" />
-      <workItem from="1544628582283" duration="7850000" />
+      <workItem from="1544628582283" duration="10097000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -526,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544639156990</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&#10;+ tutorias 18:14 12/12 test 2">
+      <created>1544639287543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544639287543</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196099000" />
+    <option name="totallyTimeSpent" value="198346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -572,7 +592,8 @@
     <MESSAGE value="&#10;+ tutorias" />
     <MESSAGE value="&#10;+ tutorias 18:14 12/12" />
     <MESSAGE value="&#10;+ tutorias 18:14 12/12 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 18:14 12/12 test" />
+    <MESSAGE value="&#10;+ tutorias 18:14 12/12 test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 18:14 12/12 test 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -843,17 +864,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/Templates/Tutoriais.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="297" column="33" lean-forward="true" selection-start-line="297" selection-start-column="33" selection-end-line="297" selection-end-column="33" />
+        <state relative-caret-position="211">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Tutoriais.html.php">
+    <entry file="file://$PROJECT_DIR$/Assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="70" column="26" lean-forward="true" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="296">
+          <caret line="344" lean-forward="true" selection-start-line="344" selection-end-line="344" />
         </state>
       </provider>
     </entry>

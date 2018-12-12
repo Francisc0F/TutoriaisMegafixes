@@ -291,15 +291,35 @@ margin-left: 90px;
 
 //tutoriais categorias
 
-#tutoriais {
+#tutoriais{
 
-  .list-group-item.list-category:first-child{
+  .list-group-item.list-category:first-child {
 
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
 
   }
 
+
+
+  //cards
+
+  .card:hover {
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+
+  }
+
+
+
+
+
+
+
+
+//lista de categorias
 
   .list-category a {
     color: black;
@@ -317,6 +337,21 @@ margin-left: 90px;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .bloc_left_price {
