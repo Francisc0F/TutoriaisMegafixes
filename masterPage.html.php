@@ -23,7 +23,7 @@
 <?php require_once "Templates/TemplateHeader.html.php"?>
 
 <!--main    pagina inicial -->
-<?php //require_once "Templates/default.html.php"?>
+<?php require_once "Templates/default.html.php"?>
 
 <!--authors-->
 <?php // require_once "Templates/TemplateAuthorsList.html.php"?>
