@@ -1,4 +1,8 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Assets/css/style.css">
 
-<style>
-</style>
+    <style>
+    </style>
 
 </head>
 
 
 
-<body >
+
+<body>
 
 <?php require_once "Templates/TemplateHeader.html.php"?>
 
@@ -40,9 +45,11 @@
 
 <?php require_once "Templates/TemplateFooter.html.php"?>
 
+
+
+
 <script src="Assets/js/jquery.min.js"></script>
 <script src="Assets/js/app.js"></script>
 </body>
 </html>
-
 
