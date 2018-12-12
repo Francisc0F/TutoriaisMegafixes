@@ -1,6 +1,6 @@
 
 <div class="container mt-3">
-
+<?php echo "cenas"?>
     <div class="text-center jumbotron">
         <h1>WOW,bueda Cool!</h1>
         <p class="lead">Anda escrever tutoriais para nos!</p>

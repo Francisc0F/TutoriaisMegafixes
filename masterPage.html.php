@@ -33,10 +33,6 @@
 <?php // require_once "Templates/TemplateAuthorsList.html.php"?>
 
 
-
-
-
-
 <!-- login/regist -->
 <?php require_once "Templates/TemplateLogin" ?>
 
