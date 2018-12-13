@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{angular, angular-route, bootstrap, jquery}" />
+    <file url="PROJECT" libraries="{angular, angular-route, bootstrap, froala_editor.pkgd, jquery}" />
     <includedPredefinedLibrary name="HTTP Response Handler" />
   </component>
 </project>

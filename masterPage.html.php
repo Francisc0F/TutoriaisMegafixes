@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="Assets/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <style>
-    </style>
+    <!-- Include Editor style. -->
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 
@@ -35,9 +37,8 @@
 
 <!--tutoriais -->
 <?php //require_once "Templates/Tutoriais.html.php"?>
-
-
-<?php require_once "Templates/TemplateEditarTutorial.html.php"?>
+<?php //require_once "Templates/TemplateEditarTutorial.html.php"?>
+<?php require_once "Templates/TemplateInserirTutorial.html.php"?>
 
 
 
@@ -54,6 +55,9 @@
 
 <script src="Assets/js/jquery.min.js"></script>
 <script src="Assets/js/app.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/js/froala_editor.pkgd.min.js"></script>
+
 </body>
 </html>
 
