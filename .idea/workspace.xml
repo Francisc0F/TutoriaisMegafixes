@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/exe24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/exe24.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/TemplateFormInserir.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/TemplateInserirTutorial.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/masterPage.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/masterPage.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -164,14 +159,14 @@
           <entry key="js" value="48" />
           <entry key="php" value="1299" />
           <entry key="scss" value="549" />
-          <entry key="txt" value="116" />
+          <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="51" />
           <entry key="PHP" value="1296" />
-          <entry key="PLAIN_TEXT" value="116" />
+          <entry key="PLAIN_TEXT" value="119" />
           <entry key="SCSS" value="549" />
         </counts>
       </usages-collector>
@@ -215,8 +210,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/masterPage.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="524">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -510,7 +505,7 @@
       <workItem from="1544628582283" duration="10942000" />
       <workItem from="1544701471686" duration="2697000" />
       <workItem from="1544723291388" duration="1506000" />
-      <workItem from="1544725433752" duration="4236000" />
+      <workItem from="1544725433752" duration="4801000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -596,11 +591,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544727226196</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&#10;+ tutorias 19:34 13/12">
+      <created>1544729695679</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544729695679</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207630000" />
+    <option name="totallyTimeSpent" value="208195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -646,7 +648,8 @@
     <MESSAGE value="&#10;+ tutorias 20:17 12/12" />
     <MESSAGE value="&#10;+ tutorias 12:27 13/12" />
     <MESSAGE value="&#10;+ tutorias 18:53 13/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 18:53 13/12" />
+    <MESSAGE value="&#10;+ tutorias 19:34 13/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 19:34 13/12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -940,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/masterPage.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="524">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
