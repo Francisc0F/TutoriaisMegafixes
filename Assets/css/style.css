@@ -63,6 +63,9 @@ button:focus {
 .bg-primary {
   background-color: #04202C !important; }
 
+.checked {
+  color: #ffc107 !important; }
+
 body {
   background-color: #304040ed; }
   body .header {
@@ -150,6 +153,15 @@ body {
   text-decoration: none;
   background-color: #f8f9fa;
   cursor: pointer; }
+#tutoriais .card .group .dificulty {
+  font-size: 16px;
+  line-height: 17px; }
+#tutoriais .card .group .rate span {
+  line-height: 21px; }
+#tutoriais .card .card-title a {
+  color: #04202C; }
+#tutoriais .card .card-title a:hover {
+  text-decoration: none; }
 #tutoriais .list-category a {
   color: black;
   text-decoration: none; }
