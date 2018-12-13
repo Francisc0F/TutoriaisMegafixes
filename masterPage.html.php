@@ -23,15 +23,21 @@
 <?php require_once "Templates/TemplateHeader.html.php"?>
 
 <!--main    pagina inicial -->
-<?php require_once "Templates/default.html.php"?>
+<?php //require_once "Templates/default.html.php"?>
 
 <!--authors-->
-<?php // require_once "Templates/TemplateAuthorsList.html.php"?>
+<?php //  require_once "Templates/TemplateAuthorsList.html.php"?>
+<?php // require_once "Templates/TemplateMyacc.html.php"?>
+
+
+
 
 
 <!--tutoriais -->
-<?php require_once "Templates/Tutoriais.html.php"?>
+<?php //require_once "Templates/Tutoriais.html.php"?>
 
+
+<?php require_once "Templates/TemplateEditarTutorial.html.php"?>
 
 
 

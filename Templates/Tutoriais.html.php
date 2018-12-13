@@ -111,7 +111,7 @@
 
                 <?php } ?>
 
-            <!-- categorie 2 -->
+            <!-- categorie style -->
 
                 <?php for($i = 0 ; $i<6;$i++) { ?>
                     <div class="col-12 col-md-6 col-lg-4 <?php if($i > 2) echo "mt-3" ?> category-pages ">
@@ -169,7 +169,6 @@
                             </div>
                         </div>
                     </div>
-
                 <?php } ?>
 
 
