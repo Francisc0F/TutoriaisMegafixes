@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/masterPage.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/masterPage.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,16 +158,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="48" />
-          <entry key="php" value="1299" />
+          <entry key="php" value="1300" />
           <entry key="scss" value="549" />
-          <entry key="txt" value="121" />
+          <entry key="txt" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="51" />
-          <entry key="PHP" value="1296" />
-          <entry key="PLAIN_TEXT" value="121" />
+          <entry key="PHP" value="1297" />
+          <entry key="PLAIN_TEXT" value="127" />
           <entry key="SCSS" value="549" />
         </counts>
       </usages-collector>
@@ -214,8 +213,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/masterPage.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="367">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -409,29 +408,6 @@
             </path>
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="style.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -446,6 +422,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RecentsManager">
@@ -526,7 +503,7 @@
       <workItem from="1544701471686" duration="2697000" />
       <workItem from="1544723291388" duration="1506000" />
       <workItem from="1544725433752" duration="4828000" />
-      <workItem from="1544786508592" duration="366000" />
+      <workItem from="1544786508592" duration="1323000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -626,17 +603,23 @@
       <option name="project" value="LOCAL" />
       <updated>1544730246829</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="&#10;+ tutorias 11:28 14/12">
+      <created>1544786906608</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544786906608</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208588000" />
+    <option name="totallyTimeSpent" value="209545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17718121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17718121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -649,7 +632,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2496454" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2496454" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -678,7 +661,8 @@
     <MESSAGE value="&#10;+ tutorias 18:53 13/12" />
     <MESSAGE value="&#10;+ tutorias 19:34 13/12" />
     <MESSAGE value="&#10;+ tutorias 19:44 13/12" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 19:44 13/12" />
+    <MESSAGE value="&#10;+ tutorias 11:28 14/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ tutorias 11:28 14/12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -960,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/masterPage.html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        <state relative-caret-position="367">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
