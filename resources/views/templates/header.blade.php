@@ -1,5 +1,8 @@
 
 
+@section('header')
+
+
 <nav class="navbar  sticky-top navbar-expand-lg navbar-dark header">
     <div class="container">
         <a class="navbar-brand" href="#">TutoriaisMegaFixes!</a>
@@ -51,3 +54,6 @@
     </div>
 
 </nav>
+
+
+@endsection

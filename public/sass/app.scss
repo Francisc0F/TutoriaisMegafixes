@@ -6,7 +6,7 @@
 @import 'variables';
 
 // Bootstrap
-@import '../assets/bootstrap/scss/bootstrap';
+@import '../../resources/assets/bootstrap/scss/bootstrap';
 
 
 $coler:#000;
@@ -291,11 +291,11 @@ body{
 
 #Grouplogin{        //evergreen com opacidade
   background-color: #304040c2;
-
+  color: black;
 
   .notMember,.Member{
     cursor: pointer;
-    color:$forest;
+
   }
   .notMember:hover, .Member:hover{
     color:$pine;

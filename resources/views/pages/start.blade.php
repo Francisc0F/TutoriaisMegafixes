@@ -1,10 +1,15 @@
+<!-- includes sempre primeiro
+@extends('master')
+@extends('templates.header')
+@extends('templates.footer')
 
 
-@extends('pages.master')
+<!-- page title -->
+@section("title")
+    start
+@endsection
 
-
-@yield("title","cenas")
-
+<!--  dynamic main content -->
 @section('content')
     <div class="container mt-3">
         <div class="text-center jumbotron">
@@ -350,4 +355,9 @@
     </div>
 
     </div>
-@stop
+@endsection
+
+
+
+<!-- footer -->
+

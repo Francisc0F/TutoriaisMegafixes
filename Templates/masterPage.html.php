@@ -21,7 +21,7 @@
 
 <body>
 
-<?php require_once "Templates/TemplateHeader.html.php" ?>
+<?php require_once "Templates/header.blade.php" ?>
 
 <!--main    pagina inicial -->
 <?php //require_once "Templates/start.blade.php"?>
@@ -42,11 +42,11 @@
 
 
 <!-- footer -->
-<?php require_once "Templates/TemplateFooter.html.php" ?>
+<?php require_once "Templates/footer.blade.php" ?>
 
 
 <script src="/resources/assets/js/jquery.min.js"></script>
-<script src="/resources/js/app.js"></script>
+<script src="/public/js/app.js"></script>
 
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/js/froala_editor.pkgd.min.js"></script>
