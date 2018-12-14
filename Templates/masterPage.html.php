@@ -38,7 +38,7 @@
 
 
 <!-- login/regist -->
-<?php require_once "Templates/TemplateLogin" ?>
+<?php require_once "Templates/templateLoginRegist.blade.php" ?>
 
 
 <!-- footer -->

@@ -1,8 +1,9 @@
 <!-- includes sempre primeiro
+ todos os includes necessarios pra start page -->
 @extends('master')
 @extends('templates.header')
 @extends('templates.footer')
-
+@extends('templates.templateLoginRegist')
 
 <!-- page title -->
 @section("title")
