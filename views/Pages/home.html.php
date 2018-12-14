@@ -1,3 +1,0 @@
-
-<strong>pagina HOME</strong>
-
