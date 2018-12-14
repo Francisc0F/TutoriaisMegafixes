@@ -15,3 +15,10 @@ Route::get('/', function () {
 
     return view('pages.start');
 });
+
+
+
+Route::get('/error', function () {
+
+    return view('pages.error');
+});

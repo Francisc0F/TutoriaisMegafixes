@@ -1,4 +1,7 @@
 
+
+
+@section("loginRegist")
 <div id="Grouplogin" class="modal">
 
     <div  id="login" >
@@ -87,3 +90,5 @@
     </div>
 
 </div>
+
+@endsection

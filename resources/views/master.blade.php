@@ -23,8 +23,9 @@
 <body>
 
 @yield('header')
-
+@yield('loginRegist')
 @yield('content')
+@yield("error")
 
 @yield('footer')
 
