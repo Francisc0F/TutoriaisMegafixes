@@ -47,22 +47,37 @@
                 <div class="accTutorials">
                     <ul class="list-group">
                         <li class="list-group-item text-muted">Activity </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong>tutorial 1</strong>
-                            </span><span>edit</span>
-                            <span> delete</span></li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong>tutorial 2</strong>
-                            </span><span>edit</span>
-                            <span> delete</span></li>
                         <li class="list-group-item text-right">
                             <span class="pull-left">
-                                <strong>tutorial 3</strong>
+                                <strong>tutorial 1</strong>
+                            </span>
                             <span>edit</span>
                             <span> delete</span>
+
                         </li>
-                        <li class="list-group-item text-right"><span class="pull-left">
-                            <strong>tutorial 4</strong>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>tutorial 1</strong>
+                            </span>
                             <span>edit</span>
                             <span> delete</span>
+
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>tutorial 1</strong>
+                            </span>
+                            <span>edit</span>
+                            <span> delete</span>
+
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="pull-left">
+                                <strong>tutorial 1</strong>
+                            </span>
+                            <span>edit</span>
+                            <span> delete</span>
+
                         </li>
                     </ul>
 
