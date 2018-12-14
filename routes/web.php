@@ -22,3 +22,8 @@ Route::get('/error', function () {
 
     return view('pages.error');
 });
+
+Route::get('/author', function () {
+
+    return view('templates.templateMyacc');
+});

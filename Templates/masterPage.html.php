@@ -28,7 +28,7 @@
 
 <!--authors-->
 <?php //  require_once "Templates/TemplateAuthorsList.html.php"?>
-<?php // require_once "Templates/TemplateMyacc.html.php"?>
+<?php // require_once "Templates/templateMyacc.blade.php"?>
 
 
 <!--tutoriais -->

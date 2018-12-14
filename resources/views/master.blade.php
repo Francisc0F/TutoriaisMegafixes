@@ -17,12 +17,17 @@
     <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_style.min.css" rel="stylesheet"
           type="text/css"/>
 
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('inputFileStyle/css/component.css') }}">
+
+
 
     <title>@yield("title")</title>
 </head>
 <body>
 
 @yield('header')
+
+@yield("author")
 @yield('loginRegist')
 @yield('content')
 @yield("error")
@@ -33,6 +38,15 @@
 
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/js/froala_editor.pkgd.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="{{ URL::asset('inputFileStyle/js/jquery.custom-file-input.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('inputFileStyle/js/custom-file-input.js') }}"></script>
+
+
+
 
 <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
 </body>
