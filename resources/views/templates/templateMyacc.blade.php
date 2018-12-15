@@ -39,46 +39,35 @@
 
                 <div class="panel panel-default">
 
-                    <div class="panel-body">
-                        <a href="http://bootnipets.com">meus tutoriais</a>
-                    </div>
+                    {{--<div class="panel-body">--}}
+                        {{--<a href="http://bootnipets.com">meus tutoriais</a>--}}
+                    {{--</div>--}}
                 </div>
 
                 <div class="accTutorials">
                     <ul class="list-group">
                         <li class="list-group-item text-muted">Activity </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>tutorial 1</strong>
-                            </span>
-                            <span>edit</span>
-                            <span> delete</span>
 
-                        </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>tutorial 1</strong>
-                            </span>
-                            <span>edit</span>
-                            <span> delete</span>
+                        @for ($i = 0; $i <3 ; $i++)
 
-                        </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>tutorial 1</strong>
-                            </span>
-                            <span>edit</span>
-                            <span> delete</span>
+                            <li class="list-group-item ">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <strong>
+                                            Tutorial de como matar um porco com um machado
+                                        </strong>
+                                    </div>
+                                </div>
 
-                        </li>
-                        <li class="list-group-item text-right">
-                            <span class="pull-left">
-                                <strong>tutorial 1</strong>
-                            </span>
-                            <span>edit</span>
-                            <span> delete</span>
+                                <div class="d-flex justify-content-center mt-1">
+                                    <a class="btn btn-lg btn-success edit-tutorial" >Edit</a>
+                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1" >Apagar</a>
+                                </div>
 
-                        </li>
+
+
+                            </li>
+                        @endfor
                     </ul>
 
                 </div>
@@ -125,7 +114,7 @@
                                 <div class="col-xs-12">
                                     <br>
                                     <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
-                                    <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                    <button class="btn btn-lg btn-success" type="reset">Reset</button>
                                 </div>
                             </div>
                         </form>
