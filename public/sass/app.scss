@@ -69,6 +69,14 @@ $bronze:#8C7853;
 
 }
 
+.btn-success:disabled {
+  color: white;
+  background-color: $forest;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .30;
+}
+
 .list-group-item.active{
   z-index: 2;
   color: #fff;

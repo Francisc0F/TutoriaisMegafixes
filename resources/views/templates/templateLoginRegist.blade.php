@@ -2,9 +2,9 @@
 
 
 @section("loginRegist")
-<div id="Grouplogin" class="modal">
+<div id="Grouplogin" class="modal" >
 
-    <div  id="login" >
+    <div  id="login" ng-controller="loginCtrl" >
         <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="modal-header ">
@@ -14,16 +14,28 @@
                     </button>
                 </div>
 
-                <form class="form-login">
+                    <form class="form-login" name="login">
 
                     <div class="modal-body">
 
 
 
-                        <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Name">
+                        <input type="text" ng-model="name" name="name" id="inputName" class="form-control"
+                               placeholder="Name" required>
+
+                                        <!-- $invalid = true quando input tiver vazio -->
+                        <span ng-show="login.name.$invalid && !login.name.$pristine" class="text-danger ml-2"><small>Nome obrigatorio</small></span>
 
 
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" >
+
+
+                        <input type="password" ng-model="password" name="password"
+                               id="inputPassword" class="form-control mt-2" placeholder="Password" ng-pattern="/^\d{0,9}(\.\d{1,9})?$/" required>
+                        <span ng-show="login.password.$error.required && !login.password.$pristine" class="text-danger ml-2"><small>Password obrigatoria</small></span>
+                        <span ng-show="login.password.$error.pattern" class="text-danger ml-2"><small>Maximo 9 digitos</small></span>
+
+
+
                         <!-- <div class="checkbox mb-3">
                              <label>
                                  <input type="checkbox" value="remember-me"> Remember me
@@ -32,8 +44,10 @@
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-lg btn-success" type="submit">Login</button>
-                        <small class="chooseForm notMember">I am not a Member</small>
+                        <button class="btn btn-lg btn-success" type="submit" ng-disabled="login.$pristine || login.$invalid" >Login</button>
+
+                            <small class="chooseForm notMember" ng-click="resetForm"> I am not a Member</small>
+
                     </div>
 
                 </form>

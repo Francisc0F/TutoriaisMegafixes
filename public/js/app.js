@@ -1,4 +1,29 @@
 
+
+
+var app = angular.module("myApp",[]);
+
+
+app.controller("loginCtrl", function($scope) {
+
+    $scope.resetForm = function () {
+
+
+    }
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
 $(document).ready(function() {
 
     //profile description top viewers

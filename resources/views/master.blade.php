@@ -22,7 +22,7 @@
 
     <title>@yield("title")</title>
 </head>
-<body>
+<body ng-app="myApp">
 
 @yield('header')
 
@@ -45,7 +45,7 @@
 <script type="text/javascript" src="{{ URL::asset('inputFileStyle/js/custom-file-input.js') }}"></script>
 
 
-
+<script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
 </body>
