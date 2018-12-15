@@ -1,3 +1,10 @@
+@extends('master')
+@extends('templates.header')
+@extends('templates.footer')
+@extends('templates.templateLoginRegist')
+
+
+@section("inserirTutorial")
 
 <div class="container my-4" id="InserirTutorial">
 
@@ -20,7 +27,7 @@
 
         <div class="form-group">
             <label for="froala-editor">Example textarea</label>
-            <textarea id="froala-editor" >Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+            <textarea id="froala-editor" name="paragraph[]">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
 
         </div>
         <div class="form-group">
@@ -28,8 +35,8 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
         </div>
 
-        <input class="btn btn-primary" type="button" value="Add Paragraph">
-        <input class="btn btn-primary" type="button" value="Add Image">
+        <a class="btn btn-primary" type="button" >add image</a>
+        <a class="btn btn-primary" type="button" >add paragraph</a>
         <hr>
 
         <input class="btn btn-primary" type="submit" name="Inserir" value="Inserir">
@@ -39,3 +46,4 @@
 
 </div>
 
+@endsection

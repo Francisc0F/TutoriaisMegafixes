@@ -113,7 +113,7 @@
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <br>
-                                    <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                    <button class="btn btn-lg btn-success" type="submit"> Save</button>
                                     <button class="btn btn-lg btn-success" type="reset">Reset</button>
                                 </div>
                             </div>

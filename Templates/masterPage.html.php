@@ -34,7 +34,7 @@
 <!--tutoriais -->
 <?php //require_once "Templates/Tutoriais.html.php"?>
 <?php //require_once "Templates/TemplateEditarTutorial.html.php"?>
-<?php require_once "Templates/TemplateInserirTutorial.html.php" ?>
+<?php require_once "Templates/templateInserirTutorial.blade.php" ?>
 
 
 <!-- login/regist -->

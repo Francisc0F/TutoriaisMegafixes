@@ -10,16 +10,15 @@
     <!-- <link rel="stylesheet"  type="text/css" href="./resources/sass/app.css">-->
 
                                                     <!-- protecao para routes de 2 nivel-->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('sass/app.css') }}">
+
     <!-- Include Editor style. -->
     <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_editor.pkgd.min.css" rel="stylesheet"
-          type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.0/css/froala_style.min.css" rel="stylesheet"
           type="text/css"/>
 
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('inputFileStyle/css/component.css') }}">
 
-
+    <!-- override-->
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('sass/app.css') }}">
 
     <title>@yield("title")</title>
 </head>
@@ -31,7 +30,7 @@
 @yield('loginRegist')
 @yield('content')
 @yield("error")
-
+@yield("inserirTutorial")
 @yield('footer')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

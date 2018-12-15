@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/TemplateInserirTutorial.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/masterPage.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/masterPage.html.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sass/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,19 +184,19 @@
           <entry key="css" value="29" />
           <entry key="js" value="57" />
           <entry key="map" value="19" />
-          <entry key="php" value="3198" />
-          <entry key="scss" value="827" />
-          <entry key="txt" value="234" />
+          <entry key="php" value="3406" />
+          <entry key="scss" value="896" />
+          <entry key="txt" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1799" />
+          <entry key="Blade" value="1992" />
           <entry key="CSS" value="29" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="1396" />
-          <entry key="PLAIN_TEXT" value="234" />
-          <entry key="SCSS" value="827" />
+          <entry key="PHP" value="1411" />
+          <entry key="PLAIN_TEXT" value="251" />
+          <entry key="SCSS" value="896" />
           <entry key="SourceMap" value="19" />
         </counts>
       </usages-collector>
@@ -200,7 +204,7 @@
         <counts>
           <entry key="TemplateLogin" value="1" />
           <entry key="artisan" value="2" />
-          <entry key="css" value="11" />
+          <entry key="css" value="12" />
           <entry key="editorconfig" value="1" />
           <entry key="env" value="2" />
           <entry key="example" value="1" />
@@ -212,7 +216,7 @@
           <entry key="lock" value="2" />
           <entry key="map" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="41" />
+          <entry key="php" value="43" />
           <entry key="scss" value="7" />
           <entry key="svg" value="4" />
           <entry key="vue" value="1" />
@@ -222,13 +226,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="Blade" value="9" />
-          <entry key="CSS" value="11" />
+          <entry key="Blade" value="10" />
+          <entry key="CSS" value="12" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="8" />
           <entry key="JavaScript" value="18" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="36" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SCSS" value="7" />
           <entry key="SVG" value="4" />
@@ -244,8 +248,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="304">
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/templates/footer.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#2511#0#Blade" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -253,8 +269,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="467">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -262,20 +278,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/error.blade.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="581">
+              <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/error.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="57">
+              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding>
                 <element signature="e#2272#2992#0#HTML" />
               </folding>
@@ -284,28 +309,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/inputFileStyle/css/component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Desktop/CustomFileInputs/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="488" column="16" selection-start-line="488" selection-start-column="16" selection-end-line="488" selection-end-column="16" />
+            <state relative-caret-position="293">
+              <caret line="509" column="1" lean-forward="true" selection-start-line="509" selection-start-column="1" selection-end-line="509" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -313,17 +320,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/templates/templateLoginRegist.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="91" />
+            <state relative-caret-position="190">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#14085#0#Blade" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -355,8 +356,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/Users.php" />
-        <option value="$PROJECT_DIR$/controllers/pages.Controller.php" />
         <option value="$PROJECT_DIR$/views/Pages/login.html.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/routes/routes.php" />
@@ -401,11 +400,13 @@
         <option value="$PROJECT_DIR$/resources/views/pages/start.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/templateLoginRegist.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/error.blade.php" />
+        <option value="$PROJECT_DIR$/public/inputFileStyle/css/component.css" />
+        <option value="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/templateInserirTutorial.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
-        <option value="$PROJECT_DIR$/public/inputFileStyle/css/component.css" />
         <option value="$PROJECT_DIR$/public/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php" />
       </list>
     </option>
   </component>
@@ -629,6 +630,13 @@
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tutoriais" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -673,17 +681,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Pessoas" />
-      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Cursos" />
-      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe24\controllers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\resources\views\tutoriais" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\resources\views\templates" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\resources\views\pages" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\public\js" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\public" />
-      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\public\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Pessoas" />
+      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Cursos" />
+      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe24\controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -754,7 +762,7 @@
       <workItem from="1544725433752" duration="4828000" />
       <workItem from="1544786508592" duration="25351000" />
       <workItem from="1544819634805" duration="203000" />
-      <workItem from="1544875759861" duration="1903000" />
+      <workItem from="1544875759861" duration="4411000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -952,17 +960,24 @@
       <option name="project" value="LOCAL" />
       <updated>1544819763547</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="&#10;+ author page done">
+      <created>1544877697204</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1544877697204</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235679000" />
+    <option name="totallyTimeSpent" value="238187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1013,7 +1028,8 @@
     <MESSAGE value="&#10;+ login working" />
     <MESSAGE value="&#10;+" />
     <MESSAGE value="&#10;+ update author page" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ update author page" />
+    <MESSAGE value="&#10;+ author page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ author page done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1148,16 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/svg/404.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1184,13 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1225,48 +1224,10 @@
     <entry file="file://$PROJECT_DIR$/public/inputFileStyle/css/normalize.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/error.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/inputFileStyle/css/component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Desktop/CustomFileInputs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1277,20 +1238,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="488" column="16" selection-start-line="488" selection-start-column="16" selection-end-line="488" selection-end-column="16" />
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#2511#0#Blade" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/inputFileStyle/css/component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#14085#0#Blade" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/error.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="57">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding>
             <element signature="e#2272#2992#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sass/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="509" column="1" lean-forward="true" selection-start-line="509" selection-start-column="1" selection-end-line="509" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="46" column="6" lean-forward="true" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>

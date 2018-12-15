@@ -27,3 +27,10 @@ Route::get('/author', function () {
 
     return view('templates.templateMyacc');
 });
+
+Route::get('/tutoriais', function () {
+
+    return view('tutoriais.templateInserirTutorial');
+});
+
+
