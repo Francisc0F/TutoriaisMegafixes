@@ -29,11 +29,12 @@
 
 
 
-                        <input type="password" ng-model="password" name="password"
-                               id="inputPassword" class="form-control mt-2" placeholder="Password" ng-pattern="/^\d{0,9}(\.\d{1,9})?$/" required>
+                        <input type="password" ng-model="password" name="password" minlength="4" maxlength="9"
+                               id="inputPassword" class="form-control mt-2" placeholder="Password"  required>
                         <span ng-show="login.password.$error.required && !login.password.$pristine" class="text-danger ml-2"><small>Password obrigatoria</small></span>
-                        <span ng-show="login.password.$error.pattern" class="text-danger ml-2"><small>Maximo 9 digitos</small></span>
-
+                        <span ng-show="login.password.$error.minLength && !login.password.$pristine" class="text-danger ml-2"><small>Minimo 4 digitos</small></span>
+                        <span ng-show="login.password.$error.maxLength" class="text-danger ml-2"><small>Max 9 digitos</small></span>
+                        <span>  </span>
 
 
                         <!-- <div class="checkbox mb-3">
@@ -46,7 +47,7 @@
                     <div class="modal-footer d-flex justify-content-center">
                         <button class="btn btn-lg btn-success" type="submit" ng-disabled="login.$pristine || login.$invalid" >Login</button>
 
-                            <small class="chooseForm notMember" ng-click="resetForm"> I am not a Member</small>
+                            <small class="chooseForm notMember" ng-click="resetForm(login)"> I am not a Member</small>
 
                     </div>
 
