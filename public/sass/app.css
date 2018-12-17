@@ -7026,8 +7026,10 @@ body {
     font-size: 14px;
     color: white; }
 
-#InserirTutorial .fr-toolbar {
-  border: 0px;
-  background-color: #C9D1C8; }
+#InserirTutorial {
+  color: white; }
+  #InserirTutorial .fr-toolbar {
+    border: 0px;
+    background-color: #C9D1C8; }
 
 /*# sourceMappingURL=app.css.map */

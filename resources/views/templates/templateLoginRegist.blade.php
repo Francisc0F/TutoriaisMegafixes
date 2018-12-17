@@ -20,7 +20,7 @@
 
 
 
-                        <input type="text" ng-model="name" name="name" id="inputName" class="form-control"
+                        <input type="text" ng-model="user.name" name="name" id="inputName" class="form-control"
                                placeholder="Name" required>
 
                                         <!-- $invalid = true quando input tiver vazio -->
@@ -28,13 +28,11 @@
 
 
 
-
-                        <input type="password" ng-model="password" name="password" minlength="4" maxlength="9"
+                        <input type="password" ng-model="user.password" name="password" ng-minlength="4" ng-maxlength="9"
                                id="inputPassword" class="form-control mt-2" placeholder="Password"  required>
                         <span ng-show="login.password.$error.required && !login.password.$pristine" class="text-danger ml-2"><small>Password obrigatoria</small></span>
-                        <span ng-show="login.password.$error.minLength && !login.password.$pristine" class="text-danger ml-2"><small>Minimo 4 digitos</small></span>
-                        <span ng-show="login.password.$error.maxLength" class="text-danger ml-2"><small>Max 9 digitos</small></span>
-                        <span>  </span>
+                        <span ng-show="login.password.$error.minlength && !login.password.$pristine" class="text-danger ml-2"><small>Minimo 4 digitos</small></span>
+                        <span ng-show="login.password.$error.maxlength" class="text-danger ml-2"><small>Max 9 digitos</small></span>
 
 
                         <!-- <div class="checkbox mb-3">

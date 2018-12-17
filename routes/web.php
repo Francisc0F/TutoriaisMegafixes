@@ -28,9 +28,19 @@ Route::get('/author', function () {
     return view('templates.templateMyacc');
 });
 
-Route::get('/tutoriais', function () {
+Route::get('/newtutorial', function () {
 
     return view('tutoriais.templateInserirTutorial');
+});
+
+Route::get('/tutoriais', function () {
+
+    return view('tutoriais.templateTutoriaisList');
+});
+
+Route::get('/about', function () {
+
+    return view('tutoriais.templateTutoriaisList');
 });
 
 

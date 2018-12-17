@@ -6,6 +6,8 @@ var app = angular.module("myApp",[]);
 
 app.controller("loginCtrl", function($scope) {
 
+
+
     $scope.resetForm = function (form) {
 
         form.$setPristine();

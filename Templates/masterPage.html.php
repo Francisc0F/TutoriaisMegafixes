@@ -32,7 +32,7 @@
 
 
 <!--tutoriais -->
-<?php //require_once "Templates/Tutoriais.html.php"?>
+<?php //require_once "Templates/templateTutoriaisList.blade.php"?>
 <?php //require_once "Templates/TemplateEditarTutorial.html.php"?>
 <?php require_once "Templates/templateInserirTutorial.blade.php" ?>
 
