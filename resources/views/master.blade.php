@@ -27,12 +27,18 @@
 @yield('header')
 
 @yield("author")
+
 @yield('loginRegist')
+
 @yield('content')
+
 @yield("error")
+
 @yield("inserirTutorial")
 
 @yield("ListTutoriais")
+
+@yield("AuthorsList")
 
 
 @yield('footer')

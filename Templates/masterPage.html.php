@@ -27,7 +27,7 @@
 <?php //require_once "Templates/start.blade.php"?>
 
 <!--authors-->
-<?php //  require_once "Templates/TemplateAuthorsList.html.php"?>
+<?php //  require_once "Templates/templateAuthorsList.blade.php"?>
 <?php // require_once "Templates/templateMyacc.blade.php"?>
 
 

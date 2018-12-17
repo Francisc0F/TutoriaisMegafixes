@@ -23,10 +23,16 @@ Route::get('/error', function () {
     return view('pages.error');
 });
 
-Route::get('/author', function () {
+Route::get('/acc', function () {
 
     return view('templates.templateMyacc');
 });
+
+Route::get('/authors', function () {
+
+    return view('autores.templateAuthorsList');
+});
+
 
 Route::get('/newtutorial', function () {
 

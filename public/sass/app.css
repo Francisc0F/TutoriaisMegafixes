@@ -6892,18 +6892,18 @@ body {
 
 .mostviewed {
   overflow: hidden; }
-  .mostviewed .mostviewed-item:last-child {
+  .mostviewed .mostviewed-item:last-child, .mostviewed #authors .author-list .author-list-item:last-child, #authors .author-list .mostviewed .author-list-item:last-child {
     border-bottom: 0px; }
-  .mostviewed .mostviewed-item {
+  .mostviewed .mostviewed-item, .mostviewed #authors .author-list .author-list-item, #authors .author-list .mostviewed .author-list-item {
     height: 110.5px;
     overflow: hidden;
     border-left: 0px;
     border-bottom: 1px solid #5b7065;
     border-top: 0px;
     padding: 0px; }
-    .mostviewed .mostviewed-item h5 {
+    .mostviewed .mostviewed-item h5, .mostviewed #authors .author-list .author-list-item h5, #authors .author-list .mostviewed .author-list-item h5 {
       font-size: 17px; }
-    .mostviewed .mostviewed-item p {
+    .mostviewed .mostviewed-item p, .mostviewed #authors .author-list .author-list-item p, #authors .author-list .mostviewed .author-list-item p {
       font-size: 16px; }
 
 #topAutors .list-group-item:hover {
