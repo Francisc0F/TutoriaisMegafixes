@@ -13,6 +13,8 @@
 
 
         <div class="list-group author-list">
+
+
             <div class="row d-flex justify-content-center">
                 <div class="col-10">
                     <a href="#" class="p-0 author-list-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
@@ -23,19 +25,26 @@
 
 
                                 <div class="row">
-                                    <div class="col-1">
-                                        <h4 style="line-height: 70px;">nome</h4>
+                                    <div class="col">
+                                        <h5 class="mt-2" style="line-height: 27px;">Antonia Aurelio Batchapas</h5>
 
                                     </div>
 
-                                    <div class="col-11">
+                                    <div class="col">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col my-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <button class="btn btn-success ">Editar</button>
+                                                        <button class="btn btn-success ">Apagar</button>
+                                                        <button class="btn btn-success ">Tutoriais</button>
+                                                    </div>
+                                                    <div>
+                                                        <small style="line-height: 35px">30302 views </small>
 
-                                                <button class="btn btn-success mt-3">editar</button>
-                                                <button class="btn btn-success mt-3">apagar</button>
-                                                <button class="btn btn-success mt-3">ver tutoriais</button>
-
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

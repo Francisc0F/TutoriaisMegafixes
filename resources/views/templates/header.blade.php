@@ -17,11 +17,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Autores</a>
+                    <a class="nav-link" href="/authors">Autores</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/author">My acc</a>
+                    <a class="nav-link" href="/acc">My acc</a>
                 </li>
 
                 <li class="nav-item">

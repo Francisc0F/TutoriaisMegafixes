@@ -4,11 +4,13 @@
 
 
 @section("footer")
-<footer class="page-footer px-0 font-small blue pt-4 container-fluid bg-forest mt-4" id="footer">
+<footer class="page-footer position-sticky px-0 font-small
+ blue pt-4 container-fluid bg-forest mt-4" ng-controller="footerCtrl" id="footer">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
 
+        <% scroll %>
         <!-- Grid row -->
         <div class="row">
 

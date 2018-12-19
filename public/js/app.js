@@ -1,7 +1,12 @@
 
 
 
-var app = angular.module("myApp",[]);
+var app = angular.module("myApp",[],function ($interpolateProvider){
+
+    $interpolateProvider.startSymbol('<%');
+    $interpolateProvider.endSymbol('%>');
+
+});
 
 
 app.controller("loginCtrl", function($scope) {
@@ -13,6 +18,16 @@ app.controller("loginCtrl", function($scope) {
         form.$setPristine();
 
     }
+
+});
+//in progress
+app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
+
+
+        $scope.scroll=$window.scrollY;
+
+
+
 
 });
 

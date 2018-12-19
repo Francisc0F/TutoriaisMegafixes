@@ -46,7 +46,7 @@ Route::get('/tutoriais', function () {
 
 Route::get('/about', function () {
 
-    return view('tutoriais.templateTutoriaisList');
+    return view('templates.about');
 });
 
 

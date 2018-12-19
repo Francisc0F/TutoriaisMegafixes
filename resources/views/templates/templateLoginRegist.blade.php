@@ -34,6 +34,8 @@
                         <span ng-show="login.password.$error.minlength && !login.password.$pristine" class="text-danger ml-2"><small>Minimo 4 digitos</small></span>
                         <span ng-show="login.password.$error.maxlength" class="text-danger ml-2"><small>Max 9 digitos</small></span>
 
+                            <% login.password  %>
+
 
                         <!-- <div class="checkbox mb-3">
                              <label>

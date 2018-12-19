@@ -39,7 +39,7 @@
 @yield("ListTutoriais")
 
 @yield("AuthorsList")
-
+@yield("about")
 
 @yield('footer')
 
