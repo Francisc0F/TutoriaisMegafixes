@@ -26,7 +26,7 @@ app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
 
         $scope.scroll=$window.scrollY;
 
-//és um gay!!!
+
 
 
 });
