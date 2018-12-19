@@ -1,7 +1,7 @@
 
 
 
-@section("loginRegist")
+
 <div id="Grouplogin" class="modal" >
 
     <div  id="login" ng-controller="loginCtrl" >
@@ -106,4 +106,3 @@
 
 </div>
 
-@endsection

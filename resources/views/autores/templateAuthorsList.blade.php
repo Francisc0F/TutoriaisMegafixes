@@ -2,13 +2,9 @@
 
 
 @extends('master')
-@extends('templates.header')
-@extends('templates.footer')
-@extends('templates.templateLoginRegist')
 
 
-
-@section("AuthorsList")
+@section('content')
     <div id="authors" class="container mt-4">
 
 

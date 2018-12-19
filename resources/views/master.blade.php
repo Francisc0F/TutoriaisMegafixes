@@ -24,24 +24,12 @@
 </head>
 <body ng-app="myApp">
 
-@yield('header')
-
-@yield("author")
-
-@yield('loginRegist')
-
+@include("templates.header")
+@include("templates.templateLoginRegist")
 @yield('content')
 
-@yield("error")
+@include("templates.footer")
 
-@yield("inserirTutorial")
-
-@yield("ListTutoriais")
-
-@yield("AuthorsList")
-@yield("about")
-
-@yield('footer')
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

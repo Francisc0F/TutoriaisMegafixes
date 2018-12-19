@@ -1,12 +1,9 @@
 
 
 @extends('master')
-@extends('templates.header')
-@extends('templates.footer')
-@extends('templates.templateLoginRegist')
 
 
-@section("ListTutoriais")
+@section('content')
 
 
 

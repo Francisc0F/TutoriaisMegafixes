@@ -1,17 +1,14 @@
 <!-- includes sempre primeiro
  todos os includes necessarios pra start page -->
 @extends('master')
-@extends('templates.header')
-@extends('templates.footer')
-@extends('templates.templateLoginRegist')
 
 <!-- page title -->
-@section("title")
-    start
-@endsection
+@section("title", "sou um titulo")
+
 
 <!--  dynamic main content -->
 @section('content')
+
     <div class="container mt-3">
         <div class="text-center jumbotron">
             <h1>WOW,bueda Cool!</h1>
@@ -356,6 +353,7 @@
     </div>
 
     </div>
+
 @endsection
 
 

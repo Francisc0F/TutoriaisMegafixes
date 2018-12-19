@@ -1,9 +1,7 @@
 @extends('master')
-@extends('templates.header')
-@extends('templates.footer')
-@extends('templates.templateLoginRegist')
 
-@section("author")
+
+@section('content')
 
     <div class="container bootstrap snippet my-4" id="myacc">
         <div class="row">

@@ -1,6 +1,6 @@
 @extends('master')
 
-@section("error")
+@section('content')
 <div id="error" >
 
     <div class="row my-4">

@@ -1,9 +1,6 @@
 
 <!-- Footer -->
 
-
-
-@section("footer")
 <footer class="page-footer position-sticky px-0 font-small
  blue pt-4 container-fluid bg-forest mt-4" ng-controller="footerCtrl" id="footer">
 
@@ -90,5 +87,3 @@
 
 </footer>
 <!-- Footer -->
-
-@endsection
