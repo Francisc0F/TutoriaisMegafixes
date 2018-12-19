@@ -31,9 +31,7 @@ app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
 
 
 });
-//comentario
 
-///jhjbjbj
 
 
 $(document).ready(function() {
