@@ -147,6 +147,7 @@ button:focus {
 body{
 
   background-color: #304040ed;
+  padding-bottom: 213px;
   .header{
     background-color: $forest;
   }
@@ -280,10 +281,10 @@ body{
 
 #footer{
 
-  position: sticky !important;
+  position: fixed !important;
   bottom: 0px;
   width: 100%;
-  height: 215px;
+  height: 213px;
   color: white;
   z-index: 1000;
 

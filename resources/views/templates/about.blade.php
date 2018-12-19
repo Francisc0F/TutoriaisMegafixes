@@ -5,7 +5,7 @@
 
 
 @section("content")
-<div id="about" >
+<div id="about" class="container" >
 
     <div class="row">
         <div class="col d-flex justify-content-center">

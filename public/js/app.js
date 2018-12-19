@@ -23,9 +23,6 @@ app.controller("loginCtrl", function($scope) {
 //in progress
 app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
 
-    document.addEventListener("mousemove", $scope.scroll=$window.scrollY);
-
-        console.log($scope.scroll);
 
 
 

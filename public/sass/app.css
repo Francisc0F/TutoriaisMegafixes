@@ -6857,7 +6857,8 @@ button:focus {
   color: #ffc107 !important; }
 
 body {
-  background-color: #304040ed; }
+  background-color: #304040ed;
+  padding-bottom: 213px; }
   body .header {
     background-color: #04202C; }
 
@@ -6923,10 +6924,10 @@ body {
   border-radius: 600px; }
 
 #footer {
-  position: sticky !important;
+  position: fixed !important;
   bottom: 0px;
   width: 100%;
-  height: 215px;
+  height: 213px;
   color: white;
   z-index: 1000; }
   #footer .footer-copyright {
