@@ -1,13 +1,10 @@
 
 
 @extends('master')
-@extends('templates.header')
-@extends('templates.footer')
-@extends('templates.templateLoginRegist')
 
 
 
-@section("about")
+@section("content")
 <div id="about" >
 
     <div class="row">
