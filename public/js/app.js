@@ -30,7 +30,7 @@ app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
 
 
 });
-
+//comentario
 
 
 
