@@ -57,7 +57,7 @@
             <div class="col" id="categories">
                 <div class="row ">
                     <!--              foreach cat-->
-                    <?php for($i = 0 ; $i<6;$i++) { ?>
+                    <?php for($i = 0 ; $i<3;$i++) { ?>
                     <div class="col-12 col-md-6 col-lg-4 <?php if($i > 2) echo "mt-3" ?> category-pages">
                         <div class="card ">
 
@@ -118,7 +118,7 @@
 
                 <!-- categorie style -->
 
-                    <?php for($i = 0 ; $i<6;$i++) { ?>
+                    <?php for($i = 0 ; $i<3;$i++) { ?>
                     <div class="col-12 col-md-6 col-lg-4 <?php if($i > 2) echo "mt-3" ?> category-pages ">
                         <div class="card ">
 

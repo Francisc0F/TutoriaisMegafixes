@@ -8,9 +8,9 @@
 <div id="about" class="container" >
 
     <div class="row">
-        <div class="col d-flex justify-content-center">
+        <div class="col d-flex justify-content-center my-2">
             <div>
-                <h1>MegaNice About Page</h1>
+                <h1 class="my-2">MegaNice About Page</h1>
                 <span>Francisco Ferreira <small>Nr 21270036</small></span>
                 <br>
                 <span>Ruben Cavaleiro <small>Nr 21270036</small></span>
