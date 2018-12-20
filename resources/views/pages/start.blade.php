@@ -9,7 +9,7 @@
 <!--  dynamic main content -->
 @section('content')
 
-    <div class="container mt-3">
+    <div class="container my-3">
         <div class="text-center jumbotron">
             <h1>WOW,bueda Cool!</h1>
             <p class="lead">Anda escrever tutoriais para nos!</p>

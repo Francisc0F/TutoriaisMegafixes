@@ -40,8 +40,8 @@ $(document).ready(function() {
     //menu
     menuActive();
 
-    //footer scroll
-    showFooterScroll();
+
+
 
 
 // text area format
@@ -176,56 +176,33 @@ function menuActive(){
 function showFooterScroll(){
 
 
-            if(VerificaScroll()){
+            //verifica se ha scroll
+        if ($(document).height() > $(window).height()) {
 
 
-                $(window).on("scroll",function() {
+
+            //esconde e mostra
+            $(window).on("scroll", function () {
+
+
+                //verifica se esta no fim
+                if ($(window).scrollTop() + $(window).height() > $(document).height() - 15) {
 
                     $("#footer").removeClass("hide");
 
+                    $("#footer").fadeIn(160);
 
-                    Console.log("ha scroll");
-                    //verifica se esta no fim
-                    if($(window).scrollTop() + $(window).height() > $(document).height()-1) {
-                        $("#footer").show();
+                } else {
+                    $("#footer").fadeOut(160);
+                }
 
+            });
 
-                        // console.log(" tamanho da window : "+$(window).height())
-                        // console.log(" tamanho do document : "+$(document).height())
-                        // console.log(" tamanho do window scroll top : "+$(window).scrollTop())
-                        // console.log($(window).scrollTop()+ $(window).height())
-
-                    }else{
-                        $("#footer").hide();
-                    }
-
-                });
-
-
-            }
-
-
-
-
-
-
-
-}
-
-function VerificaScroll() {
-
-
-    $(window).on("mouseover",function() {
-
-
-        if ($(document).height() == $(window).height()) {
-
-            console.log("nao ha scroll");
-            return true;
+        }else{
+            $("#footer").removeClass("hide");
         }
-        else{ return false;}
 
-    });
 
 
 }
+

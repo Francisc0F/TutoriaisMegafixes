@@ -1,6 +1,6 @@
 
 
-<nav class="navbar  sticky-top navbar-expand-lg navbar-dark header">
+<nav class="navbar  sticky-top navbar-expand-lg navbar-dark header" >
     <div class="container">
         <a class="navbar-brand" href="/">TutoriaisMegaFixes!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

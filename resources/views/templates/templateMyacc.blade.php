@@ -25,7 +25,7 @@
 
 
                                 <a class="btn btn-lg btn-success apagar w-100">Apagar Conta</a>
-                                <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 ">Novo tutorial</a>
+                                <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 " href="/newtutorial">Novo tutorial</a>
 
 
                         </div>
