@@ -15,10 +15,18 @@ class UtilizadorTableSeeder extends Seeder
     {
         $faker = Faker::create();
 
+        utilizador::create(["tipo_utilizador"=>"admin",
+            "nome_utilizador"=>"adminMegaFixe",
+            "password_utilizador"=>"batatas",
+            "email_utilizador"=>"batatinha@email.pt"]);
+
+
         for($i=1 ;$i<=100;$i++){
 
-            utilizador::create(["tipo_utilizador"=>"admin",
-                                ""])
+            utilizador::create(["tipo_utilizador"=>"autor",
+                "nome_utilizador"=>$faker->name,
+                "password_utilizador"=>$faker->password,
+                "email_utilizador"=>$faker->email]);
 
         }
 

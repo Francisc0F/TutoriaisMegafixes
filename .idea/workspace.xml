@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
+    <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="&#10;+ refreshed migrations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tutoriais/templateTutoriaisList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateTutoriaisList.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +36,7 @@
         <counts>
           <entry key="env" value="1" />
           <entry key="js" value="1" />
-          <entry key="php" value="23" />
+          <entry key="php" value="25" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
@@ -47,24 +45,24 @@
           <entry key=".env file" value="1" />
           <entry key="Blade" value="13" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="10" />
+          <entry key="PHP" value="12" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="945" />
-          <entry key="php" value="430" />
+          <entry key="php" value="642" />
           <entry key="scss" value="46" />
-          <entry key="txt" value="64" />
+          <entry key="txt" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="133" />
           <entry key="JavaScript" value="945" />
-          <entry key="PHP" value="297" />
-          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="PHP" value="509" />
+          <entry key="PLAIN_TEXT" value="101" />
           <entry key="SCSS" value="46" />
         </counts>
       </usages-collector>
@@ -139,17 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="228">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/utilizador.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -157,11 +155,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="380">
+              <caret line="30" column="9" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="e#7#38#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -199,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BD acess/bdInclude.php" />
         <option value="$PROJECT_DIR$/Assets/bootstrap-4.1.3-dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Assets/app.js" />
         <option value="$PROJECT_DIR$/Assets/js/jquery.min.js" />
@@ -247,9 +253,10 @@
         <option value="$PROJECT_DIR$/resources/views/templates/about.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_171819_criar_tabela_utilizador.php" />
+        <option value="$PROJECT_DIR$/app/utilizador.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/utilizador.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       </list>
     </option>
   </component>
@@ -417,12 +424,6 @@
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
               <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TutoriaisMegafixes" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TutoriaisMegafixes" type="b2602c69:ProjectViewProjectNode" />
@@ -643,7 +644,7 @@
       <workItem from="1545254938973" duration="1703000" />
       <workItem from="1545256661528" duration="4570000" />
       <workItem from="1545308802964" duration="2581000" />
-      <workItem from="1545324315955" duration="4060000" />
+      <workItem from="1545324315955" duration="6289000" />
     </task>
     <task id="LOCAL-00001" summary="+ project start">
       <created>1544628270617</created>
@@ -925,17 +926,31 @@
       <option name="project" value="LOCAL" />
       <updated>1545264928079</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="&#10;+ model utilizador">
+      <created>1545328402113</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1545328402113</updated>
+    </task>
+    <task id="LOCAL-00042" summary="&#10;+ refreshed migrations">
+      <created>1545329505633</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1545329505633</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289116000" />
+    <option name="totallyTimeSpent" value="291345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24362417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24362417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -948,7 +963,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28936172" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28936172" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -965,8 +980,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="&#10;+ tutorias" />
-    <MESSAGE value="&#10;+ tutorias 18:14 12/12" />
     <MESSAGE value="&#10;+ tutorias 18:14 12/12 test" />
     <MESSAGE value="&#10;+ tutorias 18:14 12/12 test 2" />
     <MESSAGE value="&#10;+ tutorias 20:17 12/12" />
@@ -990,7 +1003,9 @@
     <MESSAGE value="&#10;+ Update Rotas includes e section content" />
     <MESSAGE value="&#10;+ Update" />
     <MESSAGE value="&#10;+ footer complete sticky" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ footer complete sticky" />
+    <MESSAGE value="&#10;+ model utilizador" />
+    <MESSAGE value="&#10;+ refreshed migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ refreshed migrations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1002,16 +1017,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="11339" column="5" selection-start-line="11339" selection-start-column="5" selection-end-line="11339" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1239,23 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../exe26/models/Pessoa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1263,10 +1251,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/utilizador.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_173040_create_utilizadors_table.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UtilizadorTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

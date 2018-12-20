@@ -17,7 +17,7 @@ class CreateUtilizadorsTable extends Migration
             $table->increments('id_utilizador');
             $table->string('tipo_utilizador');
             $table->string('nome_utilizador');
-            $table->integer('num_tutoriais');
+            $table->integer('num_tutoriais')->default('0');
             $table->string('password_utilizador');
             $table->string('email_utilizador');
             $table->timestamps();
