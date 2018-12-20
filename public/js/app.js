@@ -21,13 +21,6 @@ app.controller("loginCtrl", function($scope) {
 
 });
 //in progress
-app.controller("footerCtrl",function ($scope,$window,$location, $rootScope){
-
-
-
-
-
-});
 
 
 
@@ -46,6 +39,10 @@ $(document).ready(function() {
 
     //menu
     menuActive();
+
+    //footer scroll
+    showFooterScroll();
+
 
 // text area format
     $(function() {
@@ -173,4 +170,62 @@ function menuActive(){
 
 }
 
+//scroll function
 
+
+function showFooterScroll(){
+
+
+            if(VerificaScroll()){
+
+
+                $(window).on("scroll",function() {
+
+                    $("#footer").removeClass("hide");
+
+
+                    Console.log("ha scroll");
+                    //verifica se esta no fim
+                    if($(window).scrollTop() + $(window).height() > $(document).height()-1) {
+                        $("#footer").show();
+
+
+                        // console.log(" tamanho da window : "+$(window).height())
+                        // console.log(" tamanho do document : "+$(document).height())
+                        // console.log(" tamanho do window scroll top : "+$(window).scrollTop())
+                        // console.log($(window).scrollTop()+ $(window).height())
+
+                    }else{
+                        $("#footer").hide();
+                    }
+
+                });
+
+
+            }
+
+
+
+
+
+
+
+}
+
+function VerificaScroll() {
+
+
+    $(window).on("mouseover",function() {
+
+
+        if ($(document).height() == $(window).height()) {
+
+            console.log("nao ha scroll");
+            return true;
+        }
+        else{ return false;}
+
+    });
+
+
+}

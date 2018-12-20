@@ -2,7 +2,7 @@
 <!-- Footer -->
 
 <footer class="page-footer position-sticky px-0 font-small
- blue pt-4 container-fluid bg-forest" ng-controller="footerCtrl" id="footer">
+     blue pt-4 container-fluid bg-forest hide"  id="footer">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
