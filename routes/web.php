@@ -28,10 +28,8 @@ Route::get('/acc', function () {
     return view('templates.templateMyacc');
 });
 
-Route::get('/authors', function () {
-
-    return view('autores.templateAuthorsList');
-});
+//lista autores
+Route::get('/authors','UtilizadorController@index');
 
 
 Route::get('/newtutorial', function () {

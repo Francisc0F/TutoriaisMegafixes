@@ -9,9 +9,8 @@
 
 
         <div class="list-group author-list">
-
-
-            <div class="row d-flex justify-content-center">
+            @foreach($autores as $autor )
+            <div class="row d-flex justify-content-center mb-2">
                 <div class="col-10">
                     <a href="#" class="p-0 author-list-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
 
@@ -22,7 +21,7 @@
 
                                 <div class="row">
                                     <div class="col">
-                                        <h5 class="mt-2" style="line-height: 27px;">Antonia Aurelio Batchapas</h5>
+                                        <h5 class="mt-2" style="line-height: 27px;">{{$autor->nome_utilizador}}</h5>
 
                                     </div>
 
@@ -60,7 +59,21 @@
                 </div>
             </div>
 
+            @endforeach
+
+
         </div>
+
+
+        <div class="row d-flex justify-content-center">
+
+
+            {{ $autores->links() }}
+
+        </div>
+    </div>
+
+
     </div>
 
 
