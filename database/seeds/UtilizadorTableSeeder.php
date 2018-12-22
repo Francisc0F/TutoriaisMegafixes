@@ -18,7 +18,9 @@ class UtilizadorTableSeeder extends Seeder
         utilizador::create(["tipo_utilizador"=>"admin",
             "nome_utilizador"=>"adminMegaFixe",
             "password_utilizador"=>"batatas",
-            "email_utilizador"=>"batatinha@email.pt"]);
+            "email_utilizador"=>"batatinha@email.pt",
+              "cidade_utilizador"=>$faker->city,
+                "pais_utilizador"=>$faker->country]);
 
 
         for($i=1 ;$i<=100;$i++){
@@ -26,7 +28,9 @@ class UtilizadorTableSeeder extends Seeder
             utilizador::create(["tipo_utilizador"=>"autor",
                 "nome_utilizador"=>$faker->name,
                 "password_utilizador"=>$faker->password,
-                "email_utilizador"=>$faker->email]);
+                "email_utilizador"=>$faker->email,
+                "cidade_utilizador"=>$faker->city,
+                "pais_utilizador"=>$faker->country]);
 
         }
 
