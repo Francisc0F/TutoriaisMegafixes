@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Categoria;
+use App\utilizador;
 
 class PageController extends Controller
 {
@@ -13,7 +15,9 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+            $users =utilizador::where("tipo_utilizador","autor")->take(3)->get();
+
+        return view("pages.start",["users"=> $users]);
     }
 
     /**

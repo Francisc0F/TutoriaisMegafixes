@@ -176,11 +176,13 @@
 
                     <ul class="list-group">
 
-                        @for ($i = 0; $i <3 ; $i++)
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Cras justo odio
-
-
+                        @for ($i = 0; $i <$users->count(); $i++)
+                            <li class="list-group-item d-flex justify-content-between align-items-center
+                              @if ($i==0)
+                                {{"active"}}
+                             @endif
+                                    ">
+                                {{$users[$i]->nome_utilizador}}
                                 <span class="badge
                                 @switch($i)
                                 @case(0)
@@ -213,29 +215,26 @@
                 <div class="col-md-8  ">
 
                     <!-- top 3 profiles-->
-                    @for ($i = 0; $i <3 ; $i++)
+                    @for ($i = 0; $i <$users->count(); $i++)
 
-                        <div class="profile d-flex mt-2 justify-content-start bg-light hide">
+                        <div class="profile d-flex justify-content-start bg-light hide">
                             <div class="d-flex justify-content-start">
                                 <div class="imageOverflow">
-                                    <img src="https://picsum.photos/300" width="100%" >
+                                    <img src="/storage/Fotos_utilizadores{{$users[$i]->img_profile_utilizador}}" width="100%" >
                                 </div>
                                 <div class="details ml-4 pt-3">
                                     <blockquote>
-                                        <h5>Otavio Torreto</h5>
-                                        <small><cite title="Source Title">Chicago, United States of America  <i class="icon-map-marker"></i></cite></small>
+                                        <h5>{{$users[$i]->nome_utilizador}}</h5>
+                                        <small><cite title="Source Title">{{$users[$i]->cidade_utilizador}}, {{$users[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
                                     </blockquote>
                                     <p class="mb-1">
                                         <i class="fas fa-eye"></i> 21031
-                                        <i class="fab fa-leanpub"></i> 2303
+                                        <i class="fab fa-leanpub"></i> 230
                                     </p>
 
                                 </div>
 
-                                <div class="profile-items">
 
-
-                                </div>
 
                             </div>
                         </div>
