@@ -20,10 +20,12 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="list-group" >
+
+
                     <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small>3 days ago</small>
+                            <small><i class="fas fa-clock"></i>  3 days </small>
 
                         </div>
                         <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -56,7 +58,7 @@
                     <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small>3 days ago</small>
+                            <small><i class="fas fa-clock"></i>  3 days </small>
 
                         </div>
                         <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -89,7 +91,7 @@
                     <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
-                            <small>3 days ago</small>
+                            <small><i class="fas fa-clock"></i>  3 days </small>
 
                         </div>
                         <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -126,120 +128,39 @@
             <div class="col-md-8">
 
                 <div class="list-group mostviewed">
+                    @for ($i = 0; $i < 4; $i++)
 
-                    <a href="#" class="mostviewed-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
+                        <a href="#" class="mostviewed-item list-group-item list-group-item-action flex-column align-items-start position-relative">
 
-                        <div class="row m-0">
-                            <div class="col-md-2 px-0 position-relative m-0">
-                                <div class="tutorialImage m-0" >
-                                    <img src="https://picsum.photos/500" width="100%">
+                            <div class="row m-0">
+                                <div class="col-md-2 px-0 position-relative m-0">
+                                    <div class="tutorialImage m-0" >
+                                        <img src="https://picsum.photos/500" width="100%">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-10 px-2">
+
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mt-1">List group item heading</h5>
+                                        <small class="mt-1"><i class="fas fa-eye"></i> 30123 </small>
+                                    </div>
+                                    <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                    <small class="mb-2">Programacao @ Alex Sienfield</small>
+
+
 
                                 </div>
-                            </div>
-                            <div class="col-md-10 pb-0 px-2">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mt-1">List group item heading</h5>
-                                    <small class="mt-1">30123 views</small>
-                                </div>
-                                <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="mb-2">Programacao @ Alex Sienfield</small>
-
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-                    </a>
-                    <a href="#" class="mostviewed-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
-
-                        <div class="row m-0">
-                            <div class="col-md-2 px-0 position-relative">
-                                <div class="tutorialImage">
-                                    <img src="https://picsum.photos/450" width="100%">
-
-                                </div>
-                            </div>
-                            <div class="col-md-10 pb-0 px-2">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mt-1">List group item heading</h5>
-                                    <small class="mt-1">30123 views</small>
-                                </div>
-                                <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="mb-2">Programacao @ Alex Sienfield</small>
-
-
 
                             </div>
 
-                        </div>
 
 
 
-
-                    </a>
-                    <a href="#" class="mostviewed-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
-
-                        <div class="row m-0">
-                            <div class="col-md-2 px-0 position-relative">
-                                <div class="tutorialImage">
-                                    <img src="https://picsum.photos/400" width="100%">
-
-                                </div>
-                            </div>
-                            <div class="col-md-10 pb-0 px-2">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mt-1">List group item heading</h5>
-                                    <small class="mt-1">30123 views</small>
-                                </div>
-                                <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="mb-2">Programacao @ Alex Sienfield</small>
+                        </a>
 
 
-
-                            </div>
-
-                        </div>
-
-
-
-
-                    </a>
-                    <a href="#" class="mostviewed-item m-0 list-group-item list-group-item-action flex-column align-items-start position-relative">
-
-                        <div class="row m-0">
-                            <div class="col-md-2 px-0 position-relative">
-                                <div class="tutorialImage">
-                                    <img src="https://picsum.photos/300" width="100%">
-
-                                </div>
-                            </div>
-                            <div class="col-md-10 pb-0 px-2">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mt-1">List group item heading</h5>
-                                    <small class="mt-1">30123 views</small>
-                                </div>
-                                <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="mb-2">Programacao @ Alex Sienfield</small>
-
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-                    </a>
-
+                    @endfor
                 </div>
 
 
@@ -253,104 +174,78 @@
             <div class="row pt-4">
                 <div class="col-md-4 py-1">
 
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center active">
-                        Cras justo odio
-                        <span class="badge badge-gold badge-pill">Most Viewed Autor</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Dapibus ac facilisis in
-                        <span class="badge badge-silver badge-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Morbi leo risus
-                        <span class="badge badge-bronze badge-pill">3</span>
-                    </li>
+                    <ul class="list-group">
 
-                </ul>
-            </div>
-
-            <div class="col-md-8  ">
-                <!-- top 3 profiles-->
-                <div class="profile d-flex justify-content-start bg-light">
-                    <div class="d-flex justify-content-start">
-                        <div class="imageOverflow">
-                            <img src="https://picsum.photos/700" width="100%" >
-                        </div>
-                        <div class="details ml-4 pt-3">
-                            <blockquote>
-                                <h5>Lourenco Matias Malaquias</h5>
-                                <small><cite title="Source Title">Chicago, United States of America  <i class="icon-map-marker"></i></cite></small>
-                            </blockquote>
-                            <p class="mb-1">
-                                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-
-                            </p>
-
-                        </div>
-
-                        <div class="profile-items">
+                        @for ($i = 0; $i <3 ; $i++)
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Cras justo odio
 
 
-                        </div>
+                                <span class="badge
+                                @switch($i)
+                                @case(0)
+                                {{"badge-gold"}}
+                                @break
+                                @case(1)
+                                {{"badge-silver"}}
+                                @break
+                                @case(2)
+                                {{"badge-bronze"}}
+                                @break
+                                @endswitch
+                                        badge-pill">
 
-                    </div>
+                                @if($i==0){{"Most Viewed Autor"}}
+
+                                    @else {{$i+1}}
+
+
+
+                                    @endif</span>
+
+
+                            </li>
+                        @endfor
+
+                    </ul>
                 </div>
-                <div class="profile d-flex justify-content-start bg-light hide">
-                    <div class="d-flex justify-content-start">
-                        <div class="imageOverflow">
-                            <img src="https://picsum.photos/300" width="100%" >
-                        </div>
-                        <div class="details ml-4 pt-3">
-                            <blockquote>
-                                <h5>Otavio Torreto</h5>
-                                <small><cite title="Source Title">Chicago, United States of America  <i class="icon-map-marker"></i></cite></small>
-                            </blockquote>
-                            <p class="mb-1">
-                                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
 
-                            </p>
+                <div class="col-md-8  ">
 
-                        </div>
+                    <!-- top 3 profiles-->
+                    @for ($i = 0; $i <3 ; $i++)
 
-                        <div class="profile-items">
+                        <div class="profile d-flex mt-2 justify-content-start bg-light hide">
+                            <div class="d-flex justify-content-start">
+                                <div class="imageOverflow">
+                                    <img src="https://picsum.photos/300" width="100%" >
+                                </div>
+                                <div class="details ml-4 pt-3">
+                                    <blockquote>
+                                        <h5>Otavio Torreto</h5>
+                                        <small><cite title="Source Title">Chicago, United States of America  <i class="icon-map-marker"></i></cite></small>
+                                    </blockquote>
+                                    <p class="mb-1">
+                                        <i class="fas fa-eye"></i> 21031
+                                        <i class="fab fa-leanpub"></i> 2303
+                                    </p>
+
+                                </div>
+
+                                <div class="profile-items">
 
 
-                        </div>
+                                </div>
 
-                    </div>
-                </div>
-                <div class="profile d-flex justify-content-start bg-light hide">
-                    <div class="d-flex justify-content-start">
-                        <div class="imageOverflow">
-                            <img src="https://picsum.photos/200" width="100%" >
-                        </div>
-                        <div class="details ml-4 pt-3">
-                            <blockquote>
-                                <h5>
-                                    Oliver tomilho</h5>
-                                <small><cite title="Source Title">Chicago, United States of America  <i class="icon-map-marker"></i></cite></small>
-                            </blockquote>
-                            <p class="mb-1">
-                                Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
-
-                            </p>
-
+                            </div>
                         </div>
 
-                        <div class="profile-items">
-
-
-                        </div>
-
-                    </div>
+                    @endfor
                 </div>
 
             </div>
 
         </div>
-
-    </div>
 
     </div>
 

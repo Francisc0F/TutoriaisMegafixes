@@ -113,7 +113,7 @@ function displaylogin(){
 //author functions
 function authorDescription(){
 
-
+    $("#topAutors > div > div.col-md-8 > div").eq(0).removeClass("hide");
 
     $("#topAutors > div > div.col-md-4 > ul li").click(function() {
 
