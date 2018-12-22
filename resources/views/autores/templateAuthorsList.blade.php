@@ -22,7 +22,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <h5 class="mt-2" style="line-height: 27px;">{{$autor->nome_utilizador}}</h5>
-
+                                        <img src="/storage/Fotos_utilizadores{{$autor->img_profile_utilizador}}">
                                     </div>
 
                                     <div class="col">

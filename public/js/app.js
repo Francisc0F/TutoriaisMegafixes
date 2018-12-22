@@ -42,6 +42,9 @@ $(document).ready(function() {
 
 
 
+    //pagina tutoriais
+
+    CategoriasActive();
 
 
 // text area format
@@ -203,6 +206,23 @@ function showFooterScroll(){
         }
 
 
+
+}
+
+//pagina tutoriais
+function CategoriasActive(){
+
+    $elem= $("#tutoriais ul li.list-group-item.list-category");
+
+    $elem.eq(0).addClass("active");
+
+    $elem.click(function () {
+
+        $elem.removeClass("active");
+
+        $(this).addClass("active");
+
+    });
 
 }
 

@@ -381,14 +381,23 @@ body{
     text-decoration: none;
 
   }
-  .list-category:hover {
+  .list-category:hover:not(.active) {
     text-decoration: none;
     background-color: #f8f9fa;
+
 
   }
   .list-category:hover a{
     color: #495057;
 
+  }
+  .list-category.list-group-item.active a{
+    color: white;
+
+  }
+
+  .list-category.list-group-item.active:hover a{
+        color: white;
   }
 
 }
