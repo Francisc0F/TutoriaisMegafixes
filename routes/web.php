@@ -37,10 +37,10 @@ Route::get('/newtutorial', function () {
     return view('tutoriais.templateInserirTutorial');
 });
 
-Route::get('/tutoriais', function () {
+Route::get('/tutoriais',"CategoriaController@index");
 
-    return view('tutoriais.templateTutoriaisList');
-});
+
+
 
 Route::get('/about', function () {
 

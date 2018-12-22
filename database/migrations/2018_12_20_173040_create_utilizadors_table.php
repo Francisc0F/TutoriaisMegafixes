@@ -24,6 +24,7 @@ class CreateUtilizadorsTable extends Migration
         });
     }
 
+
     /**
      * Reverse the migrations.
      *

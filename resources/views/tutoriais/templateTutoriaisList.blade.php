@@ -31,11 +31,9 @@
                 <div class="card bg-light mb-3">
                     <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
                     <ul class="list-group">
-                        <li class="list-group-item list-category"><a href="">Cras justo odio</a></li>
-                        <li class="list-group-item list-category" ><a href="">Dapibus ac facilisis in</a></li>
-                        <li class="list-group-item list-category"><a href="">Morbi leo risus</a></li>
-                        <li class="list-group-item list-category"><a href="">Porta ac consectetur ac</a></li>
-                        <li class="list-group-item list-category"><a href="">Vestibulum at eros</a></li>
+                        @foreach($categorias as $categoria)
+                        <li class="list-group-item list-category"><a href="">{{$categoria->nome_categoria}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -57,8 +55,8 @@
             <div class="col" id="categories">
                 <div class="row ">
                     <!--              foreach cat-->
-                    <?php for($i = 0 ; $i<3;$i++) { ?>
-                    <div class="col-12 col-md-6 col-lg-4 <?php if($i > 2) echo "mt-3" ?> category-pages">
+
+                    <div class="col-12 col-md-6 col-lg-4 category-pages">
                         <div class="card ">
 
                             <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
@@ -114,12 +112,9 @@
                         </div>
                     </div>
 
-                    <?php } ?>
 
                 <!-- categorie style -->
-
-                    <?php for($i = 0 ; $i<3;$i++) { ?>
-                    <div class="col-12 col-md-6 col-lg-4 <?php if($i > 2) echo "mt-3" ?> category-pages ">
+      <div class="col-12 col-md-6 col-lg-4 category-pages ">
                         <div class="card ">
 
                             <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
@@ -174,9 +169,6 @@
                             </div>
                         </div>
                     </div>
-                <?php } ?>
-
-
 
 
                 <!-- pagination -->
