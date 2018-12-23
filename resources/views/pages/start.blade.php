@@ -21,7 +21,7 @@
             <div class="col-md-4">
                 <div class="list-group" >
 
-
+                    @for ($i = 0; $i <3; $i++)
                     <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="d-flex w-100 justify-content-between">
                             <h5 class="mb-1">List group item heading</h5>
@@ -34,12 +34,12 @@
 
                         <div class="group mt-2 d-flex justify-content-around ">
 
-                            <div class="rate">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                            <div class="rate d-flex justify-content-around">
+                                <span class="fa fa-star checked pl-1"></span>
+                                <span class="fa fa-star checked pl-1"></span>
+                                <span class="fa fa-star checked pl-1"></span>
+                                <span class="fa fa-star pl-1" ></span>
+                                <span class="fa fa-star pl-1"></span>
                             </div>
 
 
@@ -55,72 +55,7 @@
 
 
                     </a>
-                    <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small><i class="fas fa-clock"></i>  3 days </small>
-
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small>Programacao</small>
-
-
-                        <div class="group mt-2 d-flex justify-content-around ">
-
-                            <div class="rate">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-
-
-                            <span class="text-warning dificulty">Intermediate</span>
-
-                        </div>
-                        <div class="autor d-flex justify-content-center">
-
-                            <small class="bg-dark px-2">Dimitri Tripalovski</small>
-
-
-                        </div>
-
-
-                    </a>
-                    <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small><i class="fas fa-clock"></i>  3 days </small>
-
-                        </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                        <small>Programacao</small>
-
-
-                        <div class="group mt-2 d-flex justify-content-around ">
-
-                            <div class="rate">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-
-
-                            <span class="text-warning dificulty">Intermediate</span>
-
-                        </div>
-                        <div class="autor d-flex justify-content-center">
-
-                            <small class="bg-dark px-2">Dimitri Tripalovski</small>
-
-
-                        </div>
-
-
-                    </a>
+                    @endfor
                 </div>
 
             </div>

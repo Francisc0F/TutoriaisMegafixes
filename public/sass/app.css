@@ -6919,7 +6919,7 @@ body {
   border-bottom-right-radius: 0.25rem;
   border-top-right-radius: 0.25rem; }
 #topAutors .imageOverflow {
-  width: 25%;
+  width: 143px;
   overflow: hidden;
   border-radius: 600px; }
 
@@ -6969,7 +6969,7 @@ body {
 #tutoriais .list-category.list-group-item.active a {
   color: white; }
 #tutoriais .list-category.list-group-item.active:hover a {
-  color: whirte; }
+  color: white; }
 
 .bloc_left_price {
   color: #c01508;

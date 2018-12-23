@@ -26,6 +26,9 @@ app.controller("loginCtrl", function($scope) {
 
 $(document).ready(function() {
 
+
+    //page start
+    RateMouseOverOut();
     //profile description top viewers
     authorDescription();
 
@@ -45,6 +48,11 @@ $(document).ready(function() {
     //pagina tutoriais
 
     CategoriasActive();
+
+
+
+
+
 
 
 // text area format
@@ -226,3 +234,77 @@ function CategoriasActive(){
 
 }
 
+
+
+//rate
+function RateMouseOverOut(){
+
+    $(".rate .fa.fa-star").on("mouseover",function () {
+
+        $ThisElemParent=$(this).parent();
+
+
+        $thisElemIndex=$(this).index();
+
+        //childrens array
+        $childrens=$ThisElemParent.find("span.fa.fa-star");
+
+        $countInitialStars=0;
+
+        for ($i = 0; $i < $childrens.length; $i++) {
+
+
+            if($childrens.hasClass("checked")){
+                $countInitialStars++;
+
+            }
+
+        }
+
+
+        $childrens.removeClass("checked");
+
+        for ( $i = 0; $i <$childrens.length ; $i++) {
+
+            if($thisElemIndex>=$i){
+
+                $childrens.eq($i).addClass("checked");
+
+            }
+        }
+
+
+
+    });
+
+
+
+    $(".rate .fa.fa-star").on("mouseout",function () {
+
+        $ThisElemParent=$(this).parent();
+
+
+        $thisElemIndex=$(this).index();
+
+        //childrens array
+        $childrens=$ThisElemParent.find("span.fa.fa-star");
+
+        $countInitialStars=0;
+
+        for ($i = 0; $i < $childrens.length; $i++) {
+
+
+            if($childrens.hasClass("checked")){
+                $countInitialStars++;
+
+            }
+
+        }
+
+        $childrens.removeClass("checked");
+    });
+
+
+
+
+}
