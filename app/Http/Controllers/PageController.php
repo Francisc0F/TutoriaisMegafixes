@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\utilizador;
+use App\Tutorial;
 
 class PageController extends Controller
 {
@@ -17,7 +18,11 @@ class PageController extends Controller
     {
             $users =utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
-        return view("pages.start",["users"=> $users]);
+            //$topViewed =Tutorial::max('num_views')->take(4);
+
+            $top3Recent =Tutorial::latest()->take(3)->get();
+
+        return view("pages.start",["users"=> $users,"Recent"=>$top3Recent]);
     }
 
     /**

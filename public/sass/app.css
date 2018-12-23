@@ -6879,6 +6879,9 @@ body {
   .recent-item .group {
     padding-top: 20px;
     transition: padding-top 0.5s; }
+  .recent-item .timestamp {
+    top: 0px;
+    right: 0px; }
 
 .recent-item:hover {
   height: 203px; }

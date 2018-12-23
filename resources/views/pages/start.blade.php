@@ -21,25 +21,22 @@
             <div class="col-md-4">
                 <div class="list-group" >
 
-                    @for ($i = 0; $i <3; $i++)
-                    <a href="#" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small><i class="fas fa-clock"></i>  3 days </small>
-
+                    @for ($i = 0; $i < $Recent->count(); $i++)
+                    <a href="#" class="recent-item p-3 list-group-item list-group-item-action flex-column align-items-start position-relative">
+                        <div class="w-100">
+                            <h5 class="mb-1">{{$Recent[$i]->titulo}}</h5>
+                            <small class="position-absolute timestamp p-2"><i class="fas fa-clock"></i>{{$Recent[$i]->created_at->format('H:i')}}</small>
                         </div>
-                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <p class="mb-1">{{$Recent[$i]->descricao}}</p>
                         <small>Programacao</small>
 
 
                         <div class="group mt-2 d-flex justify-content-around ">
 
-                            <div class="rate d-flex justify-content-around">
-                                <span class="fa fa-star checked pl-1"></span>
-                                <span class="fa fa-star checked pl-1"></span>
-                                <span class="fa fa-star checked pl-1"></span>
-                                <span class="fa fa-star pl-1" ></span>
-                                <span class="fa fa-star pl-1"></span>
+                            <div class="rate d-flex justify-content-around {{$Recent[$i]->rating}}">
+                                @for ($j = 0; $j <5 ; $j++)
+                                    <span class="fa fa-star @if($Recent[$i]->rating>=($j+1))checked @endif pl-1"></span>
+                                @endfor
                             </div>
 
 
