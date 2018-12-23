@@ -6853,7 +6853,7 @@ button:focus {
 .bg-primary {
   background-color: #04202C !important; }
 
-.checked {
+.checked, .text-warning {
   color: #ffc107 !important; }
 
 body {
@@ -6886,7 +6886,9 @@ body {
     padding-top: 0px; }
 
 .dificulty {
-  margin-left: 90px; }
+  margin-left: 17%;
+  font-size: 17px;
+  line-height: 17px; }
 
 .list-group-item:last-child {
   border-bottom: 0px; }

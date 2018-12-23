@@ -132,7 +132,7 @@ button:focus {
 
 
 
-.checked{
+.checked,.text-warning{
   color: #ffc107 !important;
 }
 
@@ -194,8 +194,9 @@ body{
 
 
 .dificulty{
-  margin-left: 90px;
-
+  margin-left: 17%;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 

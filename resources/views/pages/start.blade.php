@@ -43,7 +43,7 @@
                             </div>
 
 
-                            <span class="text-warning dificulty">Intermediate</span>
+                        <span class="text-warning dificulty">Intermediate</span>
 
                         </div>
                         <div class="autor d-flex justify-content-center">
