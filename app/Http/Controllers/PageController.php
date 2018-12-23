@@ -18,7 +18,7 @@ class PageController extends Controller
     {
             $users =utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
-            //$topViewed =Tutorial::max('num_views')->take(4);
+         ///   $topViewed =Tutorial::max('num_views')->take(4)->get();
 
             $top3Recent =Tutorial::latest()->take(3)->get();
 

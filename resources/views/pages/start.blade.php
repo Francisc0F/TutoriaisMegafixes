@@ -39,8 +39,20 @@
                                 @endfor
                             </div>
 
+                        @switch($Recent[$i]->dificuldade)
 
-                        <span class="text-warning dificulty">Intermediate</span>
+                          @case(1)
+                                <span class="text-success dificulty">Beginner</span>
+                                @break
+                          @case(2)
+                                <span class="text-warning dificulty">Intermediate</span>
+                                @break
+                          @case(3)
+                                <span class="text-danger dificulty">Advanced</span>
+                                @break
+
+
+                        @endswitch
 
                         </div>
                         <div class="autor d-flex justify-content-center">

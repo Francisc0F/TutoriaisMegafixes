@@ -17,6 +17,10 @@ class utilizador extends Model
 
 
 
+    public function tutoriais()
+    {
+        return $this->hasMany('App\Tutorial');
+    }
 
 }
 
