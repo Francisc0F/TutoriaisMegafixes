@@ -19,7 +19,7 @@ class utilizador extends Model
 
     public function tutoriais()
     {
-        return $this->hasMany('App\Tutorial');
+        return $this->hasMany('App\Tutorial',"id_utilizador","id_utilizador");
     }
 
 }
