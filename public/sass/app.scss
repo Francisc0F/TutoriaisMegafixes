@@ -173,7 +173,8 @@ body{
 .recent-item{
   overflow: hidden;
   //height:203px;
-  height: 146px;
+  height: 137px;
+  padding-right:37px!important;
   transition-timing-function: ease-in;
   transition: height 0.5s;
   .group{
