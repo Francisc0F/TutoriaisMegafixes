@@ -16,19 +16,18 @@ class PageController extends Controller
      */
     public function index()
     {
-            $users =utilizador::where("tipo_utilizador","autor")->take(3)->get();
+            $users = utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
 
-
+            //top recent
             $top3Recent =Tutorial::with("utilizador","categoria")->latest()->take(3)->get();
 
 
+            //most viewed
+            $MostWatchtutorial = Tutorial::with("utilizador","categoria")->orderBy("num_views","desc")->take(4)->get();
 
 
-
-
-
-        return view("pages.start",["users"=> $users,"Recent"=>$top3Recent]);
+        return view("pages.start",["users"=> $users,"Recent"=>$top3Recent,"Mostwatch"=>$MostWatchtutorial]);
     }
 
     /**

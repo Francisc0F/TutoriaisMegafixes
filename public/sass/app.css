@@ -6898,11 +6898,15 @@ body {
   border-bottom: 0px; }
 
 .mostviewed {
+  border-bottom: 1px solid grey;
   overflow: hidden; }
+  .mostviewed small.categoria-user {
+    position: absolute;
+    bottom: 14px; }
   .mostviewed .mostviewed-item:last-child, .mostviewed #authors .author-list .author-list-item:last-child, #authors .author-list .mostviewed .author-list-item:last-child {
     border-bottom: 0px; }
   .mostviewed .mostviewed-item, .mostviewed #authors .author-list .author-list-item, #authors .author-list .mostviewed .author-list-item {
-    height: 110.5px;
+    height: 102.5px;
     overflow: hidden;
     border-left: 0px;
     border-bottom: 1px solid #5b7065;

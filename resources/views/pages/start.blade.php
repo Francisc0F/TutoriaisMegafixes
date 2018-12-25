@@ -72,7 +72,9 @@
             <div class="col-md-8">
 
                 <div class="list-group mostviewed">
-                    @for ($i = 0; $i < 4; $i++)
+
+
+                    @for ($i = 0; $i < $Mostwatch->count(); $i++)
 
                         <a href="#" class="mostviewed-item list-group-item list-group-item-action flex-column align-items-start position-relative">
 
@@ -86,11 +88,11 @@
                                 <div class="col-md-10 px-2">
 
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mt-1">List group item heading</h5>
-                                        <small class="mt-1"><i class="fas fa-eye"></i> 30123 </small>
+                                        <h5 class="mt-1">{{$Mostwatch[$i]->titulo}}</h5>
+                                        <small class="mt-1"><i class="fas fa-eye"></i> {{$Mostwatch[$i]->num_views}}</small>
                                     </div>
-                                    <p class="mb-0">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                    <small class="mb-2">Programacao @ Alex Sienfield</small>
+                                    <p class="mb-0">{{$Mostwatch[$i]->descricao}}</p>
+                                    <small class="mb-2 categoria-user">{{$Mostwatch[$i]->categoria["nome_categoria"]}} @ {{$Mostwatch[$i]->utilizador["nome_utilizador"]}}</small>
 
 
 
