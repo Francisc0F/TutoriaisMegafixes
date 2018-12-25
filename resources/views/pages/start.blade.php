@@ -28,7 +28,7 @@
                             <small class="position-absolute timestamp p-2"><i class="fas fa-clock"></i>{{$Recent[$i]->created_at->format('H:i')}}</small>
                         </div>
                         <p class="mb-1">{{$Recent[$i]->descricao}}</p>
-                        <small>Programacao</small>
+                        <small>{{$Recent[$i]->categoria["nome_categoria"]}}</small>
 
 
                         <div class="group mt-2 d-flex justify-content-around ">
@@ -57,7 +57,7 @@
                         </div>
                         <div class="autor d-flex justify-content-center">
 
-                            <small class="bg-dark px-2">Dimitri Tripalovski</small>
+                            <small class="bg-dark px-2">{{$Recent[$i]->utilizador["nome_utilizador"]}}</small>
 
 
                         </div>

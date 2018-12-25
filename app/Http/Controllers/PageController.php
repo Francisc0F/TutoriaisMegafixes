@@ -20,7 +20,7 @@ class PageController extends Controller
 
 
 
-            $top3Recent =Tutorial::with("utilizador")->latest()->take(3)->get();
+            $top3Recent =Tutorial::with("utilizador","categoria")->latest()->take(3)->get();
 
 
 
