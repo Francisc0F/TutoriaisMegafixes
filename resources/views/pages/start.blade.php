@@ -15,7 +15,7 @@
             <p class="lead">Anda escrever tutoriais para nos!</p>
             <p><a class="btn btn-lg btn-success btn-login-signIn" href="#" >Sign in</a></p>
         </div>
-
+        {{dd($top3users)}}
         <!-- -->
         <div class="row">
             <div class="col-md-4">

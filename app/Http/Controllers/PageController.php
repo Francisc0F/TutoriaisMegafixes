@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use function foo\func;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\utilizador;
 use App\Tutorial;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
@@ -18,6 +20,7 @@ class PageController extends Controller
     {
             $users = utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
+            //$usersTopWatched= utilizador::with("tutoriais")->get();
 
             //top recent
             $top3Recent =Tutorial::with("utilizador","categoria")->latest()->take(3)->get();
@@ -26,8 +29,13 @@ class PageController extends Controller
             //most viewed
             $MostWatchtutorial = Tutorial::with("utilizador","categoria")->orderBy("num_views","desc")->take(4)->get();
 
+//"usersTopWatched"=>$usersTopWatched
 
-        return view("pages.start",["users"=> $users,"Recent"=>$top3Recent,"Mostwatch"=>$MostWatchtutorial]);
+        return view("pages.start",
+            ["users"=> $users,
+            "Recent"=>$top3Recent,
+            "Mostwatch"=>$MostWatchtutorial,
+            ]);
     }
 
     /**
