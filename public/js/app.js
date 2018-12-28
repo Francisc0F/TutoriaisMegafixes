@@ -20,6 +20,17 @@ app.controller("loginCtrl", function($scope) {
     }
 
 });
+app.controller("registerCtrl", function($scope) {
+
+
+
+    $scope.resetForm = function (form) {
+
+        form.$setPristine();
+
+    }
+
+});
 //in progress
 
 
@@ -89,6 +100,7 @@ function toggleloginRegist() {
     })
 
 }
+
 function displaylogin(){
 
 

@@ -58,7 +58,7 @@
     </div>
     <!-- registar-->
 
-    <div id="register">
+    <div id="register" ng-controller="registerCtrl">
         <div class="modal-dialog " >
             <div class="modal-content">
                 <div class="modal-header ">
@@ -68,20 +68,33 @@
                     </button>
                 </div>
 
-                <form class="form-signin">
+                <form class="form-signin" name="signIn">
 
                     <div class="modal-body">
 
 
 
-                        <input type="text"  class="form-control mb-2" placeholder="Your name">
-                        <input type="text"  class="form-control mb-2" placeholder="Country">
-                        <input type="text"  class="form-control mb-2" placeholder="City">
+                        <input type="text" name="name" class="form-control mb-2" ng-model="name" placeholder="Your name" required>
+                        <span ng-show="signIn.name.$invalid && !signIn.name.$pristine" class="text-danger ml-2"><small>Nome obrigatorio</small></span>
 
 
-                        <input type="password" class="form-control mb-2" placeholder="Password" >
-                        <input type="password" class="form-control mb-2" placeholder="Confirm Password" >
-                        <input type="email"  class="form-control mb-2" placeholder="Your email" >
+                        <input type="text"  class="form-control mb-2" name="country" ng-model="country" placeholder="Country" required>
+                        <span ng-show="signIn.country.$invalid && !signIn.country.$pristine" class="text-danger ml-2"><small>Pais obrigatorio</small></span>
+
+                        <input type="text"  class="form-control mb-2" name="city" ng-model="city" placeholder="City" required>
+                        <span ng-show="signIn.city.$invalid && !signIn.city.$pristine" class="text-danger ml-2"><small>Cidade obrigatoria</small></span>
+
+
+
+
+                        <input type="password" class="form-control mb-2" name="password" ng-model="password" placeholder="Password" required>
+                        <span ng-show="signIn.password.$invalid && !signIn.password.$pristine" class="text-danger ml-2"><small>Password obrigatoria</small></span>
+                        <input type="password" class="form-control mb-2" name="confirmPassword" ng-model="confirmPassword" placeholder="Confirm Password" required>
+                        <span ng-show="signIn.confirmPassword.$invalid && !signIn.confirmPassword.$pristine" class="text-danger ml-2"><small>Verificacao password</small></span>
+
+                        <input type="email"  class="form-control mb-2"  name="email" ng-model="email" placeholder="Your email" required>
+                        <span ng-show="signIn.email.$invalid && !signIn.email.$pristine" class="text-danger ml-2 clearfix"><small>Email obrigatorio</small></span>
+
 
                         <!--  upload profile pic -->
                         <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1 hide " data-multiple-caption="{count} files selected" multiple="">
@@ -104,7 +117,7 @@
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
 
-                        <button class="btn btn-lg btn-success" type="submit">Sign in</button>
+                        <button class="btn btn-lg btn-success" type="submit" ng-disabled="signIn.$pristine || signIn.$invalid">Sign in</button>
                         <small class="chooseForm Member">I am Member already!</small>
                     </div>
 

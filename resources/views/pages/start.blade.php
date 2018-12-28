@@ -15,7 +15,7 @@
             <p class="lead">Anda escrever tutoriais para nos!</p>
             <p><a class="btn btn-lg btn-success btn-login-signIn" href="#" >Sign in</a></p>
         </div>
-        {{dd($top3users)}}
+
         <!-- -->
         <div class="row">
             <div class="col-md-4">
@@ -105,7 +105,6 @@
 
                         </a>
 
-
                     @endfor
                 </div>
 
@@ -122,13 +121,13 @@
 
                     <ul class="list-group">
 
-                        @for ($i = 0; $i <$users->count(); $i++)
+                        @for ($i = 0; $i <$usersTopWatched->count(); $i++)
                             <li class="list-group-item d-flex justify-content-between align-items-center
                               @if ($i==0)
                                 {{"active"}}
                              @endif
                                     ">
-                                {{$users[$i]->nome_utilizador}}
+                               {{$usersTopWatched[$i]->id_utilizador}}
                                 <span class="badge
                                 @switch($i)
                                 @case(0)
