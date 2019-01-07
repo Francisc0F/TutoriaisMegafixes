@@ -27,7 +27,6 @@ class PageController extends Controller
             ->take(3)
             ->get();
 
-        $names= [];
 
 
 
