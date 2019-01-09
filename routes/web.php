@@ -34,7 +34,7 @@ Route::get('/newtutorial', function () {
     return view('tutoriais.templateInserirTutorial');
 });
 
-Route::get('/tutoriais',"CategoriaController@index");
+Route::get('/categorias',"CategoriaController@index");
 
 
 
@@ -47,12 +47,3 @@ Route::get('/about', function () {
 
 
 Route::get("/login",'LoginController@doLogin');
-
-
-
-
-
-//
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');

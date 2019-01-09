@@ -24,7 +24,7 @@
     <!---->
 
 
-    <div id="tutoriais" class="container mt-3">
+    <div id="categorias" class="container mt-3">
         <div class="row">
             <!-- categories list -->
             <div class="col-12 col-sm-3">
@@ -32,7 +32,7 @@
                     <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
                     <ul class="list-group">
                         @foreach($categorias as $categoria)
-                        <li class="list-group-item list-category"><a href="">{{$categoria->nome_categoria}}</a></li>
+                        <li class="list-group-item list-category"><a href="/tutoriais/{{$categoria->id_categoria}}">{{$categoria->nome_categoria}}</a></li>
                         @endforeach
                     </ul>
                 </div>
@@ -52,7 +52,7 @@
 
 
             <!-- items by categories -->
-            <div class="col" id="categories">
+            <div class="col" id="tutoriais">
                 <div class="row ">
                     <!--              foreach cat-->
 

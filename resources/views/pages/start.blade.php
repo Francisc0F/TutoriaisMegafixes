@@ -17,9 +17,6 @@
         </div>
 
         <!-- -->
-
-
-{{--{{dd($usersTopWatched)}}--}}
         <div class="row">
             <div class="col-md-4">
                 <div class="list-group" >
@@ -128,9 +125,8 @@
                             <li class="list-group-item d-flex justify-content-between align-items-center
                               @if ($i==0)
                                 {{"active"}}
-                             @endif
-                                    ">
-                               {{$usersTopWatched[$i]->id_utilizador}}
+                             @endif ">
+                               {{$usersTopWatched[$i]->nome_utilizador}}
                                 <span class="badge
                                 @switch($i)
                                 @case(0)
@@ -163,21 +159,21 @@
                 <div class="col-md-8  ">
 
                     <!-- top 3 profiles-->
-                    @for ($i = 0; $i <$users->count(); $i++)
+                    @for ($i = 0; $i <$usersTopWatched->count(); $i++)
 
                         <div class="profile d-flex justify-content-start bg-light hide">
                             <div class="d-flex justify-content-start">
                                 <div class="imageOverflow">
-                                    <img src="/storage/Fotos_utilizadores{{$users[$i]->img_profile_utilizador}}" width="100%" >
+                                    <img src="/storage/Fotos_utilizadores{{$usersTopWatched[$i]->img_profile_utilizador}}" width="100%" >
                                 </div>
                                 <div class="details ml-4 pt-3">
                                     <blockquote>
-                                        <h5>{{$users[$i]->nome_utilizador}}</h5>
-                                        <small><cite title="Source Title">{{$users[$i]->cidade_utilizador}}, {{$users[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
+                                        <h5>{{$usersTopWatched[$i]->nome_utilizador}}</h5>
+                                        <small><cite title="Source Title">{{$usersTopWatched[$i]->cidade_utilizador}}, {{$users[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
                                     </blockquote>
                                     <p class="mb-1">
-                                        <i class="fas fa-eye"></i> 21031
-                                        <i class="fab fa-leanpub"></i> 230
+                                        <i class="fas fa-eye"></i> {{$usersTopWatched[$i]->total_views}}
+                                        <i class="fab fa-leanpub"></i> {{$usersTopWatched[$i]->num_tutoriais}}
                                     </p>
 
                                 </div>

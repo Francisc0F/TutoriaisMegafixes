@@ -15,7 +15,7 @@ class UtilizadorController extends Controller
     public function index()
     {
 
-        $autores=utilizador::where("tipo_utilizador","autor")->paginate(6);
+        $autores=utilizador::where("tipo_utilizador","autor")->orderBy("nome_utilizador")->paginate(6);
 
 
         if(!$autores){

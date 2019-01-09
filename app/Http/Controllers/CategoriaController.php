@@ -22,7 +22,8 @@ class CategoriaController extends Controller
         }
 
 
-        return view("tutoriais.templateTutoriaisList",["categorias" => $categorias]);
+
+        return view("tutoriais.templateListCategorias",["categorias" => $categorias]);
 
     }
 
