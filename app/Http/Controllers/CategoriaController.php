@@ -2,55 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use function foo\func;
 use Illuminate\Http\Request;
 use App\Categoria;
-use App\utilizador;
-use App\Tutorial;
-use Illuminate\Support\Facades\DB;
 
-class PageController extends Controller
+class CategoriaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     *
-     *
      */
-    static private function getTopWatched(){
-
-        $usersTopWatched=DB::table('tutorials')
-            ->select(DB::raw('sum(num_views) as total_views, id_utilizador'))
-            ->groupBy("id_utilizador")
-            ->orderBy("total_views","desc")
-            ->take(3)
-            ->get();
-
-        return $usersTopWatched;
-    }
-
     public function index()
     {
-            $users = utilizador::where("tipo_utilizador","autor")->take(3)->get();
+        $categorias= Categoria::all();
+
+        if(!$categorias){
+
+            return view("pages.error");
+        }
 
 
-            //top recent
-            $top3Recent =Tutorial::with("utilizador","categoria")->latest()->take(3)->get();
+        return view("tutoriais.templateTutoriaisList",["categorias" => $categorias]);
 
-
-            //most viewed
-            $MostWatchtutorial = Tutorial::with("utilizador","categoria")->orderBy("num_views","desc")->take(4)->get();
-
-
-            $usersTopWatched=PageController::getTopWatched();
-
-        return view("pages.start",
-            ["users"=> $users,
-            "Recent"=>$top3Recent,
-            "Mostwatch"=>$MostWatchtutorial,
-                "usersTopWatched"=>$usersTopWatched
-            ]);
     }
 
     /**
