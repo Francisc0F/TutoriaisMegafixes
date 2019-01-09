@@ -27,11 +27,6 @@ class PageController extends Controller
             ->take(3)
             ->get();
 
-
-
-
-
-
         return $usersTopWatched;
     }
 

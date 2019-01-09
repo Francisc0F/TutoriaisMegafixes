@@ -46,7 +46,7 @@ Route::get('/about', function () {
 
 
 
-Route::get("/login",'LoginController@index');
+Route::get("/login",'LoginController@doLogin');
 
 
 
