@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Utilizador;
 
 
 class LoginController extends Controller
@@ -24,12 +26,9 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
 
-    public function Login(Request $request){
 
 
 
-        return view("pages.error");
-    }
 
 
     /**

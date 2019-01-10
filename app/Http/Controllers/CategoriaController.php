@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Categoria;
+use Illuminate\Support\Facades\DB;
 
 class CategoriaController extends Controller
 {
@@ -14,7 +15,12 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        $categorias= Categoria::all();
+        $categorias= Categoria::select(DB::raw('categorias.id_categoria,nome_categoria,sum(tutorials.num_views) as total_views
+        ,count(tutorials.id_utilizador)as num_tutoriais_cat'))
+            ->join("tutorials","categorias.id_categoria","=","tutorials.id_categoria")
+            ->groupby("categorias.id_categoria")
+            ->get();
+
 
         if(!$categorias){
 

@@ -1,6 +1,7 @@
 @extends('master')
 
 @section('content')
+
 <div id="error" >
 
     <div class="row my-4">

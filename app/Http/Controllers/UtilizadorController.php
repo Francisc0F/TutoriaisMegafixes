@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\utilizador;
+use Illuminate\Support\Facades\DB;
 
 class UtilizadorController extends Controller
 {
@@ -15,7 +16,11 @@ class UtilizadorController extends Controller
     public function index()
     {
 
-        $autores=utilizador::where("tipo_utilizador","autor")->orderBy("nome_utilizador")->paginate(6);
+        $autores=Utilizador::where("tipo_utilizador","autor")
+            ->join("tutorials","utilizadors.id","=",'tutorials.id_utilizador')
+            ->select(DB::raw('name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
+            ->groupby("tutorials.id_utilizador")
+            ->orderBy("total_views","desc")->paginate(6);
 
 
         if(!$autores){
