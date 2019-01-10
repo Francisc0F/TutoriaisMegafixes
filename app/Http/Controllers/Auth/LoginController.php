@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\View\View;
+use Illuminate\Http\Request;
+
 
 class LoginController extends Controller
 {
@@ -21,12 +24,11 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
 
-    public function doLogin(Request $request){
+    public function Login(Request $request){
 
 
 
-
-
+        return view("pages.error");
     }
 
 
@@ -35,7 +37,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.

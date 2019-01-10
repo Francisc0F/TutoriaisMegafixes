@@ -9,11 +9,12 @@
 <!--  dynamic main content -->
 @section('content')
 
+
     <div class="container my-3">
         <div class="text-center jumbotron">
             <h1>WOW,bueda Cool!</h1>
             <p class="lead">Anda escrever tutoriais para nos!</p>
-            <p><a class="btn btn-lg btn-success btn-login-signIn" href="#" >Sign in</a></p>
+            <p><a class="btn btn-lg btn-success btn-login-signIn" href="/login" >Sign in</a></p>
         </div>
 
         <!-- -->
@@ -92,7 +93,7 @@
                                         <small class="mt-1"><i class="fas fa-eye"></i> {{$Mostwatch[$i]->num_views}}</small>
                                     </div>
                                     <p class="mb-0">{{$Mostwatch[$i]->descricao}}</p>
-                                    <small class="mb-2 categoria-user">{{$Mostwatch[$i]->categoria["nome_categoria"]}} @ {{$Mostwatch[$i]->utilizador["nome_utilizador"]}}</small>
+                                    <small class="mb-2 categoria-user">{{$Mostwatch[$i]->categoria["nome_categoria"]}} @ {{$Mostwatch[$i]->utilizador["name"]}}</small>
 
 
 
@@ -126,7 +127,7 @@
                               @if ($i==0)
                                 {{"active"}}
                              @endif ">
-                               {{$usersTopWatched[$i]->nome_utilizador}}
+                               {{$usersTopWatched[$i]->name}}
                                 <span class="badge
                                 @switch($i)
                                 @case(0)
@@ -168,7 +169,7 @@
                                 </div>
                                 <div class="details ml-4 pt-3">
                                     <blockquote>
-                                        <h5>{{$usersTopWatched[$i]->nome_utilizador}}</h5>
+                                        <h5>{{$usersTopWatched[$i]->name}}</h5>
                                         <small><cite title="Source Title">{{$usersTopWatched[$i]->cidade_utilizador}}, {{$users[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
                                     </blockquote>
                                     <p class="mb-1">

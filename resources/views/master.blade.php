@@ -26,6 +26,7 @@
 <body ng-app="myApp" onload="showFooterScroll()" >
 
 @include("templates.header")
+
 @include("templates.templateLoginRegist")
 @yield('content')
 

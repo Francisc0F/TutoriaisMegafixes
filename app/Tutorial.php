@@ -9,7 +9,7 @@ class Tutorial extends Model
 
     public function utilizador()
     {
-        return $this->belongsTo('App\utilizador',"id_utilizador","id_utilizador");
+        return $this->belongsTo('App\Utilizador',"id_utilizador","id");
     }
 
     public function Categoria()

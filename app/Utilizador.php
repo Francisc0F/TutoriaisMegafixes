@@ -9,19 +9,16 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class Utilizador extends Authenticatable
 {
     protected $fillable= ["tipo_utilizador",
-        "nome_utilizador",
-        "num_tutoriais",
-        "password_utilizador",
-        "email_utilizador",
+        "name",
+        "password",
+        "email",
         "img_profile_utilizador",
         "AccVerifi_utilizador"];
 
 
-
-
     public function tutoriais()
     {
-        return $this->hasMany('App\Tutorial',"id_utilizador","id_utilizador");
+        return $this->hasMany('App\Tutorial',"id_utilizador","id");
     }
 
 }

@@ -22,25 +22,23 @@ class PageController extends Controller
 
 
         $usersTopWatched = DB::table('tutorials')
-            ->join('utilizadors', 'utilizadors.id_utilizador', '=', 'tutorials.id_utilizador')
-            ->select(DB::raw('count(tutorials.id_utilizador)as num_tutoriais,sum(num_views) as total_views, tutorials.id_utilizador,utilizadors.nome_utilizador,utilizadors.img_profile_utilizador,utilizadors.cidade_utilizador,utilizadors.cidade_utilizador,utilizadors.pais_utilizador'))
-            ->groupBy("id_utilizador")->orderBy("total_views","desc")
+            ->join('utilizadors', 'utilizadors.id', '=', 'tutorials.id_utilizador')
+            ->select(DB::raw('count(tutorials.id_utilizador)as num_tutoriais
+            ,sum(num_views) as total_views, 
+            tutorials.id_utilizador
+            ,utilizadors.name,utilizadors.img_profile_utilizador,
+            utilizadors.cidade_utilizador,
+            utilizadors.pais_utilizador'))
+            ->groupBy("tutorials.id_utilizador")->orderBy("total_views","desc")
             ->take(3)
             ->get();
-
-//        $usersTopWatched=DB::table('tutorials')
-//            ->select(DB::raw('sum(num_views) as total_views, id_utilizador'))
-//            ->groupBy("id_utilizador")
-//            ->orderBy("total_views","desc")
-//            ->take(3)
-//            ->get();
 
         return $usersTopWatched;
     }
 
     public function index()
     {
-            $users = utilizador::where("tipo_utilizador","autor")->take(3)->get();
+            $users = Utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
 
             //top recent
@@ -59,6 +57,8 @@ class PageController extends Controller
             "Mostwatch"=>$MostWatchtutorial,
                 "usersTopWatched"=>$usersTopWatched
             ]);
+
+
     }
 
     /**
