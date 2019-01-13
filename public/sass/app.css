@@ -6955,6 +6955,8 @@ body {
 #tutoriais .list-group-item.list-category:first-child {
   border-top-left-radius: 0rem;
   border-top-right-radius: 0rem; }
+#tutoriais .card {
+  width: 300px; }
 #tutoriais .card:hover {
   color: #495057;
   text-decoration: none;
@@ -7038,6 +7040,7 @@ body {
 #myacc {
   color: white; }
   #myacc .photo {
+    width: 172px;
     border-radius: 50%; }
   #myacc .apagar, #myacc .novo-tutorial {
     font-size: 15px; }

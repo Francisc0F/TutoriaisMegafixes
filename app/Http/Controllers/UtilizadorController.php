@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Tutorial;
 use Illuminate\Http\Request;
 use App\utilizador;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UtilizadorController extends Controller
 {
@@ -39,6 +41,24 @@ class UtilizadorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function myAcc(){
+
+        if(Auth::check()){
+            $user = Auth::user();
+
+            $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();
+//
+//            dd($tutoriais);
+            return view("templates.templateMyacc",["user"=>$user,"tutoriais"=>$tutoriais]);
+        }
+
+        return view("pages.error");
+     }
+
+
+
+
     public function create()
     {
         //

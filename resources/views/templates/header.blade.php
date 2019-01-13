@@ -1,4 +1,3 @@
-
 <nav class="navbar  sticky-top navbar-expand-lg navbar-dark header" >
     <div class="container">
         <a class="navbar-brand" href="/">TutoriaisMegaFixes!</a>
@@ -15,9 +14,33 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/authors">Autores</a>
                 </li>
-
+                @auth
                 <li class="nav-item">
                     <a class="nav-link" href="/acc">My acc</a>
+                </li>
+                @endauth
+
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                @endauth
+
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Novo Tutorial</a>
+                    </li>
+                @endauth
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Regist</a>
                 </li>
 
                 {{--<li class="nav-item">--}}

@@ -20,10 +20,7 @@ Route::get('/error', function () {
     return view('pages.error');
 });
 
-Route::get('/acc', function () {
-
-    return view('templates.templateMyacc');
-});
+Route::get('/acc','UtilizadorController@myAcc');
 
 //lista autores
 Route::get('/authors','UtilizadorController@index');
@@ -35,6 +32,9 @@ Route::get('/newtutorial', function () {
 });
 
 Route::get('/categorias',"CategoriaController@index");
+
+
+Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
 
 
 

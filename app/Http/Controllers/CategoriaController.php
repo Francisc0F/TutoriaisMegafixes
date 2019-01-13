@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Tutorial;
 use Illuminate\Http\Request;
 use App\Categoria;
 use Illuminate\Support\Facades\DB;
@@ -38,6 +39,24 @@ class CategoriaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function listTutoriais($idCat=null){
+
+    if($idCat==null){
+
+        return view("pages.error");
+
+
+    }
+
+    $tutoriais =Tutorial::where("id_categoria",$idCat)->get();
+//
+//        dd($tutoriais);
+
+    return view("tutoriais.templateTutoriaisList",["tutoriais"=>$tutoriais]);
+
+    }
+
+
     public function create()
     {
         //

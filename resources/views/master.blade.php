@@ -23,11 +23,11 @@
 
     <title>@yield("title")</title>
 </head>
-<body ng-app="myApp" onload="showFooterScroll()" >
+<body onload="showFooterScroll()" >
 
 @include("templates.header")
 
-@include("templates.templateLoginRegist")
+{{--@include("templates.templateLoginRegist")--}}
 @yield('content')
 
 @include("templates.footer")

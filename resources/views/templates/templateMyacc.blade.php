@@ -9,7 +9,7 @@
 
 
                 <div class="text-center" >
-                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="photo" alt="avatar">
+                    <img src="/storage/Fotos_utilizadores{{$user->img_profile_utilizador}}" class="photo" alt="avatar">
                     <div class="row">
                         <div class="col">
                             <h6 class="mt-4">Upload a different photo...</h6>
@@ -46,26 +46,27 @@
                     <ul class="list-group">
                         <li class="list-group-item text-muted">Activity </li>
 
-                        @for ($i = 0; $i <3 ; $i++)
+                        @foreach ($tutoriais as $tutorial)
 
                             <li class="list-group-item ">
                                 <div class="row">
                                     <div class="col text-center">
                                         <strong>
-                                            Tutorial de como matar um porco com um machado
+                                            {{$tutorial->titulo}}
                                         </strong>
                                     </div>
                                 </div>
 
                                 <div class="d-flex justify-content-center mt-1">
-                                    <a class="btn btn-lg btn-success edit-tutorial" >Edit</a>
-                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1" >Apagar</a>
+                                    <a class="btn btn-lg btn-success edit-tutorial" href="
+                                            {{$tutorial->id_tutorial}}">Edit</a>
+                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="
+                                            {{$tutorial->id_tutorial}}">>Apagar</a>
                                 </div>
 
-
-
                             </li>
-                        @endfor
+                        @endforeach
+
                     </ul>
 
                 </div>
@@ -82,7 +83,7 @@
 
                                 <div class="col-xs-6">
                                     <label for="first_name"><h4>First name</h4></label>
-                                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
+                                    <input type="text" class="form-control" value="{{$user->name}}" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
                                 </div>
                             </div>
 
@@ -90,7 +91,7 @@
 
                                 <div class="col-xs-6">
                                     <label for="email"><h4>Email</h4></label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                    <input type="email" class="form-control" value="{{$user->email}}" name="email" id="email" placeholder="you@email.com" title="enter your email.">
                                 </div>
                             </div>
 

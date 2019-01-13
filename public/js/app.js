@@ -1,36 +1,36 @@
-
-
-
-var app = angular.module("myApp",[],function ($interpolateProvider){
-
-    $interpolateProvider.startSymbol('<%');
-    $interpolateProvider.endSymbol('%>');
-
-});
-
-
-app.controller("loginCtrl", function($scope) {
-
-
-
-    $scope.resetForm = function (form) {
-
-        form.$setPristine();
-
-    }
-
-});
-app.controller("registerCtrl", function($scope) {
-
-
-
-    $scope.resetForm = function (form) {
-
-        form.$setPristine();
-
-    }
-
-});
+//
+//
+//
+// var app = angular.module("myApp",[],function ($interpolateProvider){
+//
+//     $interpolateProvider.startSymbol('<%');
+//     $interpolateProvider.endSymbol('%>');
+//
+// });
+//
+//
+// app.controller("loginCtrl", function($scope) {
+//
+//
+//
+//     $scope.resetForm = function (form) {
+//
+//         form.$setPristine();
+//
+//     }
+//
+// });
+// app.controller("registerCtrl", function($scope) {
+//
+//
+//
+//     $scope.resetForm = function (form) {
+//
+//         form.$setPristine();
+//
+//     }
+//
+// });
 //in progress
 
 

@@ -8,6 +8,7 @@ use App\Categoria;
 use App\utilizador;
 use App\Tutorial;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class PageController extends Controller
 {
@@ -51,12 +52,17 @@ class PageController extends Controller
 
             $usersTopWatched=PageController::getTopWatched();
 
+                //user var
+                 $user = Auth::user();
+
+
+
         return view("pages.start",
             ["users"=> $users,
             "Recent"=>$top3Recent,
             "Mostwatch"=>$MostWatchtutorial,
                 "usersTopWatched"=>$usersTopWatched
-            ]);
+            ,"user" => $user]);
 
 
     }
