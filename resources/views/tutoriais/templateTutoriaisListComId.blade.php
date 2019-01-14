@@ -36,7 +36,8 @@
                       margin-left: 5%;
                                         ">
 
-                        @foreach($tutoriais as $tutorial)
+                        @foreach($users as $user)
+                        @foreach($user->tutoriais as $tutorial)
 
                                      <div class="float-left card ml-2 mt-1">
 
@@ -102,6 +103,7 @@
                                     </div>
 
 
+                         @endforeach
                         @endforeach
 
                     </div>

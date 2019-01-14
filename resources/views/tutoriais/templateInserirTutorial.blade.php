@@ -4,30 +4,41 @@
 
 <div class="container my-4" id="InserirTutorial">
 
-    <form method="post" action="">
+    <form method="post" action="/store" enctype="multipart/form-data" name="formName">
 
+        @csrf
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         <div class="form-group">
             <label >Nome:</label>
-            <input type="text" class="form-control" name="nome" placeholder="Nome Tutorial">
+            <input type="text" class="form-control" name="title" placeholder="Nome Tutorial">
         </div>
 
         <div class="form-group">
             <label >Categoria</label>
-            <select class="form-control" name="select_Curso">
-                <option>CTeSP</option>
-                <option>MCE</option>
-                <option>LEI</option>
+            <select class="form-control" name="select_categoria">
+                <option  disabled selected value>seleccione uma categoria</option>
+            @foreach($categorias as $categoria)
+            <option value="{{$categoria->id_categoria}}">{{$categoria->nome_categoria}}</option>
+            @endforeach
             </select>
         </div>
 
         <div class="form-group">
             <label for="froala-editor">Example textarea</label>
-            <textarea id="froala-editor" name="paragraph[]">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
+            <textarea id="froala-editor" name="paragraph">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
 
         </div>
         <div class="form-group">
-            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1 hide" data-multiple-caption="{count} files selected" multiple="">
+            <input type="file" name="file" id="file-1" class="inputfile inputfile-1 hide" data-multiple-caption="{count} files selected" multiple="">
             <label for="file-1">
                 <svg xmlns="http://www.w3.org/2000/svg"
                      width="20" height="17" viewBox="0 0 20 17">
@@ -40,7 +51,7 @@
         <a class="btn btn-success" >Add paragraph</a>
         <hr>
 
-        <input class="btn btn-success" type="submit" name="Inserir" value="Inserir">
+        <input class="btn btn-success" type="submit" name="Inserir" value="Enviar">
 
     </form>
 

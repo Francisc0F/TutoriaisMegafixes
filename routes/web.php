@@ -36,6 +36,14 @@ Route::get('/categorias',"CategoriaController@index");
 
 Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
 
+Route::get('/utilizador/tutoriaisList/{id}',"UtilizadorController@tutoriaisList");
+
+
+//criar tutorial
+Route::get('/create',"TutorialController@create");
+Route::post('/store',"TutorialController@store");
+
+
 
 
 

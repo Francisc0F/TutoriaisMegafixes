@@ -20,7 +20,7 @@ class UtilizadorController extends Controller
 
         $autores=Utilizador::where("tipo_utilizador","autor")
             ->join("tutorials","utilizadors.id","=",'tutorials.id_utilizador')
-            ->select(DB::raw('name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
+            ->select(DB::raw('utilizadors.id,name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
             ->groupby("tutorials.id_utilizador")
             ->orderBy("total_views","desc")->paginate(6);
 
@@ -29,9 +29,7 @@ class UtilizadorController extends Controller
 
             return view("pages.error");
         }
-
         $baseImgUrl= "/public/storage/Fotos_utilizadores";
-
 
         return view("autores.templateAuthorsList",["autores" => $autores]);
     }
@@ -57,6 +55,18 @@ class UtilizadorController extends Controller
      }
 
 
+
+    public function tutoriaisList($iduser){
+
+
+        $users=Utilizador::where("tipo_utilizador","autor")->where("id",$iduser)->with("tutoriais")->get();
+
+         //   dd($tutoriais);
+
+        return view("tutoriais.templateTutoriaisListComId",["users"=>$users]);
+
+
+    }
 
 
     public function create()

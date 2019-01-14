@@ -6956,7 +6956,8 @@ body {
   border-top-left-radius: 0rem;
   border-top-right-radius: 0rem; }
 #tutoriais .card {
-  width: 300px; }
+  width: 300px;
+  height: 422px; }
 #tutoriais .card:hover {
   color: #495057;
   text-decoration: none;
