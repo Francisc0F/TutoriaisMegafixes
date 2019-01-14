@@ -28,7 +28,7 @@
 
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Novo Tutorial</a>
+                        <a class="nav-link" href="/create">Novo Tutorial</a>
                     </li>
                 @endauth
 

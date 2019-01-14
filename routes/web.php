@@ -44,6 +44,10 @@ Route::get('/create',"TutorialController@create");
 Route::post('/store',"TutorialController@store");
 
 
+//ver tutorial
+Route::get('/show/{id}',"TutorialController@show");
+
+
 
 
 

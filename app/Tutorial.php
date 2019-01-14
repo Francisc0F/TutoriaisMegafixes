@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tutorial extends Model
 {
+  //  protected $fillable = ['updated_at', 'created_at'];
+   // public $timestamps = true;
 
     public function utilizador()
     {

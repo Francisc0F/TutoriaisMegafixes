@@ -61,7 +61,7 @@
                                     <a class="btn btn-lg btn-success edit-tutorial" href="
                                             {{$tutorial->id_tutorial}}">Edit</a>
                                     <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="
-                                            {{$tutorial->id_tutorial}}">>Apagar</a>
+                                            {{$tutorial->id_tutorial}}">Apagar</a>
                                 </div>
 
                             </li>
