@@ -1,5 +1,6 @@
 <!-- includes sempre primeiro
  todos os includes necessarios pra start page -->
+
 @extends('master')
 
 <!-- page title -->
@@ -24,10 +25,14 @@
 
                     @for ($i = 0; $i < $Recent->count(); $i++)
 
-                    <a href="/show/{{$Recent[$i]->id_tutorial}}" class="recent-item p-3 list-group-item list-group-item-action flex-column align-items-start position-relative">
+                    <a href="/show/{{$Recent[$i]->id}}" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="w-100">
                             <h5 class="mb-1">{{$Recent[$i]->titulo}}</h5>
-                            <small class="position-absolute timestamp p-2"><i class="fas fa-clock"></i>{{$Recent[$i]->created_at->format('H:i')}}</small>
+                            <small class="position-absolute timestamp p-2"><i class="fas fa-clock"></i>
+                                @if ($Recent[$i]->created_at->isToday()){{$Recent[$i]->created_at->format('H:i')}}
+                                @else
+                                   {{$Recent[$i]->created_at->format("D j")}}
+                                @endif</small>
                         </div>
                         <p class="mb-1">{{$Recent[$i]->descricao}}</p>
                         <small>{{$Recent[$i]->categoria["nome_categoria"]}}</small>

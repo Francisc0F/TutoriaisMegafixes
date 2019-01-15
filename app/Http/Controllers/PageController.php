@@ -9,6 +9,7 @@ use App\utilizador;
 use App\Tutorial;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class PageController extends Controller
 {

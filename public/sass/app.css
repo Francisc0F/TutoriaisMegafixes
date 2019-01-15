@@ -6874,6 +6874,8 @@ body {
 .recent-item {
   overflow: hidden;
   height: 137px;
+  padding-top: 6px;
+  padding-left: 10px;
   padding-right: 37px !important;
   transition-timing-function: ease-in;
   transition: height 0.5s; }
@@ -7061,5 +7063,14 @@ body {
   color: white;
   height: 39vh;
   margin-top: 19vh; }
+
+#VerTutorial .img_capa {
+  width: 400px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 297px;
+  border-radius: 7%;
+  overflow: hidden; }
 
 /*# sourceMappingURL=app.css.map */

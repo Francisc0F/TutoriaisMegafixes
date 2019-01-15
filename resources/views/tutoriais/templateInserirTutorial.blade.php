@@ -33,6 +33,32 @@
             @endforeach
             </select>
         </div>
+        <div class="form-group">
+            <label >Dificuldade</label>
+            <select class="form-control" name="select_dificuldade">
+                <option  disabled selected value>seleccione dificuldade</option>
+                @for ($i = 1; $i <= 3; $i++)
+                    <option value="{{$i}}">
+                        @switch($i)
+                            @case(1)
+                            Beginner
+                            @break
+                            @case(2)
+                            Intermediate
+                            @break
+                            @case(3)
+                            Advanced
+                            @break
+
+                    @endswitch
+                    </option>
+
+                @endfor
+
+            </select>
+        </div>
+
+
 
 
         <div class="form-group">
@@ -41,7 +67,7 @@
         </div>
         <!-- img capa-->
         <div class="form-group">
-            <input type="file" name="file" id="file-1" class="inputfile inputfile-1 hide" data-multiple-caption="{count} files selected" multiple="">
+            <input type="file" accept="image/*" name="file" id="file-1" class="inputfile inputfile-1 hide" data-multiple-caption="{count} files selected" multiple="">
             <label for="file-1">
                 <svg xmlns="http://www.w3.org/2000/svg"
                      width="20" height="17" viewBox="0 0 20 17">

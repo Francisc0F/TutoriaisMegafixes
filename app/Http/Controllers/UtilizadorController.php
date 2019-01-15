@@ -46,7 +46,7 @@ class UtilizadorController extends Controller
             $user = Auth::user();
 
             $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();
-//
+
 //            dd($tutoriais);
             return view("templates.templateMyacc",["user"=>$user,"tutoriais"=>$tutoriais]);
         }
@@ -61,7 +61,6 @@ class UtilizadorController extends Controller
 
         $users=Utilizador::where("tipo_utilizador","autor")->where("id",$iduser)->with("tutoriais")->get();
 
-         //   dd($tutoriais);
 
         return view("tutoriais.templateTutoriaisListComId",["users"=>$users]);
 

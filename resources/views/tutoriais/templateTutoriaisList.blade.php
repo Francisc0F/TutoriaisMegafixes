@@ -40,13 +40,13 @@
 
                                      <div class="float-left card ml-2 mt-1">
 
-                                        <img class="card-img-top" src="/storage/Tutoriais_img_capa{{$tutorial->img_capa}}" alt="Card image cap">
+                                        <img class="card-img-top" src="/storage/Tutoriais_img_capa/{{$tutorial->img_capa}}" alt="Card image cap">
 
                                         <div class="card-body p-3 position-relative">
 
 
                                             <h4 class="card-title mb-1 ">
-                                                <a href="" title="View Product">{{$tutorial->titulo}}</a>
+                                                <a href="/show/{{$tutorial->id}}" title="View Product">{{$tutorial->titulo}}</a>
                                             </h4>
 
 

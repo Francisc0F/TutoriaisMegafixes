@@ -59,9 +59,10 @@ class TutorialController extends Controller
 
 
             $validatedData = $request->validate([
-                'title'=> 'bail|required',
+                'title'=> 'bail|required|max:40',
                 'select_categoria' => 'bail|required',
-                'descricao' => 'required',
+                'descricao' => 'required|max:255',
+                'select_dificuldade'=>'required',
                 'content' => 'required',
                 'file'=>'required'
 
@@ -87,10 +88,7 @@ class TutorialController extends Controller
            //$filemove=File::move($path."/Tutoriais_img_capa/".$fileOriginalName, $path."/Fotos_utilizadores/".$img_capa);
 
 
-
-
-
-            //percisa de um trt catch
+            //percisa de um try catch
 
 
             $tutorial = new Tutorial();
@@ -101,6 +99,7 @@ class TutorialController extends Controller
             $tutorial->descricao =$validatedData["descricao"];
             $tutorial->content =$validatedData["content"];
             $tutorial->img_capa =$img_capa;
+            $tutorial->dificuldade =$validatedData["select_dificuldade"];
 
             $inserted= $tutorial->save();
 //
@@ -132,8 +131,14 @@ class TutorialController extends Controller
     {
             if($id!=null){
 
-                $tutorial =Tutorial::where("id_tutorial",$id)->get();
-          // dd($tutorial[0]);
+
+                $tutorial =Tutorial::where("id",$id)->with("utilizador")->get();
+
+                $tutorial[0]->num_views= $tutorial[0]->num_views+1;
+                $tutorial[0]->save();
+
+
+
 
                 return view("tutoriais.templateVerTutorial",["tutorial"=>$tutorial[0]]);
 

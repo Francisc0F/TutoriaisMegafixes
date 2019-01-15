@@ -59,9 +59,14 @@
 
                                 <div class="d-flex justify-content-center mt-1">
                                     <a class="btn btn-lg btn-success edit-tutorial" href="
-                                            {{$tutorial->id_tutorial}}">Edit</a>
+                                            {{$tutorial->id}}">Edit</a>
                                     <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="
-                                            {{$tutorial->id_tutorial}}">Apagar</a>
+                                            {{$tutorial->id}}">Apagar</a>
+
+
+
+                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1"
+                                       href="/show/{{$tutorial->id}}">Ver</a>
                                 </div>
 
                             </li>
