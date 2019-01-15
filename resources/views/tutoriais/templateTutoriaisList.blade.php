@@ -50,7 +50,7 @@
                                             </h4>
 
 
-                                            <small class="upload-time" ><i class="fas fa-clock"></i>{{$tutorial->created_at->format('H:i')}}</small>
+                                            <small class="upload-time" ><i class="fas fa-clock"></i>{{$tutorial->created_at->format('d M')}}</small>
 
                                             <p class="card-text description">{{$tutorial->descricao}}</p>
 

@@ -62,7 +62,7 @@ class PageController extends Controller
             ["users"=> $users,
             "Recent"=>$top3Recent,
             "Mostwatch"=>$MostWatchtutorial,
-                "usersTopWatched"=>$usersTopWatched
+             "usersTopWatched"=>$usersTopWatched
             ,"user" => $user]);
 
 

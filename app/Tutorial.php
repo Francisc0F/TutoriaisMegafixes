@@ -11,7 +11,7 @@ class Tutorial extends Model
 
     public function utilizador()
     {
-        return $this->belongsTo('App\Utilizador',"id","id");
+        return $this->belongsTo('App\Utilizador',"id_utilizador","id");
     }
 
     public function Categoria()

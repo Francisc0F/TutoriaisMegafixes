@@ -13,7 +13,9 @@ class Utilizador extends Authenticatable
         "password",
         "email",
         "img_profile_utilizador",
-        "AccVerifi_utilizador"];
+        "AccVerifi_utilizador",
+        "cidade_utilizador",
+        "pais_utilizador"];
 
 
     public function tutoriais()

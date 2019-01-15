@@ -42,8 +42,22 @@ $bronze:#8C7853;
   background-color: $bronze;
   color: black;
 }
+.titulo{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 216px;
+  overflow: hidden;
 
+}
+.descricao{
 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  width: 247px;
+  display: block;
+  overflow: hidden
+}
 .hide{
   display: none!important;
 }
@@ -173,7 +187,7 @@ body{
 .recent-item{
   overflow: hidden;
   //height:203px;
-  height: 137px;
+  height: 95px;
   padding-right:37px!important;
   transition-timing-function: ease-in;
   transition: height 0.5s;
@@ -189,7 +203,7 @@ body{
 
 .recent-item:hover{
 
-  height:203px;
+  height:140px;
   .group{
     padding-top: 0px;
 
@@ -222,7 +236,7 @@ body{
   small.categoria-user{
 
     position: absolute;
-    bottom:14px;
+    bottom:0px;
 
 
   }
@@ -244,14 +258,16 @@ body{
       font-size: 16px;
 
     }
-    height: 102.5px;
+
     overflow: hidden;
     border-left: 0px;
     border-bottom: 1px solid $pine;
-    border-top: 0px;
+
     padding: 0px;
 
     .tutorialImage{
+
+      overflow: hidden;
 
     }
 

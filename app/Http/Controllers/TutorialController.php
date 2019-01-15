@@ -134,6 +134,9 @@ class TutorialController extends Controller
 
                 $tutorial =Tutorial::where("id",$id)->with("utilizador")->get();
 
+
+
+
                 $tutorial[0]->num_views= $tutorial[0]->num_views+1;
                 $tutorial[0]->save();
 

@@ -27,14 +27,14 @@
 
                     <a href="/show/{{$Recent[$i]->id}}" class="recent-item list-group-item list-group-item-action flex-column align-items-start position-relative">
                         <div class="w-100">
-                            <h5 class="mb-1">{{$Recent[$i]->titulo}}</h5>
+                            <h5 class="mb-1 titulo">{{$Recent[$i]->titulo}}</h5>
                             <small class="position-absolute timestamp p-2"><i class="fas fa-clock"></i>
                                 @if ($Recent[$i]->created_at->isToday()){{$Recent[$i]->created_at->format('H:i')}}
                                 @else
                                    {{$Recent[$i]->created_at->format("D j")}}
                                 @endif</small>
                         </div>
-                        <p class="mb-1">{{$Recent[$i]->descricao}}</p>
+                        <p class="mb-1 descricao">{{$Recent[$i]->descricao}}</p>
                         <small>{{$Recent[$i]->categoria["nome_categoria"]}}</small>
 
 
@@ -86,23 +86,22 @@
 
                     @for ($i = 0; $i < $Mostwatch->count(); $i++)
 
-                        <a href="#" class="mostviewed-item list-group-item list-group-item-action flex-column align-items-start position-relative">
+                        <a href="/show/{{$Mostwatch[$i]->id}}" class="mostviewed-item list-group-item list-group-item-action flex-column align-items-start position-relative">
 
                             <div class="row m-0">
                                 <div class="col-md-2 px-0 position-relative m-0">
                                     <div class="tutorialImage m-0" >
-                                        <img src="https://picsum.photos/500" width="100%">
-
+                                        <img src="/storage/Tutoriais_img_capa/{{$Mostwatch[$i]->img_capa}}" style="margin-left: -46px;max-height: 117px; " width="200px">
                                     </div>
                                 </div>
-                                <div class="col-md-10 px-2">
+                                <div class="col-md-10 px-2 position-relative">
 
                                     <div class="d-flex w-100 justify-content-between">
                                         <h5 class="mt-1">{{$Mostwatch[$i]->titulo}}</h5>
                                         <small class="mt-1"><i class="fas fa-eye"></i> {{$Mostwatch[$i]->num_views}}</small>
                                     </div>
                                     <p class="mb-0">{{$Mostwatch[$i]->descricao}}</p>
-                                    <small class="mb-2 categoria-user">{{$Mostwatch[$i]->categoria["nome_categoria"]}} @ {{$Mostwatch[$i]->utilizador["name"]}}</small>
+                                    <small class="mb-1 categoria-user">{{$Mostwatch[$i]->categoria["nome_categoria"]}} @ {{$Mostwatch[$i]->utilizador["name"]}}</small>
 
 
 

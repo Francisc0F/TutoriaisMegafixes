@@ -7,7 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class RegisterController extends Controller
 {
@@ -49,10 +50,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
+
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:utilizadors'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'cidade'=>['required', 'string'],
+            'pais'=>['required', 'string']
+
         ]);
     }
 
@@ -64,10 +71,32 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+
+//        $random=rand ( 0 , 999999);
+//        $random2=rand ( 0 , 9999999 );
+//        $random3=rand ( 0 , 9999999 );
+//
+//        $fileOriginalName= $data["avatar"];
+//
+//
+//        $img_profile =$random."_".$random2.$random3.".".File::extension($fileOriginalName);
+//
+//        $filecontents= File::get(file($fileOriginalName)->getClientOriginalName());
+//
+//
+//        $download=Storage::disk('public')->put('Fotos_utilizadores/'.$img_profile, $filecontents);
+//
+//        $path = storage_path();
+
+
         return Utilizador::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'cidade_utilizador'=> $data['cidade'],
+            'pais_utilizador'=> $data['pais'],
+
         ]);
     }
 }
