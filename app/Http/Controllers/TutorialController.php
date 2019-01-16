@@ -52,6 +52,8 @@ class TutorialController extends Controller
     public function store(Request $request)
     {
 
+        dd($request);
+
         if(Auth::check()){
 
             $categorias= DB::table('categorias')->select('nome_categoria', 'id_categoria')->get();

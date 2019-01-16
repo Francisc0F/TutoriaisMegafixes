@@ -4,15 +4,7 @@
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tutorial.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tutorial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Utilizador.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utilizador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/start.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tutoriais/templateTutoriaisList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateTutoriaisList.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +40,7 @@
           <entry key="jpg" value="3" />
           <entry key="js" value="6" />
           <entry key="json" value="3" />
-          <entry key="php" value="332" />
+          <entry key="php" value="334" />
           <entry key="scss" value="8" />
         </counts>
       </usages-collector>
@@ -60,7 +52,7 @@
           <entry key="Image" value="3" />
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="232" />
+          <entry key="PHP" value="234" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="8" />
         </counts>
@@ -71,9 +63,9 @@
           <entry key="dummy" value="6" />
           <entry key="js" value="1769" />
           <entry key="json" value="4" />
-          <entry key="php" value="14217" />
+          <entry key="php" value="14296" />
           <entry key="scss" value="683" />
-          <entry key="txt" value="459" />
+          <entry key="txt" value="469" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -82,15 +74,15 @@
           <entry key="CSS" value="13" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="1769" />
-          <entry key="PHP" value="8968" />
-          <entry key="PLAIN_TEXT" value="465" />
+          <entry key="PHP" value="9047" />
+          <entry key="PLAIN_TEXT" value="475" />
           <entry key="SCSS" value="683" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.11" value="1" />
@@ -100,9 +92,9 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="12" />
-          <entry key="project.open.time.9" value="10" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.open.time.8" value="13" />
+          <entry key="project.open.time.9" value="11" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
@@ -118,20 +110,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="551">
               <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3933">
+              <caret line="207" column="21" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="210" column="1" lean-forward="true" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
+            <state relative-caret-position="133">
+              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+              <folding>
+                <element signature="e#45#64#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutorialController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <marker date="1547572441559" expanded="true" signature="3012:3456" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="437">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -227,15 +240,15 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/tutoriais/templateVerTutorial.blade.php" />
         <option value="$PROJECT_DIR$/app/Utilizador.php" />
         <option value="$PROJECT_DIR$/app/Tutorial.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/tutoriais/templateTutoriaisList.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/start.blade.php" />
         <option value="$PROJECT_DIR$/public/sass/app.scss" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
       </list>
     </option>
   </component>
@@ -377,6 +390,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -534,12 +548,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Desktop/TutoriaisMegafixes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -681,14 +694,9 @@
       <workItem from="1547478604528" duration="3650000" />
       <workItem from="1547486093314" duration="5297000" />
       <workItem from="1547507341398" duration="6018000" />
-      <workItem from="1547546193738" duration="8708000" />
-    </task>
-    <task id="LOCAL-00025" summary="&#10;+">
-      <created>1544815044257</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1544815044257</updated>
+      <workItem from="1547546193738" duration="8748000" />
+      <workItem from="1547571489908" duration="1734000" />
+      <workItem from="1547575186147" duration="30000" />
     </task>
     <task id="LOCAL-00026" summary="&#10;+ update author page">
       <created>1544818427412</created>
@@ -1026,11 +1034,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547513354592</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="&#10;+ Rebuild db">
+      <created>1547554928746</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1547554928746</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="486295000" />
+    <option name="totallyTimeSpent" value="488099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1043,9 +1058,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1060,7 +1074,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.27375886" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" visible="true" weight="0.27375886" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" visible="true" weight="0.27375886" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1076,7 +1090,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="&#10;+ Update Rotas includes e section content" />
     <MESSAGE value="&#10;+ Update" />
     <MESSAGE value="&#10;+ footer complete sticky" />
     <MESSAGE value="&#10;+ model utilizador" />
@@ -1101,7 +1114,8 @@
     <MESSAGE value="&#10;+ categorias dinamic" />
     <MESSAGE value="&#10;+ avatar inserted :P" />
     <MESSAGE value="&#10;+ adjust tutorial display" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ adjust tutorial display" />
+    <MESSAGE value="&#10;+ Rebuild db" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ Rebuild db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1357,27 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#45#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutorialController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
-          <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
-            <marker date="1547552488299" expanded="true" signature="2989:3433" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -1409,30 +1402,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="207" column="21" selection-start-line="207" selection-start-column="21" selection-end-line="207" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutorialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <marker date="1547572441559" expanded="true" signature="3012:3456" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="437">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="133">
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#45#64#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="210" column="1" lean-forward="true" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
         </state>
       </provider>
     </entry>
