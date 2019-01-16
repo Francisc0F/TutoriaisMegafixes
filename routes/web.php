@@ -20,10 +20,7 @@ Route::get('/error', function () {
     return view('pages.error');
 });
 
-Route::get('/acc', function () {
-
-    return view('templates.templateMyacc');
-});
+Route::get('/acc','UtilizadorController@myAcc');
 
 //lista autores
 Route::get('/authors','UtilizadorController@index');
@@ -34,7 +31,22 @@ Route::get('/newtutorial', function () {
     return view('tutoriais.templateInserirTutorial');
 });
 
-Route::get('/tutoriais',"CategoriaController@index");
+Route::get('/categorias',"CategoriaController@index");
+
+
+Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
+
+Route::get('/utilizador/tutoriaisList/{id}',"UtilizadorController@tutoriaisList");
+
+
+//criar tutorial
+Route::get('/create',"TutorialController@create");
+Route::post('/store',"TutorialController@store");
+
+
+//ver tutorial
+Route::get('/show/{id}',"TutorialController@show");
+
 
 
 
@@ -46,13 +58,10 @@ Route::get('/about', function () {
 
 
 
-Route::get("/login",'LoginController@doLogin');
+//Auth routes
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 
-
-
-
-//
-//Auth::routes();
-//
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

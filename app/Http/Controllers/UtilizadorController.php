@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Tutorial;
 use Illuminate\Http\Request;
 use App\utilizador;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UtilizadorController extends Controller
 {
@@ -15,16 +18,18 @@ class UtilizadorController extends Controller
     public function index()
     {
 
-        $autores=utilizador::where("tipo_utilizador","autor")->paginate(6);
+        $autores=Utilizador::where("tipo_utilizador","autor")
+            ->join("tutorials","utilizadors.id","=",'tutorials.id_utilizador')
+            ->select(DB::raw('utilizadors.id,name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
+            ->groupby("tutorials.id_utilizador")
+            ->orderBy("total_views","desc")->paginate(6);
 
 
         if(!$autores){
 
             return view("pages.error");
         }
-
         $baseImgUrl= "/public/storage/Fotos_utilizadores";
-
 
         return view("autores.templateAuthorsList",["autores" => $autores]);
     }
@@ -34,6 +39,35 @@ class UtilizadorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function myAcc(){
+
+        if(Auth::check()){
+            $user = Auth::user();
+
+            $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();
+
+//            dd($tutoriais);
+            return view("templates.templateMyacc",["user"=>$user,"tutoriais"=>$tutoriais]);
+        }
+
+        return view("pages.error");
+     }
+
+
+
+    public function tutoriaisList($iduser){
+
+
+        $users=Utilizador::where("tipo_utilizador","autor")->where("id",$iduser)->with("tutoriais")->get();
+
+
+        return view("tutoriais.templateTutoriaisListComId",["users"=>$users]);
+
+
+    }
+
+
     public function create()
     {
         //

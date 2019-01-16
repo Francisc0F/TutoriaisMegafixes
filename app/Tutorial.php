@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tutorial extends Model
 {
+  //  protected $fillable = ['updated_at', 'created_at'];
+   // public $timestamps = true;
 
     public function utilizador()
     {
-        return $this->belongsTo('App\utilizador',"id_utilizador","id_utilizador");
+        return $this->belongsTo('App\Utilizador',"id_utilizador","id");
     }
 
     public function Categoria()

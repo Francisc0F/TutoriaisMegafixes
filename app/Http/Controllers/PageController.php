@@ -8,6 +8,8 @@ use App\Categoria;
 use App\utilizador;
 use App\Tutorial;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class PageController extends Controller
 {
@@ -20,10 +22,16 @@ class PageController extends Controller
      */
     static private function getTopWatched(){
 
-        $usersTopWatched=DB::table('tutorials')
-            ->select(DB::raw('sum(num_views) as total_views, id_utilizador'))
-            ->groupBy("id_utilizador")
-            ->orderBy("total_views","desc")
+
+        $usersTopWatched = DB::table('tutorials')
+            ->join('utilizadors', 'utilizadors.id', '=', 'tutorials.id_utilizador')
+            ->select(DB::raw('count(tutorials.id_utilizador)as num_tutoriais
+            ,sum(num_views) as total_views, 
+            tutorials.id_utilizador
+            ,utilizadors.name,utilizadors.img_profile_utilizador,
+            utilizadors.cidade_utilizador,
+            utilizadors.pais_utilizador'))
+            ->groupBy("tutorials.id_utilizador")->orderBy("total_views","desc")
             ->take(3)
             ->get();
 
@@ -32,7 +40,7 @@ class PageController extends Controller
 
     public function index()
     {
-            $users = utilizador::where("tipo_utilizador","autor")->take(3)->get();
+            $users = Utilizador::where("tipo_utilizador","autor")->take(3)->get();
 
 
             //top recent
@@ -45,12 +53,19 @@ class PageController extends Controller
 
             $usersTopWatched=PageController::getTopWatched();
 
+                //user var
+                 $user = Auth::user();
+
+
+
         return view("pages.start",
             ["users"=> $users,
             "Recent"=>$top3Recent,
             "Mostwatch"=>$MostWatchtutorial,
-                "usersTopWatched"=>$usersTopWatched
-            ]);
+             "usersTopWatched"=>$usersTopWatched
+            ,"user" => $user]);
+
+
     }
 
     /**

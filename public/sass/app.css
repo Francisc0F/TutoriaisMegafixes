@@ -6796,6 +6796,19 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #8C7853;
   color: black; }
 
+.titulo {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 216px;
+  overflow: hidden; }
+
+.descricao {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 247px;
+  display: block;
+  overflow: hidden; }
+
 .hide {
   display: none !important; }
 
@@ -6873,7 +6886,7 @@ body {
 
 .recent-item {
   overflow: hidden;
-  height: 137px;
+  height: 95px;
   padding-right: 37px !important;
   transition-timing-function: ease-in;
   transition: height 0.5s; }
@@ -6885,7 +6898,7 @@ body {
     right: 0px; }
 
 .recent-item:hover {
-  height: 203px; }
+  height: 140px; }
   .recent-item:hover .group {
     padding-top: 0px; }
 
@@ -6902,21 +6915,21 @@ body {
   overflow: hidden; }
   .mostviewed small.categoria-user {
     position: absolute;
-    bottom: 14px; }
+    bottom: 0px; }
   .mostviewed .mostviewed-item:last-child, .mostviewed #authors .author-list .author-list-item:last-child, #authors .author-list .mostviewed .author-list-item:last-child {
     border-bottom: 0px; }
   .mostviewed .mostviewed-item, .mostviewed #authors .author-list .author-list-item, #authors .author-list .mostviewed .author-list-item {
-    height: 102.5px;
     overflow: hidden;
     border-left: 0px;
     border-bottom: 1px solid #5b7065;
-    border-top: 0px;
     padding: 0px; }
     .mostviewed .mostviewed-item h5, .mostviewed #authors .author-list .author-list-item h5, #authors .author-list .mostviewed .author-list-item h5 {
       font-size: 17px;
       text-decoration: underline; }
     .mostviewed .mostviewed-item p, .mostviewed #authors .author-list .author-list-item p, #authors .author-list .mostviewed .author-list-item p {
       font-size: 16px; }
+    .mostviewed .mostviewed-item .tutorialImage, .mostviewed #authors .author-list .author-list-item .tutorialImage, #authors .author-list .mostviewed .author-list-item .tutorialImage {
+      overflow: hidden; }
 
 #topAutors .list-group-item:hover {
   cursor: pointer; }
@@ -6955,6 +6968,9 @@ body {
 #tutoriais .list-group-item.list-category:first-child {
   border-top-left-radius: 0rem;
   border-top-right-radius: 0rem; }
+#tutoriais .card {
+  width: 300px;
+  height: 422px; }
 #tutoriais .card:hover {
   color: #495057;
   text-decoration: none;
@@ -7038,6 +7054,7 @@ body {
 #myacc {
   color: white; }
   #myacc .photo {
+    width: 172px;
     border-radius: 50%; }
   #myacc .apagar, #myacc .novo-tutorial {
     font-size: 15px; }
@@ -7057,5 +7074,14 @@ body {
   color: white;
   height: 39vh;
   margin-top: 19vh; }
+
+#VerTutorial .img_capa {
+  width: 400px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 297px;
+  border-radius: 7%;
+  overflow: hidden; }
 
 /*# sourceMappingURL=app.css.map */

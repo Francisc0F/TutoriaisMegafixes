@@ -1,5 +1,3 @@
-
-
 <nav class="navbar  sticky-top navbar-expand-lg navbar-dark header" >
     <div class="container">
         <a class="navbar-brand" href="/">TutoriaisMegaFixes!</a>
@@ -10,20 +8,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/tutoriais">Tutoriais<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/categorias">Categorias<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/authors">Autores</a>
                 </li>
-
+                @auth
                 <li class="nav-item">
                     <a class="nav-link" href="/acc">My acc</a>
                 </li>
+                @endauth
+
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                @endauth
+
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/create">Novo Tutorial</a>
+                    </li>
+                @endauth
+
 
                 <li class="nav-item">
-                    <a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Regist</a>
+                </li>
+
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>--}}
+                {{--</li>--}}
 
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
@@ -43,6 +65,15 @@
                     {{--<a class="nav-link disabled" href="#">Disabled</a>--}}
                 {{--</li>--}}
             </ul>
+
+                                    @if (session('status'))
+                                        <div class="alert alert-success" role="alert">
+                                            {{ session('status') }}
+                                        </div>
+                                        <span>Logged in</span>
+                                    @endif
+
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
