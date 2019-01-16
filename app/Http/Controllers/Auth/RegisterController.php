@@ -61,7 +61,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:6', 'confirmed'],
             'cidade'=>['required', 'string'],
             'pais'=>['required', 'string'],
-            'avatar'=>['required']
+//            'avatar'=>['required']
 
         ]);
     }
@@ -75,23 +75,23 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-
-        $random=rand ( 0 , 999999);
-        $random2=rand ( 0 , 9999999 );
-        $random3=rand ( 0 , 9999999 );
-
-        $fileOriginalName= $data["avatar"];
-
-
-        $img_profile =$random."_".$random2.$random3.".".File::extension($fileOriginalName);
-dd($data);
-        $filecontents= file_get_contents($data["avatar"]);
-
-
-        $download=Storage::disk('public')->put('Fotos_utilizadores/'.$img_profile, $filecontents);
-
-        $path = storage_path();
-
+//
+//        $random=rand ( 0 , 999999);
+//        $random2=rand ( 0 , 9999999 );
+//        $random3=rand ( 0 , 9999999 );
+//
+//        $fileOriginalName= $data["avatar"];
+//
+//
+//        $img_profile =$random."_".$random2.$random3.".".File::extension($fileOriginalName);
+//dd($data);
+//        $filecontents= file_get_contents($data["avatar"]);
+//
+//
+//        $download=Storage::disk('public')->put('Fotos_utilizadores/'.$img_profile, $filecontents);
+//
+//        $path = storage_path();
+//
 
         return Utilizador::create([
             'name' => $data['name'],
@@ -99,7 +99,7 @@ dd($data);
             'password' => Hash::make($data['password']),
             'cidade_utilizador'=> $data['cidade'],
             'pais_utilizador'=> $data['pais'],
-            'img_profile_utilizador'=>$img_profile
+//            'img_profile_utilizador'=>$img_profile
         ]);
     }
 }
