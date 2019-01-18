@@ -22,7 +22,6 @@ class PageController extends Controller
      */
     static private function getTopWatched(){
 
-
         $usersTopWatched = DB::table('tutorials')
             ->join('utilizadors', 'utilizadors.id', '=', 'tutorials.id_utilizador')
             ->select(DB::raw('count(tutorials.id_utilizador)as num_tutoriais

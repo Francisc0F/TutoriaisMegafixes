@@ -7048,7 +7048,7 @@ body {
   margin-top: 20px; }
 
 #error {
-  margin-top: 21%;
+  margin-top: 14%;
   color: white; }
 
 #myacc {
@@ -7083,5 +7083,12 @@ body {
   height: 297px;
   border-radius: 7%;
   overflow: hidden; }
+
+#search ::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */ }
+#search input {
+  font-size: 15px; }
 
 /*# sourceMappingURL=app.css.map */

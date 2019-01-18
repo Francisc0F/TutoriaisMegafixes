@@ -15,7 +15,7 @@
         <div class="text-center jumbotron">
             <h1>WOW,bueda Cool!</h1>
             <p class="lead">Anda escrever tutoriais para nos!</p>
-            <p><a class="btn btn-lg btn-success btn-login-signIn" href="/login" >Sign in</a></p>
+            <a class="btn btn-lg btn-success btn-login-signIn" href="/register" >Sign in</a>
         </div>
 
         <!-- -->

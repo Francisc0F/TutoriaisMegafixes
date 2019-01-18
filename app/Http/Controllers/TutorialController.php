@@ -158,6 +158,24 @@ class TutorialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function search(Request $request){
+
+
+        if($request->name!=null){
+
+            $tutoriais = Tutorial::where("descricao","like", '%'.$request->name.'%')->get();
+
+
+            return view("tutoriais.templateSearch",["tutoriais"=>$tutoriais]);
+        }
+
+        return view("pages.error");
+
+
+    }
+
+
     public function edit($id)
     {
         //

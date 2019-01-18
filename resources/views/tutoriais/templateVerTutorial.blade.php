@@ -20,7 +20,6 @@
             <div class="d-flex justify-content-center">
                 <div class="img-thumbnail img_capa">
                     <img width="407px" src="/storage/Tutoriais_img_capa/{{$tutorial->img_capa}}">
-
                 </div>
 
             </div>

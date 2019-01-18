@@ -33,6 +33,7 @@
                 @endauth
 
 
+                @guest
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
@@ -42,6 +43,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Regist</a>
                 </li>
+                @endguest
 
                 {{--<li class="nav-item">--}}
                     {{--<a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>--}}
@@ -73,11 +75,14 @@
                                         <span>Logged in</span>
                                     @endif
 
+            <div id="search">
+                <form class="form-inline my-2 my-lg-0" method="post" action="/search">
+                    @csrf
+                    <input class=" btn btn-lg btn-success" style="" type="search" name="name" placeholder="Search" aria-label="Search">
+                    {{--<button class="btn btn-lg btn-success my-2 my-sm-0" type="submit">Search</button>--}}
+                </form>
+            </div>
 
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </div>
 

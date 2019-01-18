@@ -60,7 +60,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:utilizadors'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
             'cidade'=>['required', 'string'],
-            'pais'=>['required', 'string'],
+            'pais'=>['required', 'string']
 //            'avatar'=>['required']
 
         ]);
@@ -98,7 +98,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'cidade_utilizador'=> $data['cidade'],
-            'pais_utilizador'=> $data['pais'],
+            'pais_utilizador'=> $data['pais']
 //            'img_profile_utilizador'=>$img_profile
         ]);
     }
