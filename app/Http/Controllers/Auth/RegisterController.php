@@ -93,13 +93,14 @@ class RegisterController extends Controller
 //        $path = storage_path();
 //
 
-        return Utilizador::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'cidade_utilizador'=> $data['cidade'],
-            'pais_utilizador'=> $data['pais']
-//            'img_profile_utilizador'=>$img_profile
-        ]);
+            return Utilizador::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+                'cidade_utilizador'=> $data['cidade'],
+                'pais_utilizador'=> $data['pais']
+            ]);
+
+
     }
 }

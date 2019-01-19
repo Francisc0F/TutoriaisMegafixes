@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Tutorial;
-use Illuminate\Http\Request;
 use App\utilizador;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Session;
 
 class UtilizadorController extends Controller
 {
@@ -52,7 +55,7 @@ class UtilizadorController extends Controller
         }
 
         return view("pages.error");
-     }
+    }
 
 
 
@@ -101,10 +104,7 @@ class UtilizadorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
@@ -115,10 +115,70 @@ class UtilizadorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        if($request->file('file') ==null){
+            DB::table('utilizadors')
+                ->where('id', $id)
+                ->update([
+                    'name' => $request->first_name,
+                    'email'=>$request->email,
+                    'cidade_utilizador'=>$request->cidade,
+                    'pais_utilizador'=>$request->pais
+                ]);
+//            Session::flash('message', '!');
+
+
+            return redirect("/acc")->with("message","Utilizador Atualizado com sucesso");
+         }
+
+        $user= Utilizador::find($id);
+
+        $fileOriginalName= $request->file('file')->getClientOriginalName();
+
+        $random=rand (  0 , 999999 );
+
+        $NovoNomeimg =$random."_".$id.".".File::extension($fileOriginalName);
+
+        $filecontents= file_get_contents($request->file('file'));
+
+        $file=Storage::disk('public')->put('Fotos_utilizadores/'.$NovoNomeimg, $filecontents);
+
+
+
+        if($user->img_profile_utilizador!="img-default.png"){
+
+            Storage::disk('public')->delete('Fotos_utilizadores/'. $user->img_profile_utilizador);
+
+        }
+
+        if($filecontents and $file){
+
+            DB::table('utilizadors')
+                ->where('id', $id)
+                ->update([
+                    'name' => $request->first_name,
+                    'email'=>$request->email,
+                    'cidade_utilizador'=>$request->cidade,
+                    'pais_utilizador'=>$request->pais,
+                    'img_profile_utilizador'=>$NovoNomeimg
+                ]);
+        }else{
+            return redirect("/acc")->with("message","Ocorreu Um Erro!");
+
+
+        }
+        return redirect("/acc")->with("message","Conta atualizada!");
+
+
+
+
     }
 
+
+
     /**
+     *
+     *
      * Remove the specified resource from storage.
      *
      * @param  int  $id

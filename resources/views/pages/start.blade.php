@@ -4,18 +4,28 @@
 @extends('master')
 
 <!-- page title -->
+
 @section("title", "sou um titulo")
 
 
 <!--  dynamic main content -->
 @section('content')
 
+    @if (session('message'))
 
+        <div id="message">
+            <div id="inner-message" class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {{ session('message') }}
+            </div>
+        </div>
+
+    @endif
     <div class="container my-3">
         <div class="text-center jumbotron">
             <h1>WOW,bueda Cool!</h1>
             <p class="lead">Anda escrever tutoriais para nos!</p>
-            <a class="btn btn-lg btn-success btn-login-signIn" href="/register" >Sign in</a>
+            <a class="btn btn-success" href="/register">Regist</a>
         </div>
 
         <!-- -->
@@ -91,7 +101,7 @@
                             <div class="row m-0">
                                 <div class="col-md-2 px-0 position-relative m-0">
                                     <div class="tutorialImage m-0" >
-                                        <img src="/storage/Tutoriais_img_capa/{{$Mostwatch[$i]->img_capa}}" style="margin-left: -46px;max-height: 117px; " width="200px">
+                                        <img src="/storage/Tutoriais_img_capa/{{$Mostwatch[$i]->img_capa}}" width="200px">
                                     </div>
                                 </div>
                                 <div class="col-md-10 px-2 position-relative">
@@ -167,6 +177,8 @@
 
                 <div class="col-md-8  ">
 
+
+
                     <!-- top 3 profiles-->
                     @for ($i = 0; $i <$usersTopWatched->count(); $i++)
 
@@ -178,7 +190,7 @@
                                 <div class="details ml-4 pt-3">
                                     <blockquote>
                                         <h5>{{$usersTopWatched[$i]->name}}</h5>
-                                        <small><cite title="Source Title">{{$usersTopWatched[$i]->cidade_utilizador}}, {{$users[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
+                                        <small><cite title="Source Title">{{$usersTopWatched[$i]->cidade_utilizador}}, {{$usersTopWatched[$i]->pais_utilizador}}  <i class="icon-map-marker"></i></cite></small>
                                     </blockquote>
                                     <p class="mb-1">
                                         <i class="fas fa-eye"></i> {{$usersTopWatched[$i]->total_views}}

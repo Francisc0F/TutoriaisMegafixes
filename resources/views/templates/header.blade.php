@@ -1,4 +1,6 @@
-<nav class="navbar  sticky-top navbar-expand-lg navbar-dark header" >
+
+
+<nav id="header" class="navbar  sticky-top navbar-expand-lg navbar-dark header" >
     <div class="container">
         <a class="navbar-brand" href="/">TutoriaisMegaFixes!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,21 +17,34 @@
                     <a class="nav-link" href="/authors">Autores</a>
                 </li>
                 @auth
-                <li class="nav-item">
-                    <a class="nav-link" href="/acc">My acc</a>
-                </li>
-                @endauth
 
-                @auth
+
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
                     </li>
-                @endauth
 
-                @auth
+
                     <li class="nav-item">
                         <a class="nav-link" href="/create">Novo Tutorial</a>
+
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pb-0 d-flex justify-content-between" href="/acc">
+                            <div class="img_Profile">
+
+                            <img src="/storage/Fotos_utilizadores/{{Auth::user()->img_profile_utilizador}}"
+                        >
+                            </div>
+                          <span class="ml-2">{{\App\Utilizador::split_name(Auth::user()->name)[0]}}</span>
+                        </a>
+
+                    </li>
+
                 @endauth
 
 
@@ -37,9 +52,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
-
-
-
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Regist</a>
                 </li>
@@ -49,9 +61,7 @@
                     {{--<a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>--}}
                 {{--</li>--}}
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
+
                 {{--<li class="nav-item dropdown">--}}
                     {{--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
                         {{--Dropdown--}}

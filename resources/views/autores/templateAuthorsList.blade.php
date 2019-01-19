@@ -1,11 +1,10 @@
 
-
-
 @extends('master')
 
 
 @section('content')
     <div id="authors" class="container mt-4">
+
 
 
         <div class="list-group author-list">
@@ -18,7 +17,6 @@
 
                             <div class="col-12 pb-0 px-2">
 
-
                                 <div class="row">
                                     <div class="col">
                                         <h5 class="mt-2" style="line-height: 27px;">{{$autor->name}}</h5>
@@ -30,8 +28,13 @@
                                             <div class="col my-1">
                                                     <div class="d-flex justify-content-between">
                                                         <div>
-                                                            <button class="btn btn-success">Editar</button>
-                                                            <button class="btn btn-success">Apagar</button>
+                                                            @if(Auth::check())
+                                                            @if(Auth::user()->tipo_utilizador=="admin")
+                                                            <a href="/edit/{id}" class="btn btn-success" style="color:white;">Apagar</a>
+                                                            <a href="/edit/{id}" class="btn btn-success" style="color:white;">Editar</a>
+                                                            @endif
+
+                                                            @endif
                                                             <a href="/utilizador/tutoriaisList/{{$autor->id}}" class="btn btn-success" style="color:white;">Tutoriais</a>
                                                         </div>
                                                         <div>
@@ -73,8 +76,6 @@
         </div>
     </div>
 
-
-    </div>
 
 
 @endsection

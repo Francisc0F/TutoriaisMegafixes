@@ -20,6 +20,8 @@ class PageController extends Controller
      *
      *
      */
+
+
     static private function getTopWatched(){
 
         $usersTopWatched = DB::table('tutorials')
@@ -33,6 +35,8 @@ class PageController extends Controller
             ->groupBy("tutorials.id_utilizador")->orderBy("total_views","desc")
             ->take(3)
             ->get();
+
+
 
         return $usersTopWatched;
     }

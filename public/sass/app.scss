@@ -71,6 +71,14 @@ $bronze:#8C7853;
 
 
 //Overrides
+
+.card-img-top{
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+
 .btn-success{
   background-color: $pine;
   color: white;
@@ -155,7 +163,23 @@ button:focus {
 
 //body start
 
+#header{
 
+
+
+  .img_Profile{
+    overflow: hidden;
+    width: auto;
+    border-radius: 50%;
+
+    img{
+    object-fit: cover;
+      width: 26px;
+      height: 26px;
+    }
+
+  }
+}
 
 
 body{
@@ -268,7 +292,13 @@ body{
     .tutorialImage{
 
       overflow: hidden;
+      img{
 
+        object-fit: cover;
+        width: 100%;
+        height: 94px;
+
+      }
     }
 
   }
@@ -313,6 +343,11 @@ body{
     width:143px;
     overflow: hidden;
     border-radius: 600px;
+    img{
+
+      object-fit: cover;
+      height: 135px;
+    }
   }
 
 }
@@ -507,9 +542,7 @@ body{
 
 
 
-//errors
-
-
+//error page
 
 #error{
 
@@ -528,6 +561,8 @@ color:white;
   .photo{
     width: 172px;
     border-radius: 50%;
+    height: 172PX;
+    object-fit: cover;
 
   }
   .apagar,.novo-tutorial{
@@ -565,6 +600,14 @@ color:white;
   .fr-toolbar{
     border: 0px;
     background-color: $fog;
+  }
+
+
+
+  .img_Editar{
+    object-fit: cover;
+    width: 20%;
+    height: 31%;
   }
 
 }
@@ -609,13 +652,12 @@ color:white;
 
 
   .img_capa{
-    width: 400px;
-padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 297px;
-    border-radius: 7%;
+    width: 432px;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 300px;
     overflow: hidden;
+    box-shadow: 0 0 1px 0px;
   }
 
 }
@@ -637,6 +679,17 @@ padding-left: 0px;
 
 
 
+#message {
+  z-index: 123213123312123132;
+  position: fixed;
+
+  width: 75%;
+  left: 50%;
+  margin-left: -37.5%;
+}
+#inner-message {
+  margin: 0 auto;
+}
 
 
 

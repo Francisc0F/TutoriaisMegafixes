@@ -13,9 +13,7 @@
                         <div class="row justify-content-center">
                             <div class="col-md-10">
                                 <div class="card">
-                                    <div class="card-header">{{ __('Login') }}</div>
-
-                                    <div class="card-body">
+                                     <div class="card-body">
                                         <form method="POST" action="{{ route('login') }}">
                                             @csrf
 
@@ -27,8 +25,8 @@
 
                                                     @if ($errors->has('email'))
                                                         <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                    </span>
                                                     @endif
                                                 </div>
                                             </div>
@@ -69,9 +67,6 @@
                                                 </div>
                                             </div>
 
-                                            <p class="text-center mb-3">
-                                                Or Login with
-                                            </p>
 
 
 

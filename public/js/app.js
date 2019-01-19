@@ -61,7 +61,7 @@ $(document).ready(function() {
     CategoriasActive();
 
 
-
+    messageAlert();
 
 
 
@@ -315,6 +315,20 @@ function RateMouseOverOut(){
 
         $childrens.removeClass("checked");
     });
+
+
+
+
+}
+
+
+//Alert message
+
+function messageAlert() {
+
+    setTimeout(function (){
+            $("#message").fadeOut();
+        },4000);
 
 
 

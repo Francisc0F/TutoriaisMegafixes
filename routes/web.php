@@ -19,6 +19,9 @@ Route::get('/error', function () {
 
     return view('pages.error');
 });
+//utilizadores
+Route::post('/utilizador/update/{id}','UtilizadorController@update');
+
 
 Route::get('/acc','UtilizadorController@myAcc');
 
@@ -35,8 +38,10 @@ Route::get('/categorias',"CategoriaController@index");
 
 
 Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
-
 Route::get('/utilizador/tutoriaisList/{id}',"UtilizadorController@tutoriaisList");
+
+
+
 
 
 //search tutorial
@@ -49,6 +54,11 @@ Route::post('/store',"TutorialController@store");
 
 //ver tutorial
 Route::get('/show/{id}',"TutorialController@show");
+
+
+//Editar
+Route::get('/edit/{id}',"TutorialController@edit");
+Route::post('/update/{id}',"TutorialController@update");
 
 
 

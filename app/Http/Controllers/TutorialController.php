@@ -52,7 +52,7 @@ class TutorialController extends Controller
     public function store(Request $request)
     {
 
-        dd($request);
+       //dd($request);
 
         if(Auth::check()){
 
@@ -178,7 +178,12 @@ class TutorialController extends Controller
 
     public function edit($id)
     {
-        //
+
+        $tutorial = Tutorial::find($id);
+
+        $categorias= DB::table('categorias')->select('nome_categoria', 'id_categoria')->get();
+
+            return view("tutoriais.templateEditarTutorial",["tutorial"=> $tutorial,"categorias"=>$categorias]);
     }
 
     /**
@@ -190,7 +195,65 @@ class TutorialController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        if($request->file('file') ==null){
+            DB::table('tutorials')
+                ->where('id', $id)
+                ->update([
+                    'id_categoria'=>$request->select_categoria,
+                    'titulo' => $request->title,
+                    'descricao'=>$request->descricao,
+                    'content'=>$request->conteudo,
+                    'dificuldade'=>$request->select_dificuldade
+                ]);
+
+            return redirect("/edit/".$id)->with("message","Tutorial Atualizado com sucesso");
+        }
+
+
+
+        $tutorial= Tutorial::find($id);
+
+        $fileOriginalName= $request->file('file')->getClientOriginalName();
+
+        $random=rand (  0 , 999999 );
+
+        $NovoNomeimg =$random."_Tutorial_".$id.".".File::extension($fileOriginalName);
+
+        $filecontents= file_get_contents($request->file('file'));
+
+        //gravar nova imagem
+        $file=Storage::disk('public')->put('Tutoriais_img_capa/'.$NovoNomeimg, $filecontents);
+
+
+        //apagar antiga imagem
+        if($tutorial->img_capa!="img-tutorial-default.png"){
+
+            Storage::disk('public')->delete('Tutoriais_img_capa/'. $tutorial->img_capa);
+
+        }
+
+        if($filecontents and $file){
+
+            DB::table('tutorials')
+                ->where('id', $id)
+                ->update([
+                    'id_categoria'=>$request->select_categoria,
+                    'titulo' => $request->title,
+                    'descricao'=>$request->descricao,
+                    'content'=>$request->conteudo,
+                    'dificuldade'=>$request->select_dificuldade,
+                    'img_capa'=>$NovoNomeimg
+                ]);
+        }else{
+            return redirect("/edit/".$id)->with("message","Ocorreu Um Erro!");
+
+
+        }
+        return redirect("/edit/".$id)->with("message","Tutorial atualizado!");
+
+
+
     }
 
     /**
