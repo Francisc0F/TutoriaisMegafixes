@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec502bd-048f-4d3e-87ea-e4ae33039cb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateEditarTutorial.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/templates/templateOthersAccAdmin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Utilizador.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utilizador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/start.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tutoriais/templateVerTutorial.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tutoriais/templateVerTutorial.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,9 +44,9 @@
           <entry key="css" value="2" />
           <entry key="env" value="2" />
           <entry key="jpg" value="6" />
-          <entry key="js" value="8" />
+          <entry key="js" value="9" />
           <entry key="json" value="3" />
-          <entry key="php" value="414" />
+          <entry key="php" value="422" />
           <entry key="png" value="2" />
           <entry key="scss" value="17" />
         </counts>
@@ -67,12 +54,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="152" />
+          <entry key="Blade" value="157" />
           <entry key="CSS" value="2" />
           <entry key="Image" value="8" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="8" />
-          <entry key="PHP" value="262" />
+          <entry key="JavaScript" value="9" />
+          <entry key="PHP" value="265" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="17" />
         </counts>
@@ -81,21 +68,21 @@
         <counts>
           <entry key="css" value="13" />
           <entry key="dummy" value="6" />
-          <entry key="js" value="1877" />
+          <entry key="js" value="2357" />
           <entry key="json" value="4" />
-          <entry key="php" value="17649" />
+          <entry key="php" value="18646" />
           <entry key="scss" value="1001" />
-          <entry key="txt" value="507" />
+          <entry key="txt" value="516" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="6951" />
+          <entry key="Blade" value="7424" />
           <entry key="CSS" value="13" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="1877" />
-          <entry key="PHP" value="10696" />
-          <entry key="PLAIN_TEXT" value="513" />
+          <entry key="JavaScript" value="2357" />
+          <entry key="PHP" value="11220" />
+          <entry key="PLAIN_TEXT" value="522" />
           <entry key="SCSS" value="1001" />
           <entry key="SQL" value="2" />
         </counts>
@@ -128,10 +115,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateEditarTutorial.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="102" column="55" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="55" />
+            <state relative-caret-position="245">
+              <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
+              <folding>
+                <element signature="e#7#389#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#3235#6145#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
             </state>
           </provider>
         </entry>
@@ -139,20 +150,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="104" column="42" lean-forward="true" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+            <state>
+              <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateVerTutorial.blade.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding>
-                <element signature="e#313#333#0#HTML" expanded="true" />
+                <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/templates/templateOthersAccAdmin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -203,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_23_191135_alterar_id_tabela_categorias.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Categoria.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/templateLoginRegist.blade.php" />
@@ -237,23 +265,24 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/verify.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
         <option value="$PROJECT_DIR$/app/Utilizador.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/header.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
         <option value="$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/tutoriais/templateEditarTutorial.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TutorialController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/start.blade.php" />
         <option value="$PROJECT_DIR$/public/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/tutoriais/templateVerTutorial.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php" />
+        <option value="$PROJECT_DIR$/resources/views/templates/templateOthersAccAdmin.blade.php" />
       </list>
     </option>
   </component>
@@ -536,7 +565,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;ver&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/tutoriais/templateVerTutorial.blade.php&#10;start&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;tut&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Tutorial.php&#10;au&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/autores/templateAuthorsList.blade.php&#10;sta&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;tutorial&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/tutoriais/templateInserirTutorial.blade.php&#10;tu&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/TutorialController.php&#10;web&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/routes/web.php&#10;auth&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/autores/templateAuthorsList.blade.php&#10;page&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/PageController.php&#10;star&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;con&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/TutorialController.php&#10;pa&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/PageController.php&#10;ut&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Utilizador.php&#10;uti&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/UtilizadorController.php&#10;we&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/routes/web.php&#10;header&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/header.blade.php&#10;APP&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;app.js&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/js/app.js&#10;ap&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;ss&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;my&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/templateMyacc.blade.php&#10;head&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/header.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/routes/web.php&#10;app&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/js/app.js&#10;master&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/master.blade.php&#10;start&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;uti&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/UtilizadorController.php&#10;auth&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/autores/templateAuthorsList.blade.php&#10;ver&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/tutoriais/templateVerTutorial.blade.php&#10;tut&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Tutorial.php&#10;au&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/autores/templateAuthorsList.blade.php&#10;sta&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;tutorial&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/tutoriais/templateInserirTutorial.blade.php&#10;tu&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/TutorialController.php&#10;page&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/PageController.php&#10;star&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/pages/start.blade.php&#10;con&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/TutorialController.php&#10;pa&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Http/Controllers/PageController.php&#10;ut&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/app/Utilizador.php&#10;we&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/routes/web.php&#10;header&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/header.blade.php&#10;APP&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;app.js&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/js/app.js&#10;ap&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;ss&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/public/sass/app.scss&#10;my&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/templateMyacc.blade.php&#10;head&#9;FILE&#9;file://D:/ISEC/3 Semestre/PHP/Exercicios/TutoriaisMegafixes/resources/views/templates/header.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -553,6 +582,7 @@
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\public\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\resources\views\templates" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\TutoriaisMegafixes\resources\views\tutoriais" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Pessoas" />
       <recent name="D:\ISEC\3 Semestre\PHP\Exercicios\exe26\views\Cursos" />
@@ -689,14 +719,7 @@
       <workItem from="1547816411189" duration="12557000" />
       <workItem from="1547833927251" duration="6657000" />
       <workItem from="1547909452297" duration="7649000" />
-      <workItem from="1547926302619" duration="8377000" />
-    </task>
-    <task id="LOCAL-00029" summary="&#10;+ author page done">
-      <created>1544877697204</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1544877697204</updated>
+      <workItem from="1547926302619" duration="21994000" />
     </task>
     <task id="LOCAL-00030" summary="&#10;+ Inserir tuto">
       <created>1544880745761</created>
@@ -1034,11 +1057,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547817612532</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="&#10;+ Edit done">
+      <created>1547934721601</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1547934721611</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="533649000" />
+    <option name="totallyTimeSpent" value="547266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1085,7 +1115,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="&#10;+ model utilizador" />
     <MESSAGE value="&#10;+ refreshed migrations" />
     <MESSAGE value="&#10;+ users seeds" />
     <MESSAGE value="&#10;+ Controlador user" />
@@ -1110,7 +1139,8 @@
     <MESSAGE value="&#10;+ Rebuild db" />
     <MESSAGE value="&#10;+ last 1601" />
     <MESSAGE value="&#10;+ login error 13:19 18/01" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ login error 13:19 18/01" />
+    <MESSAGE value="&#10;+ Edit done" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;+ Edit done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -1122,7 +1152,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/app/public/Tutoriais_img_capa/68611_206.jpg" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_22_194101_add_city_country.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1297,13 +1326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1314,13 +1336,6 @@
     <entry file="file://$PROJECT_DIR$/storage/app/public/Fotos_utilizadores/181537_207.jpg" />
     <entry file="file://$PROJECT_DIR$/storage/app/public/Fotos_utilizadores/399375_207.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="332" selection-start-line="332" selection-end-line="332" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/templates/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1343,20 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateInserirTutorial.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1376,44 +1377,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Tutorial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="104" column="42" lean-forward="true" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateEditarTutorial.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="102" column="55" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1440,6 +1407,78 @@
           <folding>
             <element signature="e#313#333#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/tutoriais/templateEditarTutorial.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="55" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/start.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/autores/templateAuthorsList.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#3235#6145#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/templateMyacc.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/templates/templateOthersAccAdmin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UtilizadorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
         </state>
       </provider>
     </entry>

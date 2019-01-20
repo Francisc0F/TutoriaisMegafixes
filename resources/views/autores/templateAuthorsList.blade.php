@@ -3,8 +3,14 @@
 
 
 @section('content')
-    <div id="authors" class="container mt-4">
+@if(Auth::user()->tipo_utilizador=="admin")
 
+    <div id="ControllerAdmin" class="container mt-5"></div>
+
+
+@else
+
+    <div id="authors" class="container mt-4">
 
 
         <div class="list-group author-list">
@@ -20,8 +26,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <h5 class="mt-2" style="line-height: 27px;">{{$autor->name}}</h5>
-                                        {{--<img src="/storage/Fotos_utilizadores{{$autor->img_profile_utilizador}}">--}}
-                                    </div>
+                                   </div>
 
                                     <div class="col">
                                         <div class="row">
@@ -63,11 +68,7 @@
             </div>
 
             @endforeach
-
-
         </div>
-
-
         <div class="row d-flex justify-content-center">
 
 
@@ -76,6 +77,6 @@
         </div>
     </div>
 
-
+@endif
 
 @endsection

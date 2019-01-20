@@ -18,6 +18,17 @@ class UtilizadorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+    public function getAuthors(){
+
+        $autoresAll=Utilizador::where("tipo_utilizador","autor")->with("tutoriais")->get();
+        return $autoresAll;
+
+    }
+
+
+
     public function index()
     {
 
@@ -26,6 +37,12 @@ class UtilizadorController extends Controller
             ->select(DB::raw('utilizadors.id,name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
             ->groupby("tutorials.id_utilizador")
             ->orderBy("total_views","desc")->paginate(6);
+
+//        if(Auth::user()->tipo_utilizador=="admin"){
+//
+//
+//            $autoresAll=Utilizador::where("tipo_utilizador","autor")->with("tutoriais")->get();
+//        }
 
 
         if(!$autores){
@@ -43,9 +60,25 @@ class UtilizadorController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function myAcc(){
+    public function myAcc($id=null){
 
-        if(Auth::check()){
+        if(Auth::User()->tipo_utilizador =="admin"){
+
+            if($id!=null){
+                //editing others
+                $user= utilizador::find($id);
+
+                $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();
+
+
+                return view("templates.templateOthersAccAdmin",["user"=>$user,"tutoriais"=>$tutoriais]);
+            }
+
+        }
+
+
+
+        if(Auth::check() ){
             $user = Auth::user();
 
             $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();

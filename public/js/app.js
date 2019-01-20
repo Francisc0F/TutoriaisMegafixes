@@ -64,6 +64,8 @@ $(document).ready(function() {
     messageAlert();
 
 
+    admin();
+
 
 
 // text area format
@@ -329,6 +331,77 @@ function messageAlert() {
     setTimeout(function (){
             $("#message").fadeOut();
         },4000);
+
+
+
+
+}
+
+
+Tabulator.prototype.extendModule("ajax", "defaultConfig", {
+    type:"post",
+    contentType : "application/json; charset=utf-8"
+});
+
+function admin() {
+
+
+
+
+
+    function call(Url) {
+        $.getJSON(Url, function(result){
+            nestedData=result;
+            console.log(nestedData);
+        });
+
+    }
+   call("http://127.0.0.1:8000/getAuthors");
+
+
+   // $("#ControllerAdmin-table").tabulator("nestedData","http://127.0.0.1:8000/getAuthors");
+
+    var openButton = function(value, data, cell, row, formatterParams){ //plain text value
+        var button = $("<a>Edit Row</a>");
+
+        button.on("click", function(){
+         console.log(data);
+        });
+
+        return button;
+    };
+
+    var table = new Tabulator("#ControllerAdmin",
+        {
+            ajaxURL: "http://127.0.0.1:8000/getAuthors",
+            height: "auto",
+            layout: "fitColumns",
+            resizableColumns: true,
+
+            columns: [
+                {title: "Id", field: "id"},
+                {title: "tipo_utilizador", field: "tipo_utilizador"},
+                {title: "name", field: "name"},
+                {title: "created_at", field: "created_at"},
+                {title: "img_capa", field: "img_profile_utilizador"},
+                {title: "cidade_utilizador", field: "cidade_utilizador"},
+                {title: "pais_utilizador", field: "pais_utilizador"},
+                {title:"Edit", field:"id", formatter:function(cell, formatterParams, onRendered){
+                        //cell - the cell component
+                        //formatterParams - parameters set for the column
+                        //onRendered - function to call when the formatter has been rendered
+
+                        hrf ='href="/acc/'+ cell.getValue() +'">Edit</a>';
+                        link = '<a class="btn btn-success"';
+
+                         result =  link.concat(hrf);
+                        return result; //return the contents of the cell;
+                    }}  ],
+
+
+
+        });
+
 
 
 

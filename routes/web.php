@@ -11,6 +11,11 @@
 |
 */
 
+//admin info
+Route::get('/getAuthors','UtilizadorController@getAuthors');
+
+
+
 Route::get('/','PageController@index');
 
 
@@ -23,7 +28,7 @@ Route::get('/error', function () {
 Route::post('/utilizador/update/{id}','UtilizadorController@update');
 
 
-Route::get('/acc','UtilizadorController@myAcc');
+Route::get('/acc/{id?}','UtilizadorController@myAcc');
 
 //lista autores
 Route::get('/authors','UtilizadorController@index');
@@ -74,7 +79,10 @@ Route::get('/about', function () {
 //Auth routes
 Auth::routes();
 
+
+
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
-
-
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
