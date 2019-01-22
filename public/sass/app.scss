@@ -185,7 +185,7 @@ button:focus {
 body{
 
   background-color: #304040ed;
-  padding-bottom: 213px;
+  padding-bottom: 200px;
   .header{
     background-color: $forest;
   }
@@ -279,7 +279,7 @@ body{
 
     }
     p{
-      font-size: 16px;
+      font-size: 12px;
 
     }
 
@@ -410,7 +410,7 @@ body{
   .card{
 
     width: 300px;
-    height: 422px;
+    height: auto;
     .description{
 
     }
@@ -692,6 +692,20 @@ color:white;
 }
 
 
+.profile{
 
 
 
+  margin-top: 5px;
+}
+
+#ControllerAdmin{
+
+
+  img{
+    object-fit: cover;
+    width: 55%;
+    height: auto;
+  }
+
+}

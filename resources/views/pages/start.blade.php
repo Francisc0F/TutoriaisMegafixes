@@ -22,12 +22,17 @@
 
     @endif
     <div class="container my-3">
-        <div class="text-center jumbotron">
-            <h1>WOW,bueda Cool!</h1>
-            <p class="lead">Anda escrever tutoriais para nos!</p>
-            <a class="btn btn-success" href="/register">Regist</a>
-        </div>
 
+        @if(Auth::check())
+
+        @else
+            <div class="text-center jumbotron">
+                <h1>WOW,bueda Cool!</h1>
+                <p class="lead">Anda escrever tutoriais para nos!</p>
+                <a class="btn btn-success" href="/register">Regist</a>
+            </div>
+
+         @endif
         <!-- -->
         <div class="row">
             <div class="col-md-4">

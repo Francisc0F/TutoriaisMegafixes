@@ -22,8 +22,12 @@ class UtilizadorController extends Controller
 
     public function getAuthors(){
 
-        $autoresAll=Utilizador::where("tipo_utilizador","autor")->with("tutoriais")->get();
-        return $autoresAll;
+        if(Auth::check())
+            if(Auth::user()->tipo_utilizador == "admin")
+                return    $autoresAll=Utilizador::where("tipo_utilizador","autor")->with("tutoriais")->get();
+
+        return view("pages.error");
+
 
     }
 
@@ -37,12 +41,6 @@ class UtilizadorController extends Controller
             ->select(DB::raw('utilizadors.id,name,sum(tutorials.num_views) as total_views,count(tutorials.id_utilizador)as num_tutoriais'))
             ->groupby("tutorials.id_utilizador")
             ->orderBy("total_views","desc")->paginate(6);
-
-//        if(Auth::user()->tipo_utilizador=="admin"){
-//
-//
-//            $autoresAll=Utilizador::where("tipo_utilizador","autor")->with("tutoriais")->get();
-//        }
 
 
         if(!$autores){
@@ -61,22 +59,21 @@ class UtilizadorController extends Controller
      */
 
     public function myAcc($id=null){
+        if(Auth::check() ) {
+            if (Auth::User()->tipo_utilizador == "admin") {
 
-        if(Auth::User()->tipo_utilizador =="admin"){
+                if ($id != null) {
+                    //editing others
+                    $user = utilizador::find($id);
 
-            if($id!=null){
-                //editing others
-                $user= utilizador::find($id);
-
-                $tutoriais=Tutorial::where("id_utilizador",$user->id)->get();
+                    $tutoriais = Tutorial::where("id_utilizador", $user->id)->get();
 
 
-                return view("templates.templateOthersAccAdmin",["user"=>$user,"tutoriais"=>$tutoriais]);
+                    return view("templates.templateOthersAccAdmin", ["user" => $user, "tutoriais" => $tutoriais]);
+                }
+
             }
-
         }
-
-
 
         if(Auth::check() ){
             $user = Auth::user();
@@ -92,14 +89,24 @@ class UtilizadorController extends Controller
 
 
 
+
+
+
+
+
+
+
     public function tutoriaisList($iduser){
 
 
-        $users=Utilizador::where("tipo_utilizador","autor")->where("id",$iduser)->with("tutoriais")->get();
+        if(Utilizador::find($iduser)){
+            $users=Utilizador::where("tipo_utilizador","autor")->where("id",$iduser)->with("tutoriais")->get();
+
+            return view("tutoriais.templateTutoriaisListComId",["users"=>$users]);
 
 
-        return view("tutoriais.templateTutoriaisListComId",["users"=>$users]);
-
+        }
+        return view("pages.error");
 
     }
 
@@ -131,26 +138,13 @@ class UtilizadorController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
 
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
 
+
         if($request->file('file') ==null){
-            DB::table('utilizadors')
+            $insert =DB::table('utilizadors')
                 ->where('id', $id)
                 ->update([
                     'name' => $request->first_name,
@@ -158,10 +152,18 @@ class UtilizadorController extends Controller
                     'cidade_utilizador'=>$request->cidade,
                     'pais_utilizador'=>$request->pais
                 ]);
-//            Session::flash('message', '!');
+
+            if(Auth::User()->tipo_utilizador=="admin" and $insert){
+
+
+                return redirect("/acc/".Auth::User()->id)->with("message","Utilizador Atualizado com sucesso ".Auth::User()->name);
+            }
+
 
 
             return redirect("/acc")->with("message","Utilizador Atualizado com sucesso");
+
+
          }
 
         $user= Utilizador::find($id);
@@ -175,8 +177,6 @@ class UtilizadorController extends Controller
         $filecontents= file_get_contents($request->file('file'));
 
         $file=Storage::disk('public')->put('Fotos_utilizadores/'.$NovoNomeimg, $filecontents);
-
-
 
         if($user->img_profile_utilizador!="img-default.png"){
 
@@ -196,9 +196,17 @@ class UtilizadorController extends Controller
                     'img_profile_utilizador'=>$NovoNomeimg
                 ]);
         }else{
+            if(Auth::User()->tipo_utilizador=="admin"){
+
+                return redirect()->back()->with("message","Ocorreu Um Erro! ".Auth::User()->name);
+            }
             return redirect("/acc")->with("message","Ocorreu Um Erro!");
 
 
+        }
+        if(Auth::User()->tipo_utilizador=="admin"){
+
+            return redirect()->back()->with("message","Conta atualizada! ".Auth::User()->name);
         }
         return redirect("/acc")->with("message","Conta atualizada!");
 
@@ -208,17 +216,49 @@ class UtilizadorController extends Controller
     }
 
 
-
-    /**
-     *
-     *
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
+       if(Auth::check()){
+           if(Auth::user()->id == $id or Auth::user()->tipo_utilizador ="admin"){
+
+               $user=Utilizador::find($id);
+               if($user->img_profile_utilizador!="img-default.png") {
+                   if (Storage::disk('public')->delete('Fotos_utilizadores/' . $user->img_profile_utilizador)) {
+
+                       //imagem de conta apagada e user apagado
+
+                   }
+               }
+               $user->delete();
+
+                //tutoriais apagados
+               $tutoriais =Tutorial::where("id_utilizador",$id)->get();
+
+                if($tutoriais->count()==0 ){
+
+                      //  dd($tutoriais);
+                }else{
+
+                    foreach ($tutoriais as $tutorial){
+                        if($tutorial->img_capa!="img-tutorial-default.png"){
+
+                            Storage::disk('public')->delete('Fotos_utilizadores/'.$tutorial->img_capa);
+
+
+                        }
+                        $tutorial->delete();
+
+                    }
+
+                }
+
+                if(Auth::user()->tipo_utilizador ="admin"){
+                    return redirect("acc/".Auth::user()->id)->with("message","Conta apagada ".Auth::User()->name);
+                }
+                return redirect("/logout");
+           }
+
+       }
+
     }
 }

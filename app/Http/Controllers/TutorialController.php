@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-
+use Illuminate\Support\Facades\Session;
 use App\Exceptions\Handler;
 
 class TutorialController extends Controller
@@ -58,8 +58,6 @@ class TutorialController extends Controller
 
             $categorias= DB::table('categorias')->select('nome_categoria', 'id_categoria')->get();
 
-
-
             $validatedData = $request->validate([
                 'title'=> 'bail|required|max:40',
                 'select_categoria' => 'bail|required',
@@ -69,7 +67,6 @@ class TutorialController extends Controller
                 'file'=>'required'
 
             ]);
-
             $user = Auth::user();
 
             $min =0;
@@ -79,7 +76,7 @@ class TutorialController extends Controller
             $fileOriginalName= $request->file('file')->getClientOriginalName();
 
 
-            $img_capa =$random."_".$user->id.".".File::extension($fileOriginalName);
+            $img_capa =$random."_Tutorial_".$user->id.".".File::extension($fileOriginalName);
 
             $filecontents= file_get_contents($validatedData["file"]);
 
@@ -115,7 +112,10 @@ class TutorialController extends Controller
 //            );
 //            $inserted->save();
 
-                return view("tutoriais.templateInserirTutorial",["inserted"=> $inserted,"categorias" => $categorias]);
+
+            Session::flash("message","Tutorial Novo Adicionado!!");
+            return view("tutoriais.templateInserirTutorial",
+                    ["inserted"=> $inserted,"categorias" => $categorias]);
 
 
 
@@ -164,7 +164,7 @@ class TutorialController extends Controller
 
         if($request->name!=null){
 
-            $tutoriais = Tutorial::where("descricao","like", '%'.$request->name.'%')->get();
+            $tutoriais = Tutorial::where("descricao","like", '%'.$request->name.'%')->orWhere("content","like", '%'.$request->name.'%')->get();
 
 
             return view("tutoriais.templateSearch",["tutoriais"=>$tutoriais]);
@@ -209,7 +209,6 @@ class TutorialController extends Controller
 
             return redirect("/edit/".$id)->with("message","Tutorial Atualizado com sucesso");
         }
-
 
 
         $tutorial= Tutorial::find($id);
@@ -264,6 +263,21 @@ class TutorialController extends Controller
      */
     public function destroy($id)
     {
-        //
+                $tutorial=Tutorial::find($id);
+
+        if(Auth::user()->id == $tutorial->id_utilizador or Auth::user()->tipo_utilizador=="admin"){
+
+            if($tutorial->delete()){
+                return redirect()->back()->with("message","Tutorial Apagado!");
+
+            }else{
+                return redirect()->back()->with("message","Nao Foi Possivel Apagar!");
+
+            }
+
+        }
+        return redirect()->back()->with("message","Ocorreu um erro de permissao!");
+
+
     }
 }

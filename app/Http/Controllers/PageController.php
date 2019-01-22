@@ -51,7 +51,7 @@ class PageController extends Controller
 
 
             //most viewed
-            $MostWatchtutorial = Tutorial::with("utilizador","categoria")->orderBy("num_views","desc")->take(4)->get();
+            $MostWatchtutorial = Tutorial::with("utilizador","categoria")->orderBy("num_views","desc")->take(3)->get();
 
 
             $usersTopWatched=PageController::getTopWatched();

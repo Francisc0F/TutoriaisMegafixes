@@ -6885,7 +6885,7 @@ button:focus {
 
 body {
   background-color: #304040ed;
-  padding-bottom: 213px; }
+  padding-bottom: 200px; }
   body .header {
     background-color: #04202C; }
 
@@ -6941,7 +6941,7 @@ body {
       font-size: 17px;
       text-decoration: underline; }
     .mostviewed .mostviewed-item p, .mostviewed #authors .author-list .author-list-item p, #authors .author-list .mostviewed .author-list-item p {
-      font-size: 16px; }
+      font-size: 12px; }
     .mostviewed .mostviewed-item .tutorialImage, .mostviewed #authors .author-list .author-list-item .tutorialImage, #authors .author-list .mostviewed .author-list-item .tutorialImage {
       overflow: hidden; }
       .mostviewed .mostviewed-item .tutorialImage img, .mostviewed #authors .author-list .author-list-item .tutorialImage img, #authors .author-list .mostviewed .author-list-item .tutorialImage img {
@@ -6991,7 +6991,7 @@ body {
   border-top-right-radius: 0rem; }
 #tutoriais .card {
   width: 300px;
-  height: 422px; }
+  height: auto; }
 #tutoriais .card:hover {
   color: #495057;
   text-decoration: none;
@@ -7126,5 +7126,13 @@ body {
 
 #inner-message {
   margin: 0 auto; }
+
+.profile {
+  margin-top: 5px; }
+
+#ControllerAdmin img {
+  object-fit: cover;
+  width: 55%;
+  height: auto; }
 
 /*# sourceMappingURL=app.css.map */

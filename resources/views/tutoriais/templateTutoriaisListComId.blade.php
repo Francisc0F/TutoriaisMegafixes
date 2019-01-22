@@ -41,7 +41,7 @@
 
                             @foreach($user->tutoriais as $tutorial)
 
-                                <div class="float-left card ml-2 mt-1">
+                                <div class="float-left card ml-2">
 
                                     <img class="card-img-top" src="/storage/Tutoriais_img_capa/{{$tutorial->img_capa}}" alt="Card image cap">
 
@@ -63,12 +63,12 @@
                                             <div class="col">
                                                 <div class="group d-flex justify-content-between mt-2">
 
-                                                    <div class="rate w-100 d-flex justify-content-start">
-                                                        @for ($i = 1; $i <=5 ; $i++)
-                                                            <span class="fa fa-star
-                                                        @if($tutorial->rating>=$i) checked @endif"></span>
-                                                        @endfor
-                                                    </div>
+                                                    {{--<div class="rate w-100 d-flex justify-content-start">--}}
+                                                        {{--@for ($i = 1; $i <=5 ; $i++)--}}
+                                                            {{--<span class="fa fa-star--}}
+                                                        {{--@if($tutorial->rating>=$i) checked @endif"></span>--}}
+                                                        {{--@endfor--}}
+                                                    {{--</div>--}}
 
 
                                                     @switch($tutorial->dificuldade)

@@ -17,11 +17,17 @@
             </div>
         @endif
 
-        @if ($inserted)
-            <div class="alert alert-success" role="alert">
-                Tutorial Enviado com sucesso!
+        @if (session('message'))
+
+            <div  id="message">
+                <div id="inner-message" class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ session('message') }}
+                </div>
             </div>
+
         @endif
+        
 
 
         <div class="form-group">
@@ -90,10 +96,6 @@
             <textarea id="froala-editor" name="content">Initialize the Froala WYSIWYG HTML Editor on a textarea.</textarea>
 
         </div>
-
-
-        <a class="btn btn-success" >Add image</a>
-        <a class="btn btn-success" >Add paragraph</a>
         <hr>
 
         <input class="btn btn-success" type="submit" name="Inserir" value="Enviar">

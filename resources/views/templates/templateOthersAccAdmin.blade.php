@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="container bootstrap snippet my-4" id="myacc">
+    <div class="container bootstrap snippet mt-4" id="myacc">
         <div class="row">
             <div class="col-sm-3"><!--left col-->
 
@@ -26,11 +26,11 @@
                     <div class="row">
                         <div class="col">
 
+                            <a class="btn btn-lg btn-success apagar w-100" href="/utilizador/destroy/{{$user->id}}">Apagar Conta</a>
 
-
-                                <a class="btn btn-lg btn-success apagar w-100">Apagar Conta</a>
-                                <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 " href="/newtutorial">Novo tutorial</a>
-
+                        @if(Auth::User()->tipo_utilizador=="autor")
+                                 <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 " href="/create">Novo tutorial</a>
+                            @endif
 
                         </div>
 
@@ -48,7 +48,7 @@
 
                 <div class="accTutorials">
                     <ul class="list-group">
-                        <li class="list-group-item text-muted">Activity </li>
+                        <li class="list-group-item text-muted">@if($tutoriais->count()==0){{"Sem Tutoriais"}}@else {{"Atividade"}}@endif</li>
 
                         @foreach ($tutoriais as $tutorial)
 
@@ -62,14 +62,17 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center mt-1">
-                                    <a class="btn btn-lg btn-success edit-tutorial" href="
-                                            {{$tutorial->id}}">Edit</a>
+                                    @if(Auth::User()->tipo_utilizador=="autor")
+                                    <a class="btn btn-lg btn-success edit-tutorial" href="/edit/{{$tutorial->id}}">Edit</a>
+                                    @endif
+
+                                       @if(Auth::User()->tipo_utilizador=="autor" or Auth::User()->tipo_utilizador=="admin")
+
                                     <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="
-                                            {{$tutorial->id}}">Apagar</a>
+                                            /delete/{{$tutorial->id}}">Apagar</a>
+                                        @endif
 
-
-
-                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1"
+                                    <a class="btn btn-lg btn-success ml-1"
                                        href="/show/{{$tutorial->id}}">Ver</a>
                                 </div>
 
@@ -87,7 +90,7 @@
                 <div>
                     <div class="tab-pane active" id="home">
 
-                        <form class="form" action="utilizador/update/{{$user->id}}" method="post" id="registrationForm" enctype="multipart/form-data">
+                        <form class="form" action="/utilizador/update/{{$user->id}}" method="post" id="registrationForm" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group">

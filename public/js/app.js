@@ -36,7 +36,14 @@
 
 
 $(document).ready(function() {
-
+    $(function() {
+        $('textarea#froala-editor').froalaEditor({
+            toolbarButtons: ['undo', 'redo' , '|', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'outdent', 'indent', 'clearFormatting', 'insertTable', 'html'],
+            toolbarButtonsXS: ['undo', 'redo' , '-', 'bold', 'italic', 'underline'],
+            quickInsertTags:[],
+            height: 300
+        })
+    });
 
     //page start
     RateMouseOverOut();
@@ -63,20 +70,16 @@ $(document).ready(function() {
 
     messageAlert();
 
+    confirmDelete();
 
+
+    //tem de ser a ultima
     admin();
 
 
 
 // text area format
-    $(function() {
-        $('textarea#froala-editor').froalaEditor({
-            toolbarButtons: ['undo', 'redo' , '|', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'outdent', 'indent', 'clearFormatting', 'insertTable', 'html'],
-            toolbarButtonsXS: ['undo', 'redo' , '-', 'bold', 'italic', 'underline'],
-            quickInsertTags:[],
-            height: 300
-        })
-    });
+
 });
 
 
@@ -201,31 +204,31 @@ function menuActive(){
 function showFooterScroll(){
 
 
-            //verifica se ha scroll
-        if ($(document).height() > $(window).height()) {
+    //verifica se ha scroll
+    if ($(document).height() > $(window).height()) {
 
 
 
-            //esconde e mostra
-            $(window).on("scroll", function () {
+        //esconde e mostra
+        $(window).on("scroll", function () {
 
 
-                //verifica se esta no fim
-                if ($(window).scrollTop() + $(window).height() > $(document).height() - 15) {
+            //verifica se esta no fim
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 15) {
 
-                    $("#footer").removeClass("hide");
+                $("#footer").removeClass("hide");
 
-                    $("#footer").fadeIn(160);
+                $("#footer").fadeIn(160);
 
-                } else {
-                    $("#footer").fadeOut(160);
-                }
+            } else {
+                $("#footer").fadeOut(160);
+            }
 
-            });
+        });
 
-        }else{
-            $("#footer").removeClass("hide");
-        }
+    }else{
+        $("#footer").removeClass("hide");
+    }
 
 
 
@@ -329,13 +332,28 @@ function RateMouseOverOut(){
 function messageAlert() {
 
     setTimeout(function (){
-            $("#message").fadeOut();
-        },4000);
+        $("#message").fadeOut();
+    },4000);
 
 
 
 
 }
+
+function confirmDelete(){
+
+
+    $(".apagar-tutorial").click(function() {
+        return confirm("Deseja prosseguir com o delete?");
+    });
+
+    $(".apagar").click(function() {
+        return confirm("Deseja prosseguir com o delete?");
+    });
+
+
+}
+
 
 
 Tabulator.prototype.extendModule("ajax", "defaultConfig", {
@@ -348,28 +366,20 @@ function admin() {
 
 
 
+    //
+    //  function call(Url) {
+    //      $.getJSON(Url, function(result){
+    //          nestedData=result;
+    //          console.log(nestedData);
+    //      });
+    //
+    //  }
+    // call("http://127.0.0.1:8000/getAuthors");
 
-    function call(Url) {
-        $.getJSON(Url, function(result){
-            nestedData=result;
-            console.log(nestedData);
-        });
 
-    }
-   call("http://127.0.0.1:8000/getAuthors");
+    // $("#ControllerAdmin-table").tabulator("nestedData","http://127.0.0.1:8000/getAuthors");
 
 
-   // $("#ControllerAdmin-table").tabulator("nestedData","http://127.0.0.1:8000/getAuthors");
-
-    var openButton = function(value, data, cell, row, formatterParams){ //plain text value
-        var button = $("<a>Edit Row</a>");
-
-        button.on("click", function(){
-         console.log(data);
-        });
-
-        return button;
-    };
 
     var table = new Tabulator("#ControllerAdmin",
         {
@@ -379,11 +389,23 @@ function admin() {
             resizableColumns: true,
 
             columns: [
-                {title: "Id", field: "id"},
+
                 {title: "tipo_utilizador", field: "tipo_utilizador"},
                 {title: "name", field: "name"},
+                {title: "email", field: "email"},
                 {title: "created_at", field: "created_at"},
-                {title: "img_capa", field: "img_profile_utilizador"},
+                {title: "profile pic",field:"img_profile_utilizador", formatter:function(cell, formatterParams, onRendered){
+                        //cell - the cell component
+                        //formatterParams - parameters set for the column
+                        //onRendered - function to call when the formatter has been rendered
+                        link ="/storage/Fotos_utilizadores/";
+
+                        img ='<img class="" src="'+link+cell.getValue()+'';
+                        img2 ='" >';
+
+                        result =  img.concat(img2);
+                        return result; //return the contents of the cell;
+                    }},
                 {title: "cidade_utilizador", field: "cidade_utilizador"},
                 {title: "pais_utilizador", field: "pais_utilizador"},
                 {title:"Edit", field:"id", formatter:function(cell, formatterParams, onRendered){
@@ -391,14 +413,57 @@ function admin() {
                         //formatterParams - parameters set for the column
                         //onRendered - function to call when the formatter has been rendered
 
-                        hrf ='href="/acc/'+ cell.getValue() +'">Edit</a>';
-                        link = '<a class="btn btn-success"';
+                        edit2 ='href="/acc/'+ cell.getValue() +'">Edit</a>';
+                        edit1 = '<a class="btn btn-success"';
 
-                         result =  link.concat(hrf);
+                        apagar2 ='href="/utilizador/destroy/'+ cell.getValue() +'">Apagar</a>';
+                        apagar1 = '<a class="ml-2 btn btn-success apagar"';
+
+                        result =  edit1.concat(edit2) + apagar1.concat(apagar2);
                         return result; //return the contents of the cell;
                     }}  ],
-
-
+            // rowFormatter:function(row){
+            //     //create and style holder elements
+            //     var holderEl = document.createElement("div");
+            //     var tableEl = document.createElement("div");
+            //
+            //
+            //
+            //     holderEl.appendChild(tableEl);
+            //
+            //     row.getElement().appendChild(holderEl);
+            //
+            //     var subTable = new Tabulator(tableEl, {
+            //         layout:"fitColumns",
+            //         data:row.getData().tutoriais,
+            //         columns:[
+            //             {title:"id", field:"id", sorter:"id"},
+            //             {title:"id_categoria", field:"id_categoria"},
+            //             {title:"id_utilizador", field:"id_utilizador"},
+            //             {title:"titulo", field:"titulo", sorter:"titulo"},
+            //             {title:"descricao", field:"descricao"},
+            //             {title:"img_capa", field:"img_capa"},
+            //             {title:"num_views", field:"num_views"},
+            //             {title:"dificuldade", field:"dificuldade"},
+            //             {title:"Edit", field:"id", formatter:function(cell, formatterParams, onRendered){
+            //                     //cell - the cell component
+            //                     //formatterParams - parameters set for the column
+            //                     //onRendered - function to call when the formatter has been rendered
+            //
+            //                     edit2 ='href="/acc/'+ cell.getValue() +'">Edit</a>';
+            //                     edit1 = '<a class="btn btn-success"';
+            //
+            //                     apagar2 ='href="/acc/'+ cell.getValue() +'">Apagar</a>';
+            //                     apagar1 = '<a class="ml-2 btn btn-success"';
+            //
+            //                     result =  edit1.concat(edit2) + apagar1.concat(apagar2);
+            //                     return result; //return the contents of the cell;
+            //                 }}
+            //         ]
+            //     })
+            // }
+            //
+            //
 
         });
 

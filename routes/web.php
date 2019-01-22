@@ -13,66 +13,64 @@
 
 //admin info
 Route::get('/getAuthors','UtilizadorController@getAuthors');
-
-
-
+//start
 Route::get('/','PageController@index');
-
-
-
+//error
 Route::get('/error', function () {
 
     return view('pages.error');
 });
-//utilizadores
-Route::post('/utilizador/update/{id}','UtilizadorController@update');
-
-
-Route::get('/acc/{id?}','UtilizadorController@myAcc');
-
-//lista autores
-Route::get('/authors','UtilizadorController@index');
-
-
-Route::get('/newtutorial', function () {
-
-    return view('tutoriais.templateInserirTutorial');
-});
-
-Route::get('/categorias',"CategoriaController@index");
-
-
-Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
-Route::get('/utilizador/tutoriaisList/{id}',"UtilizadorController@tutoriaisList");
-
-
-
-
-
-//search tutorial
-Route::post('/search',"TutorialController@search");
-
-//criar tutorial
-Route::get('/create',"TutorialController@create");
-Route::post('/store',"TutorialController@store");
-
-
-//ver tutorial
-Route::get('/show/{id}',"TutorialController@show");
-
-
-//Editar
-Route::get('/edit/{id}',"TutorialController@edit");
-Route::post('/update/{id}',"TutorialController@update");
-
-
-
-
 
 Route::get('/about', function () {
 
     return view('templates.about');
 });
+
+
+//utilizadores
+Route::post('/utilizador/update/{id}','UtilizadorController@update');
+Route::get('/acc/{id?}','UtilizadorController@myAcc');
+
+//->ApagarConta
+Route::get('/utilizador/destroy/{id}','UtilizadorController@destroy');
+
+//lista autores
+Route::get('/authors','UtilizadorController@index');
+//lista Categorias
+Route::get('/categorias',"CategoriaController@index");
+//lista tutoriais por categoria
+Route::get('/categorias/listTutoriais/{id}',"CategoriaController@listTutoriais");
+
+//lista tutoriais por utilizador
+Route::get('/utilizador/tutoriaisList/{id}',"UtilizadorController@tutoriaisList");
+
+
+
+//tutoriais
+//->search tutorial
+Route::post('/search',"TutorialController@search");
+
+//->criar tutorial
+Route::get('/create',"TutorialController@create");
+Route::post('/store',"TutorialController@store");
+
+
+//->ver tutorial
+Route::get('/show/{id}',"TutorialController@show");
+
+//->Editar tutorial
+Route::get('/edit/{id}',"TutorialController@edit");
+Route::post('/update/{id}',"TutorialController@update");
+
+//->Apagar Tutorial
+Route::get('/delete/{id}',"TutorialController@destroy");
+
+
+
+
+
+
+
 
 
 

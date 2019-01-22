@@ -104,9 +104,6 @@
 
         </div>
 
-
-        <a class="btn btn-success" >Add image</a>
-        <a class="btn btn-success" >Add paragraph</a>
         <hr>
 
         <input class="btn btn-success" type="submit" name="Inserir" value="Enviar">

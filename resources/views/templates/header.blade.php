@@ -14,14 +14,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/authors">Autores</a>
+                    <a class="nav-link" href="/authors">
+                        @if(Auth::check())
+                            @if(Auth::User()->tipo_utilizador=="admin")
+                                Dashboard
+                            @endif
+                        @else
+                            Autores
+                        @endif
+                    </a>
                 </li>
                 @auth
 
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/logout">Logout</a>
-                    </li>
 
 
                     <li class="nav-item">
@@ -34,56 +39,65 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link pb-0 d-flex justify-content-between" href="/acc">
+                        <a class="nav-link pb-0 d-flex justify-content-between"
+                           @if(Auth::user()->tipo_utilizador=="admin")
+                           href="/acc/{{Auth::user()->id}}">
+                            @else
+                                href="/acc">
+                            @endif
                             <div class="img_Profile">
 
-                            <img src="/storage/Fotos_utilizadores/{{Auth::user()->img_profile_utilizador}}"
-                        >
+                                <img src="/storage/Fotos_utilizadores/{{Auth::user()->img_profile_utilizador}}">
+
                             </div>
-                          <span class="ml-2">{{\App\Utilizador::split_name(Auth::user()->name)[0]}}</span>
+                            <span class="ml-2">{{\App\Utilizador::split_name(Auth::user()->name)[0]}}</span>
                         </a>
 
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+
 
                 @endauth
 
 
                 @guest
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/register">Regist</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Regist</a>
+                    </li>
                 @endguest
 
                 {{--<li class="nav-item">--}}
-                    {{--<a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>--}}
+                {{--<a class="nav-link btn-login-signIn" href="#"  >Login/sign in</a>--}}
                 {{--</li>--}}
 
 
                 {{--<li class="nav-item dropdown">--}}
-                    {{--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
-                        {{--Dropdown--}}
-                    {{--</a>--}}
-                    {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
-                        {{--<a class="dropdown-item" href="#">Action</a>--}}
-                        {{--<a class="dropdown-item" href="#">Another action</a>--}}
-                        {{--<div class="dropdown-divider"></div>--}}
-                        {{--<a class="dropdown-item" href="#">Something else here</a>--}}
-                    {{--</div>--}}
+                {{--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                {{--Dropdown--}}
+                {{--</a>--}}
+                {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+                {{--<a class="dropdown-item" href="#">Action</a>--}}
+                {{--<a class="dropdown-item" href="#">Another action</a>--}}
+                {{--<div class="dropdown-divider"></div>--}}
+                {{--<a class="dropdown-item" href="#">Something else here</a>--}}
+                {{--</div>--}}
                 {{--</li>--}}
                 {{--<li class="nav-item">--}}
-                    {{--<a class="nav-link disabled" href="#">Disabled</a>--}}
+                {{--<a class="nav-link disabled" href="#">Disabled</a>--}}
                 {{--</li>--}}
             </ul>
 
-                                    @if (session('status'))
-                                        <div class="alert alert-success" role="alert">
-                                            {{ session('status') }}
-                                        </div>
-                                        <span>Logged in</span>
-                                    @endif
+            @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                <span>Logged in</span>
+            @endif
 
             <div id="search">
                 <form class="form-inline my-2 my-lg-0" method="post" action="/search">

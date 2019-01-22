@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="container bootstrap snippet my-4" id="myacc">
+    <div class="container bootstrap snippet mt-4" id="myacc">
         <div class="row">
             <div class="col-sm-3"><!--left col-->
                 @if (session('message'))
@@ -22,11 +22,13 @@
                     <div class="row">
                         <div class="col">
 
+                            @if(Auth::check() or Auth::User()->tipo_utilizador=="admin")
+                                <a class="btn btn-lg btn-success apagar w-100" href="/utilizador/destroy/{{Auth::User()->id}}">Apagar Conta</a>
 
-
-                                <a class="btn btn-lg btn-success apagar w-100">Apagar Conta</a>
-                                <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 " href="/newtutorial">Novo tutorial</a>
-
+                             @endif
+                            @if(Auth::User()->tipo_utilizador="autor")
+                                  <a class="btn btn-lg btn-success novo-tutorial w-100 mt-2 " href="/create">Novo tutorial</a>
+                            @endif
 
                         </div>
 
@@ -58,14 +60,12 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center mt-1">
-                                    <a class="btn btn-lg btn-success edit-tutorial" href="
-                                            {{$tutorial->id}}">Edit</a>
-                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="
-                                            {{$tutorial->id}}">Apagar</a>
 
 
+                                    <a class="btn btn-lg btn-success edit-tutorial" href="/edit/{{$tutorial->id}}">Edit</a>
+                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1" href="/delete/{{$tutorial->id}}">Apagar</a>
 
-                                    <a class="btn btn-lg btn-success apagar-tutorial ml-1"
+                                    <a class="btn btn-lg btn-success ml-1"
                                        href="/show/{{$tutorial->id}}">Ver</a>
                                 </div>
 
